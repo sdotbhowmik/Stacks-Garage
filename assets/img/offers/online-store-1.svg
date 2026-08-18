@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <linearGradient id="bg-os" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3d4a"/>
+      <stop offset="100%" stop-color="#02090d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg-os)"/>
+  <!-- Browser frame -->
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+  <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
+  <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
+  <circle cx="64" cy="30" r="5" fill="#27c93f"/>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#00f2fe" opacity="0.7">shop.dhakakart.bd</text>
+  <!-- Site header -->
+  <rect x="10" y="50" width="380" height="32" fill="#00f2fe" fill-opacity="0.08"/>
+  <text x="20" y="71" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff">DHAKAKART</text>
+  <rect x="290" y="60" width="80" height="14" rx="7" fill="#00f2fe"/>
+  <text x="330" y="70" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#02090d">Cart (2)</text>
+  <!-- Product grid -->
+  <g transform="translate(20,100)">
+    <rect x="0" y="0" width="110" height="110" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.25"/>
+    <rect x="10" y="10" width="90" height="60" rx="3" fill="#00f2fe" opacity="0.2"/>
+    <rect x="10" y="78" width="60" height="6" rx="3" fill="#00f2fe" opacity="0.5"/>
+    <text x="10" y="100" font-family="sans-serif" font-size="9" fill="#cbd5e1">Traditional saree</text>
+    <text x="100" y="100" text-anchor="end" font-family="sans-serif" font-size="10" font-weight="bold" fill="#00f2fe">৳2,500</text>
+  </g>
+  <g transform="translate(145,100)">
+    <rect x="0" y="0" width="110" height="110" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.25"/>
+    <rect x="10" y="10" width="90" height="60" rx="3" fill="#14b8a6" opacity="0.25"/>
+    <rect x="10" y="78" width="50" height="6" rx="3" fill="#00f2fe" opacity="0.5"/>
+    <text x="10" y="100" font-family="sans-serif" font-size="9" fill="#cbd5e1">Leather bag</text>
+    <text x="100" y="100" text-anchor="end" font-family="sans-serif" font-size="10" font-weight="bold" fill="#00f2fe">৳1,800</text>
+  </g>
+  <g transform="translate(270,100)">
+    <rect x="0" y="0" width="110" height="110" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.25"/>
+    <rect x="10" y="10" width="90" height="60" rx="3" fill="#00f2fe" opacity="0.3"/>
+    <rect x="10" y="78" width="40" height="6" rx="3" fill="#00f2fe" opacity="0.5"/>
+    <text x="10" y="100" font-family="sans-serif" font-size="9" fill="#cbd5e1">Cotton shirt</text>
+    <text x="100" y="100" text-anchor="end" font-family="sans-serif" font-size="10" font-weight="bold" fill="#00f2fe">৳950</text>
+  </g>
+  <!-- Pagination -->
+  <rect x="170" y="240" width="60" height="22" rx="11" fill="#00f2fe"/>
+  <text x="200" y="255" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#02090d" font-weight="bold">Load more</text>
+</svg>

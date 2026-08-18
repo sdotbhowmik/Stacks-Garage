@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <linearGradient id="bg-cw2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3d4a"/>
+      <stop offset="100%" stop-color="#02090d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg-cw2)"/>
+  <!-- Browser frame -->
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+  <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
+  <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
+  <circle cx="64" cy="30" r="5" fill="#27c93f"/>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#00f2fe" opacity="0.7">finsolve-bd.com/en/solutions</text>
+  <!-- Header (English active) -->
+  <rect x="10" y="50" width="380" height="36" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.15"/>
+  <g transform="translate(22,58)">
+    <circle cx="10" cy="10" r="9" fill="#00f2fe"/>
+    <circle cx="10" cy="10" r="4" fill="#02090d"/>
+  </g>
+  <text x="46" y="74" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff">FinSolve BD</text>
+  <text x="300" y="74" font-family="sans-serif" font-size="9" fill="#cbd5e1">Solutions</text>
+  <text x="345" y="74" font-family="sans-serif" font-size="9" fill="#cbd5e1">Insights</text>
+  <!-- Language switcher (highlighted) -->
+  <g transform="translate(360,58)">
+    <rect width="22" height="20" rx="4" fill="#00f2fe"/>
+    <text x="11" y="14" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#02090d">EN</text>
+  </g>
+  <!-- Page title -->
+  <text x="200" y="118" text-anchor="middle" font-family="serif" font-size="18" font-weight="bold" fill="#ffffff">Treasury Solutions</text>
+  <text x="200" y="138" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#cbd5e1">Custom-built platforms for banks, MFIs, and fintechs</text>
+  <!-- 3 feature cards -->
+  <g transform="translate(20,156)">
+    <rect width="115" height="120" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <circle cx="58" cy="30" r="14" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe"/>
+    <text x="58" y="34" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#00f2fe">৳</text>
+    <text x="58" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff">Cash Mgmt</text>
+    <text x="58" y="76" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#cbd5e1">Real-time positions</text>
+    <text x="58" y="100" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#00f2fe">Learn more →</text>
+  </g>
+  <g transform="translate(143,156)">
+    <rect width="115" height="120" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <circle cx="58" cy="30" r="14" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe"/>
+    <text x="58" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#00f2fe">⚖</text>
+    <text x="58" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff">Risk</text>
+    <text x="58" y="76" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#cbd5e1">VaR analytics</text>
+    <text x="58" y="100" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#00f2fe">Learn more →</text>
+  </g>
+  <g transform="translate(266,156)">
+    <rect width="115" height="120" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <circle cx="58" cy="30" r="14" fill="#00f2fe" fill-opacity="0.2" stroke="#00f2fe"/>
+    <text x="58" y="34" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#00f2fe">📋</text>
+    <text x="58" y="62" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff">Compliance</text>
+    <text x="58" y="76" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#cbd5e1">BB reporting</text>
+    <text x="58" y="100" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#00f2fe">Learn more →</text>
+  </g>
+  <!-- Bottom note -->
+  <text x="200" y="296" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#64748b">Available in English and বাংলা — switch anytime</text>
+</svg>

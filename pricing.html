@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StackGarage pricing — hosting and maintenance plans starting at ৳5,000/month. Free .com domain, free SSL, 24/7 support.">
+  <title>Pricing | StackGarage</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.svg" alt="StackGarage" class="nav__logo-img" style="display:none">
+      </a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+        <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="pricing.html" class="nav__link is-active" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="bn">বাং</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary" style="padding:10px 20px" data-i18n="nav.cta_quote">Get a Quote</a>
+        <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <aside class="nav-drawer" aria-label="Mobile menu">
+    <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+    <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+    <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn--primary" data-i18n="nav.cta_quote">Get a Quote</a>
+  </aside>
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="eyebrow">Pricing</span>
+      <h1>Simple, honest plans.</h1>
+      <p>Hosting &amp; maintenance built for every stage of your business — from a personal blog to a national brand.</p>
+      <div class="page-hero__breadcrumbs"><a href="index.html">Home</a> <span>/</span> <span style="color:var(--accent)">Pricing</span></div>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-label="Plans">
+    <div class="container">
+      <div class="pricing">
+
+        <article class="plan reveal">
+          <h3 class="plan__name">Starter</h3>
+          <div class="plan__price">৳5,000<small>/month</small></div>
+          <div class="plan__billing">billed monthly</div>
+          <div class="plan__features">
+            <ul style="display:flex;flex-direction:column;gap:10px">
+              <li>5 GB SSD Storage</li>
+              <li>Free .com Domain (1yr)</li>
+              <li>Free SSL Certificate</li>
+              <li>10 Email Accounts</li>
+              <li>Weekly Backups</li>
+              <li>Basic Support</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn--ghost">Start Now</a>
+        </article>
+
+        <article class="plan plan--featured reveal reveal--delay-1">
+          <h3 class="plan__name">Business</h3>
+          <div class="plan__price">৳15,000<small>/month</small></div>
+          <div class="plan__billing">billed monthly</div>
+          <div class="plan__features">
+            <ul style="display:flex;flex-direction:column;gap:10px">
+              <li>50 GB NVMe Storage</li>
+              <li>Free .com / .com.bd Domain</li>
+              <li>Free SSL &amp; CDN</li>
+              <li>Unlimited Emails</li>
+              <li>Daily Backups</li>
+              <li>Priority 24/7 Support</li>
+              <li>Host up to 10 websites</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Choose Business</a>
+        </article>
+
+        <article class="plan reveal reveal--delay-2">
+          <h3 class="plan__name">Enterprise</h3>
+          <div class="plan__price">Custom</div>
+          <div class="plan__billing">tailored to your scale</div>
+          <div class="plan__features">
+            <ul style="display:flex;flex-direction:column;gap:10px">
+              <li>Dedicated Resources</li>
+              <li>Custom-domain bundle</li>
+              <li>Advanced DDoS Protection</li>
+              <li>Unlimited Emails &amp; Sites</li>
+              <li>Hourly Backups</li>
+              <li>Dedicated Account Manager</li>
+              <li>SLA-backed 99.99% uptime</li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn btn--ghost">Talk to Sales</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-label="Project pricing">
+    <div class="container">
+      <div class="section-heading reveal" style="margin-bottom:2rem">
+        <span class="eyebrow">Project pricing</span>
+        <h2>Need a website, app, or custom software?</h2>
+        <p>Here are typical starting prices for our project work. Every quote is fixed, transparent, and milestone-based.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <h3 class="card__title">Brochure Website</h3>
+          <p class="card__text">5–7 pages, mobile responsive, SEO foundations, contact form.</p>
+          <div style="margin:18px 0;color:var(--accent);font-family:var(--font-display);font-weight:700;font-size:1.6rem">From ৳25,000</div>
+          <a href="contact.html" class="card__link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="card reveal reveal--delay-1">
+          <h3 class="card__title">Mobile App</h3>
+          <p class="card__text">Cross-platform iOS &amp; Android, basic backend, store submission.</p>
+          <div style="margin:18px 0;color:var(--accent);font-family:var(--font-display);font-weight:700;font-size:1.6rem">From ৳3,00,000</div>
+          <a href="contact.html" class="card__link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+        <div class="card reveal reveal--delay-2">
+          <h3 class="card__title">Custom Software</h3>
+          <p class="card__text">ERP, CRM, POS or workflow automation. Scoped per discovery.</p>
+          <div style="margin:18px 0;color:var(--accent);font-family:var(--font-display);font-weight:700;font-size:1.6rem">From ৳2,00,000</div>
+          <a href="contact.html" class="card__link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-label="FAQ">
+    <div class="container container--narrow">
+      <div class="section-heading reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common pricing questions</h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item is-open reveal">
+          <button class="faq__question">Are there any setup fees on hosting plans?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">No setup fees. You pay only the monthly fee and any add-ons. Migration is free.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Can I switch plans later?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes — upgrade or downgrade anytime. We'll pro-rate and apply the change within an hour.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Do project quotes include everything?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes — design, development, QA, deployment and a 30-day post-launch bug-fix window. Third-party service fees (domain, SMS, payment gateway) are itemized separately.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Do you offer monthly payment plans?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes for projects over ৳1,00,000 — typically 30/30/40 milestone split, with each milestone tied to a deliverable you can use.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-label="CTA">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Still have questions?</h2>
+          <p>Hop on a free 30-minute consultation — we'll help you pick the right plan or scope a project.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo"><img src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img"></a>
+          <p>Bangladesh's software partner for web, mobile, hosting and beyond.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="about.html">About</a></li><li><a href="about.html#team">Team</a></li>
+            <li><a href="#">Careers</a></li><li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="services.html#web">Web Development</a></li>
+            <li><a href="services.html#app">App Development</a></li>
+            <li><a href="services.html#hosting">Hosting</a></li>
+            <li><a href="services.html#domain">Domains</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Stay updated</h4>
+          <p>Subscribe for product updates and engineering insights.</p>
+          <form class="footer__newsletter" novalidate>
+            <input type="email" required placeholder="your@email.com" aria-label="Email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 StackGarage. All rights reserved.</span>
+        <span>Built with care in Dhaka, Bangladesh.</span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

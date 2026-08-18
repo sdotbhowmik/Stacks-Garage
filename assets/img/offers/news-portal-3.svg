@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <linearGradient id="bg-np3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3d4a"/>
+      <stop offset="100%" stop-color="#02090d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg-np3)"/>
+  <!-- Browser frame -->
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+  <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
+  <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
+  <circle cx="64" cy="30" r="5" fill="#27c93f"/>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#00f2fe" opacity="0.7">dailybangladesh.bd/live</text>
+  <!-- BREAKING ticker -->
+  <g>
+    <rect x="10" y="50" width="380" height="30" fill="#dc2626"/>
+    <rect x="10" y="50" width="80" height="30" fill="#02090d"/>
+    <text x="50" y="70" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fff" letter-spacing="1.5">BREAKING</text>
+    <text x="100" y="70" font-family="serif" font-size="11" fill="#fff">Central bank announces new monetary policy effective Feb 1</text>
+  </g>
+  <!-- Live indicator -->
+  <g transform="translate(20,92)">
+    <circle cx="6" cy="6" r="4" fill="#dc2626"/>
+    <circle cx="6" cy="6" r="4" fill="#dc2626" opacity="0.5">
+      <animate attributeName="r" values="4;9;4" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="20" y="10" font-family="sans-serif" font-size="9" font-weight="bold" fill="#dc2626">LIVE</text>
+    <text x="50" y="10" font-family="sans-serif" font-size="8" fill="#cbd5e1">12,438 viewers</text>
+  </g>
+  <!-- Headlines list -->
+  <g transform="translate(20,114)">
+    <line x1="0" y1="0" x2="360" y2="0" stroke="#00f2fe" stroke-opacity="0.4"/>
+    <g transform="translate(0,8)">
+      <rect width="6" height="20" fill="#dc2626"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#ffffff">14:23 — PM addresses parliament on budget</text>
+    </g>
+    <g transform="translate(0,34)">
+      <rect width="6" height="20" fill="#00f2fe"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#cbd5e1">14:15 — Taka strengthens against dollar</text>
+    </g>
+    <g transform="translate(0,60)">
+      <rect width="6" height="20" fill="#00f2fe"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#cbd5e1">14:02 — Cabinet approves new rail project</text>
+    </g>
+    <g transform="translate(0,86)">
+      <rect width="6" height="20" fill="#94a3b8"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#cbd5e1">13:48 — Cyclone moves toward Cox's Bazar</text>
+    </g>
+    <g transform="translate(0,112)">
+      <rect width="6" height="20" fill="#94a3b8"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#cbd5e1">13:30 — Cricket team lands in Chattogram</text>
+    </g>
+    <g transform="translate(0,138)">
+      <rect width="6" height="20" fill="#94a3b8"/>
+      <text x="14" y="14" font-family="sans-serif" font-size="9" font-weight="bold" fill="#cbd5e1">13:15 — Startup funding hits record in Q4</text>
+    </g>
+  </g>
+</svg>

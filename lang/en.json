@@ -1,0 +1,313 @@
+{
+  "meta": {
+    "site_name": "StackGarage",
+    "tagline": "Build Solutions. Stack Success."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta_quote": "Get a Quote"
+  },
+  "hero": {
+    "typewriter_phrases": ["We Build.", "We Host.", "We Scale.", "Your Vision."],
+    "headline_suffix": "Build Solutions. Stack Success.",
+    "subheadline": "Bangladesh-based software firm delivering web apps, mobile apps, hosting, and domain solutions — built with precision, deployed with reliability.",
+    "cta_primary": "Get Started",
+    "cta_secondary": "Our Services",
+    "scroll_hint": "Scroll"
+  },
+  "trust": {
+    "heading": "Trusted by growing businesses across Bangladesh"
+  },
+  "services": {
+    "eyebrow": "What we offer",
+    "heading": "End-to-end software services",
+    "subheading": "From the first line of code to lifelong hosting — we've got every layer of your digital stack covered.",
+    "items": {
+      "web": {
+        "title": "Web Development",
+        "text": "Custom websites, e-commerce stores, and full-stack web apps built with React, Next.js, Laravel, and WordPress.",
+        "link": "Explore web development"
+      },
+      "app": {
+        "title": "Mobile App Development",
+        "text": "Native and cross-platform Android & iOS apps using Flutter and React Native — from concept to Play Store launch.",
+        "link": "Explore app development"
+      },
+      "hosting": {
+        "title": "Hosting Solutions",
+        "text": "Managed shared, VPS, cloud, and dedicated hosting with 99.9% uptime, free SSL, and 24/7 Bangladesh support.",
+        "link": "Explore hosting"
+      },
+      "domain": {
+        "title": "Domain Registration",
+        "text": "Register .com, .net, .org, .io, .bd and more. Free DNS, WHOIS privacy, and renewal reminders included.",
+        "link": "Find your domain"
+      },
+      "custom": {
+        "title": "Software Customization",
+        "text": "Tailor-made ERP, CRM, POS, and inventory systems — adapted to the workflows of your Bangladesh business.",
+        "link": "Explore customization"
+      },
+      "design": {
+        "title": "UI/UX & SEO",
+        "text": "Conversion-focused design and on-page SEO to make sure your beautiful site actually gets found and converts.",
+        "link": "Explore design & SEO"
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Why StackGarage",
+    "heading": "Built for serious businesses, priced for Bangladesh",
+    "subheading": "We combine global engineering standards with local understanding and unbeatable value.",
+    "features": {
+      "experience": { "title": "Experienced Engineers", "text": "50+ years of combined dev experience across modern stacks." },
+      "delivery":   { "title": "On-time Delivery",     "text": "Agile sprints with weekly demos — never miss a deadline." },
+      "support":    { "title": "24/7 Local Support",    "text": "Dhaka-based team available around the clock via phone, chat, email." },
+      "pricing":    { "title": "Transparent Pricing",   "text": "Fixed quotes, milestone billing, no surprise invoices." }
+    }
+  },
+  "stack": {
+    "eyebrow": "Tech stack",
+    "heading": "The tools we master",
+    "subheading": "Battle-tested technologies to deliver fast, secure, and scalable products."
+  },
+  "process": {
+    "eyebrow": "Our process",
+    "heading": "From idea to launch in five clear steps",
+    "steps": [
+      { "title": "Consult",  "desc": "We listen, research, and define the right scope for your goals." },
+      { "title": "Design",   "desc": "Wireframes and UI mockups you approve before we write any code." },
+      { "title": "Develop",  "desc": "Agile sprints with weekly demos and clean Git workflows." },
+      { "title": "Test",     "desc": "Rigorous QA, security audits, and real-device testing." },
+      { "title": "Launch",   "desc": "Deployment, training, monitoring, and ongoing support." }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Selected work",
+    "heading": "Projects we're proud of",
+    "subheading": "A glimpse into apps, sites and platforms shipped for clients across Bangladesh.",
+    "filters": ["All", "Web", "Apps", "Hosting", "Custom Software"],
+    "view_all": "View full portfolio"
+  },
+  "stats": {
+    "projects":  { "label": "Projects Delivered" },
+    "clients":   { "label": "Happy Clients" },
+    "years":     { "label": "Years in Business" },
+    "team":      { "label": "Team Members" }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "heading": "Simple, honest plans",
+    "subheading": "Hosting and maintenance packages built for every stage of your business.",
+    "billing": "/month",
+    "featured_ribbon": "Most Popular",
+    "plans": [
+      {
+        "name": "Starter",
+        "price": "৳5,000",
+        "tagline": "Perfect for personal sites and small portfolios",
+        "cta": "Start Now",
+        "features": [
+          "5 GB SSD Storage",
+          "Free .com Domain (1yr)",
+          "Free SSL Certificate",
+          "10 Email Accounts",
+          "Weekly Backups",
+          "Basic Support"
+        ]
+      },
+      {
+        "name": "Business",
+        "price": "৳15,000",
+        "tagline": "Best for growing SMEs and e-commerce",
+        "cta": "Choose Business",
+        "features": [
+          "50 GB NVMe Storage",
+          "Free .com / .com.bd Domain",
+          "Free SSL & CDN",
+          "Unlimited Emails",
+          "Daily Backups",
+          "Priority 24/7 Support",
+          "Host up to 10 websites"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "tagline": "For high-traffic and mission-critical systems",
+        "cta": "Talk to Sales",
+        "features": [
+          "Dedicated Resources",
+          "Custom-domain bundle",
+          "Advanced DDoS Protection",
+          "Unlimited Emails & Sites",
+          "Hourly Backups",
+          "Dedicated Account Manager",
+          "SLA-backed uptime 99.99%"
+        ]
+      }
+    ]
+  },
+  "offers": {
+    "eyebrow": "Hot offers",
+    "heading": "Solutions built for you",
+    "subheading": "Curated packages for the businesses we build the most — transparent monthly pricing.",
+    "popular_ribbon": "Most Popular",
+    "online_store": {
+      "title": "Online Store",
+      "price": "৳35,000",
+      "per_month": "/month",
+      "demo": "View Demo",
+      "call": "Call for Details",
+      "features": [
+        "Up to 500 product listings",
+        "bKash / Nagad / SSL Commerz / Stripe gateways",
+        "Order management dashboard",
+        "Inventory tracking + low-stock alerts",
+        "Customer accounts & order history",
+        "Free .com domain (1 year) + SSL",
+        "WhatsApp order integration"
+      ]
+    },
+    "news_portal": {
+      "title": "News Portal",
+      "price": "৳35,000",
+      "per_month": "/month",
+      "demo": "View Demo",
+      "call": "Call for Details",
+      "features": [
+        "Multi-category article management",
+        "Author / reporter role-based access",
+        "Breaking-news ticker + push notifications",
+        "SEO-optimized article URLs",
+        "Newsletter signup + email broadcast",
+        "Ad slot management for revenue",
+        "RSS / Atom feed + social auto-share"
+      ]
+    },
+    "business_website": {
+      "title": "Business Website",
+      "price": "৳20,000",
+      "per_month": "/month",
+      "demo": "View Demo",
+      "call": "Call for Details",
+      "features": [
+        "Up to 12 pages (Home, About, Services, etc.)",
+        "WordPress CMS — edit content yourself",
+        "Mobile-responsive + Core Web Vitals optimized",
+        "Contact form + Google Maps embed",
+        "Basic on-page SEO + sitemap.xml",
+        "Free SSL + 30 days post-launch support",
+        "Social media + WhatsApp chat widget"
+      ]
+    },
+    "corporate_website": {
+      "title": "Corporate Website",
+      "price": "Negotiable",
+      "demo": "View Demo",
+      "call": "Call for Details",
+      "features": [
+        "Bespoke UI/UX design (no template)",
+        "EN + BN multilingual support",
+        "Custom CMS with role permissions",
+        "Live chat + analytics + lead forms",
+        "Performance-tuned (90+ PageSpeed score)",
+        "Accessibility WCAG-AA compliant",
+        "Dedicated PM + SLA-backed support"
+      ]
+    }
+  },
+  "team": {
+    "eyebrow": "The team",
+    "heading": "The people behind StackGarage",
+    "subheading": "Engineers, designers and strategists who care about your success.",
+    "members": [
+      { "name": "Nazmul Hossain",   "role": "Founder & CEO",        "initials": "NH" },
+      { "name": "Fahim Rahman",     "role": "CTO — Full-Stack Lead","initials": "FR" },
+      { "name": "Sadia Karim",      "role": "Head of Design",        "initials": "SK" },
+      { "name": "Tanvir Ahmed",     "role": "DevOps & Hosting",      "initials": "TA" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Client voices",
+    "heading": "Words from the people we work with",
+    "prev": "Previous",
+    "next": "Next",
+    "items": [
+      { "name": "Rahim Ahmed",       "role": "Founder, DhakaKart",        "text": "StackGarage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.", "initials": "RA" },
+      { "name": "Tania Akter",       "role": "Director, Chittagong Logistics", "text": "Their hosting has had zero downtime in 14 months. The local 24/7 support has saved us more than once.", "initials": "TA" },
+      { "name": "Mohammad Imran",    "role": "CTO, FinSolve BD",          "text": "They custom-built our ERP from scratch and trained the entire team. ROI was visible within two months.", "initials": "MI" },
+      { "name": "Nusrat Jahan",      "role": "Marketing Lead, EduPath",   "text": "UI/UX work was outstanding. Our app is finally something my students actually want to open every day.", "initials": "NJ" },
+      { "name": "Asif Iqbal",        "role": "Owner, Sylhet Bazar",       "text": "Domain, hosting, and a beautiful store — all in one quote. Five stars from a non-tech founder like me.", "initials": "AI" },
+      { "name": "Sharmin Haque",     "role": "CEO, Khulna Agro",          "text": "They translated our messy Excel workflows into a clean custom system. Our team productivity doubled.", "initials": "SH" }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "heading": "Frequently asked questions",
+    "subheading": "Quick answers to the most common queries we hear.",
+    "items": [
+      { "q": "How long does a typical website project take?",
+        "a": "A brochure site takes 2–3 weeks, a custom web app 6–10 weeks, and a mobile app 10–16 weeks. We share a detailed timeline after the discovery call." },
+      { "q": "Do you provide hosting after the project launches?",
+        "a": "Yes — we offer managed shared, VPS, cloud and dedicated hosting with 99.9% uptime SLA, free SSL and 24/7 support from Dhaka." },
+      { "q": "Can you register .bd domains?",
+        "a": "Yes, we are an authorized registrar for .bd domains alongside .com, .net, .io, .org and most popular TLDs." },
+      { "q": "Do you sign NDAs and IP agreements?",
+        "a": "Absolutely. Every project starts with an NDA and ends with full IP transfer — your code, design, and data belong to you." },
+      { "q": "What if I need changes after launch?",
+        "a": "All packages include a 30-day post-launch bug-fix window. After that, you can join a maintenance plan or pay hourly as needed." },
+      { "q": "Do you work with international clients?",
+        "a": "Yes — we serve clients across the US, EU, Middle East and South Asia. We invoice in BDT, USD or EUR and work in your timezone." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's talk",
+    "heading": "Tell us about your project",
+    "subheading": "Drop a message and we'll reply within one business hour during Dhaka working hours.",
+    "info": {
+      "address": {
+        "title": "Visit us",
+        "lines": ["House 24, Road 11, Banani", "Dhaka 1213, Bangladesh"]
+      },
+      "phone":   { "title": "Call us",    "lines": ["+880 1700-123456", "+880 2-9876543"] },
+      "email":   { "title": "Email us",   "lines": ["hello@stackgarage.bd", "sales@stackgarage.bd"] },
+      "hours":   { "title": "Working hours", "lines": ["Sun–Thu: 9:00 – 19:00", "24/7 for hosting emergencies"] }
+    },
+    "form": {
+      "name":    "Full name",
+      "email":   "Email address",
+      "phone":   "Phone (optional)",
+      "service": "Service interested in",
+      "service_options": ["Web Development", "Mobile App Development", "Hosting", "Domain Registration", "Software Customization", "UI/UX & SEO", "Other"],
+      "budget":  "Budget range",
+      "budget_options": ["Under ৳50,000", "৳50,000 – ৳2,00,000", "৳2,00,000 – ৳5,00,000", "৳5,00,000+", "Not sure yet"],
+      "message": "Tell us about your project",
+      "submit":  "Send message",
+      "success": "Thanks! We've received your message and will reply within one business hour."
+    }
+  },
+  "cta_banner": {
+    "heading": "Have an idea? Let's build it.",
+    "text": "Free 30-minute consultation — book a slot and we'll scope your project together.",
+    "button": "Book a Free Consultation"
+  },
+  "footer": {
+    "tagline": "Bangladesh's software partner for web, mobile, hosting and beyond.",
+    "company_heading": "Company",
+    "company_links": { "about": "About", "team": "Team", "careers": "Careers", "blog": "Blog" },
+    "services_heading": "Services",
+    "services_links": { "web": "Web Development", "app": "App Development", "hosting": "Hosting", "domain": "Domains", "custom": "Custom Software", "design": "Design & SEO" },
+    "contact_heading": "Stay updated",
+    "contact_text": "Subscribe for product updates and engineering insights from our team.",
+    "newsletter_placeholder": "your@email.com",
+    "newsletter_btn": "Subscribe",
+    "copyright": "© 2025 StackGarage. All rights reserved.",
+    "built": "Built with care in Dhaka, Bangladesh."
+  }
+}

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StackGarage — Bangladesh-based software firm delivering web, app, hosting, and domain solutions for businesses across South Asia and beyond.">
+  <meta name="keywords" content="software firm Bangladesh, web development Dhaka, app development, hosting, domain, ERP, CRM, custom software">
+  <meta name="author" content="StackGarage">
+  <meta property="og:title" content="StackGarage — We Build. We Host. We Scale.">
+  <meta property="og:description" content="End-to-end software services from Dhaka, Bangladesh.">
+  <meta property="og:type" content="website">
+  <title>StackGarage | Build Solutions. Stack Success.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.svg" alt="StackGarage" class="nav__logo-img" style="display:none">
+      </a>
+
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="#hero" class="nav__link is-active" data-i18n="nav.home">Home</a>
+        <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="bn">বাং</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary" style="padding:10px 20px" data-i18n="nav.cta_quote">Get a Quote</a>
+        <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="nav-drawer" aria-label="Mobile menu">
+    <a href="#hero" class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="#portfolio" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+    <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+    <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn--primary" data-i18n="nav.cta_quote">Get a Quote</a>
+  </aside>
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+
+  <!-- ============== HERO ============== -->
+  <section id="hero" class="hero" aria-label="Hero">
+    <div class="hero-spotlight" aria-hidden="true"></div>
+
+    <!-- Faint network-mark watermark behind hero content -->
+    <img class="hero__watermark" src="assets/img/logos/StackGarage-mark.svg" alt="" aria-hidden="true">
+
+    <!-- Orbitals (left + right) -->
+    <div class="hero__orbit" aria-hidden="true">
+      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-cw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-ccw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-cw-slow"
+        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 30deg, transparent 30deg 90deg, rgba(0,242,254,0.4) 90deg 120deg, transparent 120deg 180deg, rgba(0,242,254,0.4) 180deg 210deg, transparent 210deg 270deg, rgba(0,242,254,0.4) 270deg 300deg, transparent 300deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-ccw-slow"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
+    </div>
+    <div class="hero__orbit hero__orbit--right" aria-hidden="true">
+      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-ccw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-cw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-ccw-slow"
+        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 45deg, transparent 45deg 120deg, rgba(0,242,254,0.4) 120deg 165deg, transparent 165deg 200deg, rgba(0,242,254,0.4) 200deg 245deg, transparent 245deg 300deg, rgba(0,242,254,0.4) 300deg 345deg, transparent 345deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-cw-slow"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
+    </div>
+
+    <!-- Floating tech icons -->
+    <div class="hero__floats" aria-hidden="true">
+      <svg class="float-icon animate-float" style="top:18%;left:14%;width:56px;height:56px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z" fill="rgba(0,242,254,.1)"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+      <svg class="float-icon animate-float-d" style="top:22%;right:18%;width:64px;height:64px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" fill="rgba(0,242,254,.05)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"/>
+        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+      </svg>
+      <svg class="float-icon animate-float" style="bottom:32%;left:18%;width:48px;height:48px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 12c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
+        <path d="M4 18c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
+      </svg>
+      <svg class="float-icon animate-float-d" style="bottom:24%;right:14%;width:56px;height:56px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="rgba(0,242,254,.1)"/>
+        <text x="12" y="16" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="currentColor" stroke="none">&lt;/&gt;</text>
+      </svg>
+    </div>
+
+    <!-- Floor + cityscape -->
+    <div class="floor-grid" aria-hidden="true"></div>
+    <div class="cityscape" aria-hidden="true">
+      <div class="building" style="height:60px"></div>
+      <div class="building" style="height:90px"></div>
+      <div class="building" style="height:40px"></div>
+      <div class="building" style="height:120px"></div>
+      <div class="building" style="height:70px"></div>
+      <div class="building" style="height:140px"></div>
+      <div class="building" style="height:50px"></div>
+      <div class="building" style="height:100px"></div>
+      <div class="building" style="height:80px"></div>
+      <div class="building" style="height:150px"></div>
+      <div class="building" style="height:60px"></div>
+      <div class="building" style="height:110px"></div>
+      <div class="building" style="height:40px"></div>
+      <div class="building" style="height:90px"></div>
+      <div class="building" style="height:70px"></div>
+      <div class="building" style="height:130px"></div>
+      <div class="building" style="height:50px"></div>
+      <div class="building" style="height:80px"></div>
+      <div class="building" style="height:110px"></div>
+      <div class="building" style="height:60px"></div>
+    </div>
+
+    <div class="hero__inner">
+      <span class="eyebrow reveal">Software • Hosting • Domains • Beyond</span>
+      <h1 class="reveal reveal--delay-1" style="margin-top:20px">
+        <span id="typewriter-text" style="color:var(--accent)"></span><span class="cursor-blink" style="color:var(--accent)">_</span>
+        <br>
+        <span style="font-size:0.6em" data-i18n="hero.headline_suffix">Build Solutions. Stack Success.</span>
+      </h1>
+      <p class="reveal reveal--delay-2" data-i18n="hero.subheadline">Bangladesh-based software firm delivering web apps, mobile apps, hosting, and domain solutions — built with precision, deployed with reliability.</p>
+      <div class="hero__cta-row reveal reveal--delay-3">
+        <a href="contact.html" class="btn btn--primary">
+          <span data-i18n="hero.cta_primary">Get Started</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn--ghost" data-i18n="hero.cta_secondary">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TRUST BAR ============== -->
+  <section class="section section-light" aria-label="Trusted by">
+    <div class="container">
+      <p class="trust-bar__heading reveal" data-i18n="trust.heading">Trusted by growing businesses across Bangladesh</p>
+      <div class="trust-bar reveal">
+        <div class="trust-bar__item">DhakaKart</div>
+        <div class="trust-bar__item">FinSolve BD</div>
+        <div class="trust-bar__item">EduPath</div>
+        <div class="trust-bar__item">SylhetBazar</div>
+        <div class="trust-bar__item">KhulnaAgro</div>
+        <div class="trust-bar__item">CTG Logistics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SERVICES ============== -->
+  <section id="services" class="section section--dark" aria-label="Services">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">What we offer</span>
+        <h2 data-i18n="services.heading">End-to-end software services</h2>
+        <p data-i18n="services.subheading">From the first line of code to lifelong hosting — we've got every layer of your digital stack covered.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.web.title">Web Development</h3>
+          <p class="card__text" data-i18n="services.items.web.text">Custom websites, e-commerce stores, and full-stack web apps built with React, Next.js, Laravel, and WordPress.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.web.link">Explore web development</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal reveal--delay-1">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.app.title">Mobile App Development</h3>
+          <p class="card__text" data-i18n="services.items.app.text">Native and cross-platform Android & iOS apps using Flutter and React Native — from concept to Play Store launch.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.app.link">Explore app development</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal reveal--delay-2">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 014.5-4.5h11.25a4.5 4.5 0 014.5 4.5m-4.5 10.5a3 3 0 01-3-3m3 3a3 3 0 100 6h7.5a3 3 0 100-6m-10.5-3a3 3 0 013-3h7.5a3 3 0 013 3"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.hosting.title">Hosting Solutions</h3>
+          <p class="card__text" data-i18n="services.items.hosting.text">Managed shared, VPS, cloud, and dedicated hosting with 99.9% uptime, free SSL, and 24/7 Bangladesh support.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.hosting.link">Explore hosting</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A11.953 11.953 0 0012 10.5c-2.998 0-5.74-1.1-7.843-2.918"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.domain.title">Domain Registration</h3>
+          <p class="card__text" data-i18n="services.items.domain.text">Register .com, .net, .org, .io, .bd and more. Free DNS, WHOIS privacy, and renewal reminders included.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.domain.link">Find your domain</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal reveal--delay-1">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.205.108l-.737.527c-.448.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.custom.title">Software Customization</h3>
+          <p class="card__text" data-i18n="services.items.custom.text">Tailor-made ERP, CRM, POS, and inventory systems — adapted to the workflows of your Bangladesh business.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.custom.link">Explore customization</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card reveal reveal--delay-2">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
+          </div>
+          <h3 class="card__title" data-i18n="services.items.design.title">UI/UX & SEO</h3>
+          <p class="card__text" data-i18n="services.items.design.text">Conversion-focused design and on-page SEO to make sure your beautiful site actually gets found and converts.</p>
+          <a href="services.html" class="card__link">
+            <span data-i18n="services.items.design.link">Explore design & SEO</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== WHY CHOOSE US ============== -->
+  <section class="section section-light" aria-label="Why choose us">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="why.eyebrow">Why StackGarage</span>
+        <h2 data-i18n="why.heading">Built for serious businesses, priced for Bangladesh</h2>
+        <p data-i18n="why.subheading">We combine global engineering standards with local understanding and unbeatable value.</p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item reveal">
+          <div class="feature-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-item__title" data-i18n="why.features.experience.title">Experienced Engineers</h4>
+            <p class="feature-item__text" data-i18n="why.features.experience.text">50+ years of combined dev experience across modern stacks.</p>
+          </div>
+        </div>
+        <div class="feature-item reveal reveal--delay-1">
+          <div class="feature-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-item__title" data-i18n="why.features.delivery.title">On-time Delivery</h4>
+            <p class="feature-item__text" data-i18n="why.features.delivery.text">Agile sprints with weekly demos — never miss a deadline.</p>
+          </div>
+        </div>
+        <div class="feature-item reveal reveal--delay-2">
+          <div class="feature-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c0-1.195-.969-2.163-2.164-2.163H5.914c-1.195 0-2.164.968-2.164 2.163v7.978c0 1.195.969 2.163 2.164 2.163h12.172c1.195 0 2.164-.968 2.164-2.163V8.511zM9.158 21.75a1.97 1.97 0 01-1.951-1.557M15.793 21.75a1.97 1.97 0 001.951-1.557M9.158 8.489l-.444-.834 1.21-1.21a.75.75 0 011.06 0l1.06 1.06m-2.886 1.005l3.829-3.83m0 0l3.83-3.83m-3.83 3.83l3.83 3.83"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-item__title" data-i18n="why.features.support.title">24/7 Local Support</h4>
+            <p class="feature-item__text" data-i18n="why.features.support.text">Dhaka-based team available around the clock via phone, chat, email.</p>
+          </div>
+        </div>
+        <div class="feature-item reveal reveal--delay-3">
+          <div class="feature-item__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/></svg>
+          </div>
+          <div>
+            <h4 class="feature-item__title" data-i18n="why.features.pricing.title">Transparent Pricing</h4>
+            <p class="feature-item__text" data-i18n="why.features.pricing.text">Fixed quotes, milestone billing, no surprise invoices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== TECH STACK ============== -->
+  <section class="section section--dark" aria-label="Tech stack" style="padding:60px 0">
+    <div class="container">
+      <div class="section-heading reveal" style="margin-bottom:2rem">
+        <span class="eyebrow" data-i18n="stack.eyebrow">Tech stack</span>
+        <h2 data-i18n="stack.heading" style="font-size:2rem">The tools we master</h2>
+      </div>
+    </div>
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> React</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg> Next.js</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg> Node.js</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Laravel</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3z" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="16" text-anchor="middle" font-size="11" font-weight="bold">PHP</text></svg> PHP</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg> Flutter</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2v20M2 12h20"/></svg> React Native</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 7l-9-5-9 5v10l9 5 9-5V7z"/></svg> AWS</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg> MongoDB</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="6" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 6v6c0 1.66 4.03 3 9 3s9-1.34 9-3V6M3 12v6c0 1.66 4.03 3 9 3s9-1.34 9-3v-6" fill="none" stroke="currentColor" stroke-width="2"/></svg> MySQL</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg> cPanel</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> WordPress</div>
+        <!-- duplicate for seamless scroll -->
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg> React</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="9"/></svg> Next.js</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg> Node.js</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="18" height="18" rx="2"/></svg> Laravel</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3z" fill="none" stroke="currentColor" stroke-width="2"/></svg> PHP</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg> Flutter</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2v20M2 12h20"/></svg> React Native</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 7l-9-5-9 5v10l9 5 9-5V7z"/></svg> AWS</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/></svg> MongoDB</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><ellipse cx="12" cy="6" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/></svg> MySQL</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="6" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/></svg> cPanel</div>
+        <div class="marquee__item"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg> WordPress</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROCESS ============== -->
+  <section class="section section-light" aria-label="Our process">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="process.eyebrow">Our process</span>
+        <h2 data-i18n="process.heading">From idea to launch in five clear steps</h2>
+      </div>
+      <div class="process">
+        <div class="process__step reveal">
+          <div class="process__num">01</div>
+          <h4 class="process__title" data-i18n="process.steps.0.title">Consult</h4>
+          <p class="process__desc" data-i18n="process.steps.0.desc">We listen, research, and define the right scope for your goals.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-1">
+          <div class="process__num">02</div>
+          <h4 class="process__title" data-i18n="process.steps.1.title">Design</h4>
+          <p class="process__desc" data-i18n="process.steps.1.desc">Wireframes and UI mockups you approve before we write any code.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-2">
+          <div class="process__num">03</div>
+          <h4 class="process__title" data-i18n="process.steps.2.title">Develop</h4>
+          <p class="process__desc" data-i18n="process.steps.2.desc">Agile sprints with weekly demos and clean Git workflows.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-3">
+          <div class="process__num">04</div>
+          <h4 class="process__title" data-i18n="process.steps.3.title">Test</h4>
+          <p class="process__desc" data-i18n="process.steps.3.desc">Rigorous QA, security audits, and real-device testing.</p>
+        </div>
+        <div class="process__step reveal reveal--delay-4">
+          <div class="process__num">05</div>
+          <h4 class="process__title" data-i18n="process.steps.4.title">Launch</h4>
+          <p class="process__desc" data-i18n="process.steps.4.desc">Deployment, training, monitoring, and ongoing support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PORTFOLIO PREVIEW ============== -->
+  <section id="portfolio" class="section section--dark" aria-label="Portfolio">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="portfolio.eyebrow">Selected work</span>
+        <h2 data-i18n="portfolio.heading">Projects we're proud of</h2>
+        <p data-i18n="portfolio.subheading">A glimpse into apps, sites and platforms shipped for clients across Bangladesh.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <a href="portfolio.html" class="portfolio-card reveal" data-category="web">
+          <img src="assets/img/portfolio/ecommerce.svg" alt="DhakaKart e-commerce platform" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>DhakaKart</h4>
+            <span>E-commerce Platform</span>
+            <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-1" data-category="apps">
+          <img src="assets/img/portfolio/mobile-app.svg" alt="EduPath mobile app" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>EduPath</h4>
+            <span>Learning App</span>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-2" data-category="hosting">
+          <img src="assets/img/portfolio/cloud-hosting.svg" alt="Multi-tenant cloud infra" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>CTG Logistics</h4>
+            <span>Cloud Infrastructure</span>
+            <div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal" data-category="web">
+          <img src="assets/img/portfolio/portfolio-site.svg" alt="Khulna Agro corporate site" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>Khulna Agro</h4>
+            <span>Corporate Website</span>
+            <div class="tags"><span class="tag">WordPress</span><span class="tag">SEO</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-1" data-category="custom software">
+          <img src="assets/img/portfolio/erp-dashboard.svg" alt="FinSolve ERP system" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>FinSolve ERP</h4>
+            <span>Custom ERP</span>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-2" data-category="apps">
+          <img src="assets/img/portfolio/edtech.svg" alt="Sylhet Bazar delivery app" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>SylhetBazar</h4>
+            <span>Delivery App</span>
+            <div class="tags"><span class="tag">React Native</span><span class="tag">Maps API</span></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center" style="margin-top:36px">
+        <a href="portfolio.html" class="btn btn--ghost">
+          <span data-i18n="portfolio.view_all">View full portfolio</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== STATS ============== -->
+  <section class="section section-light" aria-label="Stats">
+    <div class="container">
+      <div class="stats">
+        <div class="stat reveal">
+          <div class="stat__num" data-counter data-target="120" data-suffix="+">0</div>
+          <div class="stat__label" data-i18n="stats.projects.label">Projects Delivered</div>
+        </div>
+        <div class="stat reveal reveal--delay-1">
+          <div class="stat__num" data-counter data-target="80" data-suffix="+">0</div>
+          <div class="stat__label" data-i18n="stats.clients.label">Happy Clients</div>
+        </div>
+        <div class="stat reveal reveal--delay-2">
+          <div class="stat__num" data-counter data-target="5" data-suffix="+">0</div>
+          <div class="stat__label" data-i18n="stats.years.label">Years in Business</div>
+        </div>
+        <div class="stat reveal reveal--delay-3">
+          <div class="stat__num" data-counter data-target="25" data-suffix="+">0</div>
+          <div class="stat__label" data-i18n="stats.team.label">Team Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HOT OFFERS ============== -->
+  <section id="offers" class="section section--dark" aria-label="Hot offers">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="offers.eyebrow">Hot offers</span>
+        <h2 data-i18n="offers.heading">Solutions built for you</h2>
+        <p data-i18n="offers.subheading">Curated packages for the businesses we build the most — transparent monthly pricing.</p>
+      </div>
+
+      <div class="offers-grid">
+
+        <!-- Online Store -->
+        <article class="offer-card reveal">
+          <div class="offer-card__head">
+            <div class="offer-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 11-2 0 1 1 0 012 0zm9 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
+            </div>
+            <h3 class="offer-card__title" data-i18n="offers.online_store.title">Online Store</h3>
+          </div>
+          <div class="offer-card__price" data-i18n="offers.online_store.price">৳35,000<small data-i18n="offers.online_store.per_month">/month</small></div>
+          <ul class="offer-card__features" data-i18n-list-html="offers.online_store.features"></ul>
+          <div class="offer-card__actions">
+            <button class="btn btn--ghost" data-demo-open="online_store" data-i18n="offers.online_store.demo">View Demo</button>
+            <a href="tel:+8801700123456" class="btn btn--primary" data-i18n="offers.online_store.call">Call for Details</a>
+          </div>
+        </article>
+
+        <!-- News Portal (featured) -->
+        <article class="offer-card offer-card--featured reveal reveal--delay-1">
+          <span class="offer-card__ribbon" data-i18n="offers.popular_ribbon">Most Popular</span>
+          <div class="offer-card__head">
+            <div class="offer-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM14 4v4h4M8 12h8M8 16h6"/></svg>
+            </div>
+            <h3 class="offer-card__title" data-i18n="offers.news_portal.title">News Portal</h3>
+          </div>
+          <div class="offer-card__price" data-i18n="offers.news_portal.price">৳35,000<small data-i18n="offers.news_portal.per_month">/month</small></div>
+          <ul class="offer-card__features" data-i18n-list-html="offers.news_portal.features"></ul>
+          <div class="offer-card__actions">
+            <button class="btn btn--ghost" data-demo-open="news_portal" data-i18n="offers.news_portal.demo">View Demo</button>
+            <a href="tel:+8801700123456" class="btn btn--primary" data-i18n="offers.news_portal.call">Call for Details</a>
+          </div>
+        </article>
+
+        <!-- Business Website -->
+        <article class="offer-card reveal">
+          <div class="offer-card__head">
+            <div class="offer-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9-4 9 4M4 10h16M5 10v10a1 1 0 001 1h12a1 1 0 001-1V10M9 21v-6h6v6"/></svg>
+            </div>
+            <h3 class="offer-card__title" data-i18n="offers.business_website.title">Business Website</h3>
+          </div>
+          <div class="offer-card__price" data-i18n="offers.business_website.price">৳20,000<small data-i18n="offers.business_website.per_month">/month</small></div>
+          <ul class="offer-card__features" data-i18n-list-html="offers.business_website.features"></ul>
+          <div class="offer-card__actions">
+            <button class="btn btn--ghost" data-demo-open="business_website" data-i18n="offers.business_website.demo">View Demo</button>
+            <a href="tel:+8801700123456" class="btn btn--primary" data-i18n="offers.business_website.call">Call for Details</a>
+          </div>
+        </article>
+
+        <!-- Corporate Website -->
+        <article class="offer-card reveal reveal--delay-1">
+          <div class="offer-card__head">
+            <div class="offer-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4h6"/></svg>
+            </div>
+            <h3 class="offer-card__title" data-i18n="offers.corporate_website.title">Corporate Website</h3>
+          </div>
+          <div class="offer-card__price offer-card__price--neg" data-i18n="offers.corporate_website.price">Negotiable</div>
+          <ul class="offer-card__features" data-i18n-list-html="offers.corporate_website.features"></ul>
+          <div class="offer-card__actions">
+            <button class="btn btn--ghost" data-demo-open="corporate_website" data-i18n="offers.corporate_website.demo">View Demo</button>
+            <a href="tel:+8801700123456" class="btn btn--primary" data-i18n="offers.corporate_website.call">Call for Details</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offer data (used by js/demo-modal.js — JSON, hidden from view) -->
+  <script type="application/json" data-offer-data="online_store">{"title":"Online Store — Demo","subtitle":"Product grid, cart, checkout flow","callHref":"tel:+8801700123456","images":["assets/img/offers/online-store-1.svg","assets/img/offers/online-store-2.svg","assets/img/offers/online-store-3.svg"]}</script>
+  <script type="application/json" data-offer-data="news_portal">{"title":"News Portal — Demo","subtitle":"Headlines, article page, breaking-news ticker","callHref":"tel:+8801700123456","images":["assets/img/offers/news-portal-1.svg","assets/img/offers/news-portal-2.svg","assets/img/offers/news-portal-3.svg"]}</script>
+  <script type="application/json" data-offer-data="business_website">{"title":"Business Website — Demo","subtitle":"Landing, services, contact page","callHref":"tel:+8801700123456","images":["assets/img/offers/business-website-1.svg","assets/img/offers/business-website-2.svg","assets/img/offers/business-website-3.svg"]}</script>
+  <script type="application/json" data-offer-data="corporate_website">{"title":"Corporate Website — Demo","subtitle":"Bespoke hero, multilingual, admin dashboard","callHref":"tel:+8801700123456","images":["assets/img/offers/corporate-website-1.svg","assets/img/offers/corporate-website-2.svg","assets/img/offers/corporate-website-3.svg"]}</script>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section class="section section--dark" aria-label="Testimonials">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="testimonials.eyebrow">Client voices</span>
+        <h2 data-i18n="testimonials.heading">Words from the people we work with</h2>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonials__track">
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">StackGarage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">RA</div>
+              <div>
+                <div class="testimonial__name">Rahim Ahmed</div>
+                <div class="testimonial__role">Founder, DhakaKart</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">Their hosting has had zero downtime in 14 months. The local 24/7 support has saved us more than once.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">TA</div>
+              <div>
+                <div class="testimonial__name">Tania Akter</div>
+                <div class="testimonial__role">Director, Chittagong Logistics</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">They custom-built our ERP from scratch and trained the entire team. ROI was visible within two months.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">MI</div>
+              <div>
+                <div class="testimonial__name">Mohammad Imran</div>
+                <div class="testimonial__role">CTO, FinSolve BD</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">UI/UX work was outstanding. Our app is finally something my students actually want to open every day.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">NJ</div>
+              <div>
+                <div class="testimonial__name">Nusrat Jahan</div>
+                <div class="testimonial__role">Marketing Lead, EduPath</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">Domain, hosting, and a beautiful store — all in one quote. Five stars from a non-tech founder like me.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">AI</div>
+              <div>
+                <div class="testimonial__name">Asif Iqbal</div>
+                <div class="testimonial__role">Owner, Sylhet Bazar</div>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial">
+            <span class="testimonial__quote-mark">"</span>
+            <p class="testimonial__text">They translated our messy Excel workflows into a clean custom system. Our team productivity doubled.</p>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">SH</div>
+              <div>
+                <div class="testimonial__name">Sharmin Haque</div>
+                <div class="testimonial__role">CEO, Khulna Agro</div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="testimonials__nav">
+          <button type="button" data-dir="prev" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button type="button" data-dir="next" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA BANNER ============== -->
+  <section class="section section-light" aria-label="Call to action">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2 data-i18n="cta_banner.heading">Have an idea? Let's build it.</h2>
+          <p data-i18n="cta_banner.text">Free 30-minute consultation — book a slot and we'll scope your project together.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary">
+          <span data-i18n="cta_banner.button">Book a Free Consultation</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FAQ ============== -->
+  <section class="section section--dark" aria-label="FAQ">
+    <div class="container container--narrow">
+      <div class="section-heading reveal">
+        <span class="eyebrow" data-i18n="faq.eyebrow">FAQ</span>
+        <h2 data-i18n="faq.heading">Frequently asked questions</h2>
+        <p data-i18n="faq.subheading">Quick answers to the most common queries we hear.</p>
+      </div>
+      <div class="faq">
+        <div class="faq__item is-open reveal">
+          <button class="faq__question">How long does a typical website project take?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">A brochure site takes 2–3 weeks, a custom web app 6–10 weeks, and a mobile app 10–16 weeks. We share a detailed timeline after the discovery call.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Do you provide hosting after the project launches?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes — we offer managed shared, VPS, cloud and dedicated hosting with 99.9% uptime SLA, free SSL and 24/7 support from Dhaka.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Can you register .bd domains?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes, we are an authorized registrar for .bd domains alongside .com, .net, .io, .org and most popular TLDs.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Do you sign NDAs and IP agreements?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Absolutely. Every project starts with an NDA and ends with full IP transfer — your code, design, and data belong to you.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">What if I need changes after launch?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">All packages include a 30-day post-launch bug-fix window. After that, you can join a maintenance plan or pay hourly as needed.</div></div>
+        </div>
+        <div class="faq__item reveal">
+          <button class="faq__question">Do you work with international clients?<span class="faq__icon">+</span></button>
+          <div class="faq__answer"><div class="faq__answer-inner">Yes — we serve clients across the US, EU, Middle East and South Asia. We invoice in BDT, USD or EUR and work in your timezone.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo">
+            <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
+          </a>
+          <p data-i18n="footer.tagline">Bangladesh's software partner for web, mobile, hosting and beyond.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a href="https://wa.me/8801700123456" target="_blank" rel="noopener" aria-label="WhatsApp support"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+            <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer.company_heading">Company</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="about.html" data-i18n="footer.company_links.about">About</a></li>
+            <li><a href="about.html#team" data-i18n="footer.company_links.team">Team</a></li>
+            <li><a href="#" data-i18n="footer.company_links.careers">Careers</a></li>
+            <li><a href="#" data-i18n="footer.company_links.blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer.services_heading">Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="services.html#web" data-i18n="footer.services_links.web">Web Development</a></li>
+            <li><a href="services.html#app" data-i18n="footer.services_links.app">App Development</a></li>
+            <li><a href="services.html#hosting" data-i18n="footer.services_links.hosting">Hosting</a></li>
+            <li><a href="services.html#domain" data-i18n="footer.services_links.domain">Domains</a></li>
+            <li><a href="services.html#custom" data-i18n="footer.services_links.custom">Custom Software</a></li>
+            <li><a href="services.html#design" data-i18n="footer.services_links.design">Design & SEO</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 data-i18n="footer.contact_heading">Stay updated</h4>
+          <p data-i18n="footer.contact_text">Subscribe for product updates and engineering insights from our team.</p>
+          <form class="footer__newsletter" novalidate>
+            <input type="email" required placeholder="your@email.com" data-i18n-placeholder="footer.newsletter_placeholder" aria-label="Email">
+            <button type="submit" data-i18n="footer.newsletter_btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span data-i18n="footer.copyright">© 2025 StackGarage. All rights reserved.</span>
+        <span data-i18n="footer.built">Built with care in Dhaka, Bangladesh.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== BACK TO TOP ============== -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <!-- ============== DEMO MODAL ============== -->
+  <div id="demoModal" class="demo-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="demoModalTitle">
+    <div class="demo-modal__backdrop" data-demo-close></div>
+    <div class="demo-modal__panel">
+      <div class="demo-modal__head">
+        <div>
+          <div class="demo-modal__title" id="demoModalTitle" data-demo-title>Demo Preview</div>
+          <div class="demo-modal__subtitle" data-demo-subtitle>Live mockups</div>
+        </div>
+        <button class="demo-modal__close" data-demo-close aria-label="Close">&times;</button>
+      </div>
+      <div class="demo-modal__body">
+        <div class="demo-modal__gallery" data-demo-gallery></div>
+      </div>
+      <div class="demo-modal__foot">
+        <div class="demo-modal__hint">Have questions? <b>Call us directly</b> — no form needed.</div>
+        <a class="btn btn--primary" data-demo-call href="tel:+8801700123456">Call +880 1700-123456</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== SCRIPTS ============== -->
+  <script src="js/i18n.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/demo-modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 160" class="logo-network-svg" role="img" aria-label="StackGarage">
+  <style>
+    /* Layout A — horizontal mark + single-line wordmark. 350x160 (2x). Used on light sections. */
+    .lg-node {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: lg-pulse 4.4s ease-in-out infinite;
+      transition: r 0.3s ease, filter 0.3s ease;
+    }
+    .lg-edge {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: lg-draw 1.4s ease-out forwards;
+      opacity: 0.8;
+    }
+    .lg-edge:nth-of-type(1)  { animation-delay: 0.05s; }
+    .lg-edge:nth-of-type(2)  { animation-delay: 0.18s; }
+    .lg-edge:nth-of-type(3)  { animation-delay: 0.31s; }
+    .lg-edge:nth-of-type(4)  { animation-delay: 0.44s; }
+    .lg-edge:nth-of-type(5)  { animation-delay: 0.57s; }
+    .lg-edge:nth-of-type(6)  { animation-delay: 0.70s; }
+    .lg-edge:nth-of-type(7)  { animation-delay: 0.83s; }
+    .lg-edge:nth-of-type(8)  { animation-delay: 0.96s; }
+    .lg-edge:nth-of-type(9)  { animation-delay: 1.09s; }
+    .lg-edge:nth-of-type(10) { animation-delay: 1.22s; }
+
+    .lg-node:nth-of-type(1) { animation-delay: 0s;   }
+    .lg-node:nth-of-type(2) { animation-delay: 0.2s; }
+    .lg-node:nth-of-type(3) { animation-delay: 0.4s; }
+    .lg-node:nth-of-type(4) { animation-delay: 0.6s; }
+    .lg-node:nth-of-type(5) { animation-delay: 0.8s; }
+    .lg-node:nth-of-type(6) { animation-delay: 1.0s; }
+
+    .logo-network-svg:hover .lg-node {
+      animation-duration: 2.2s;
+      filter: drop-shadow(0 0 6px #0d9488);
+    }
+    .logo-network-svg:hover .lg-node:nth-of-type(odd) { r: 9; }
+
+    @keyframes lg-pulse {
+      0%, 100% { opacity: 0.55; transform: scale(0.85); }
+      50%      { opacity: 1;    transform: scale(1.2);  }
+    }
+    @keyframes lg-draw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lg-node, .lg-edge { animation: none; }
+      .lg-edge { stroke-dashoffset: 0; opacity: 0.7; }
+    }
+  </style>
+
+  <!-- Network mark on the left, centered around (44, 80), pentagon-star pattern.
+       Teal-dark palette to harmonize with light sections. -->
+  <g class="logo-network" aria-hidden="true">
+    <!-- Spokes (center → 5 outer nodes) -->
+    <line class="lg-edge" x1="44" y1="80" x2="70" y2="80"  stroke="#0d9488" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="52" y2="55.2" stroke="#0d9488" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="22" y2="64.6" stroke="#0d9488" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="22" y2="95.4" stroke="#0d9488" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="52" y2="104.8" stroke="#0d9488" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Pentagon perimeter -->
+    <line class="lg-edge" x1="70" y1="80"   x2="52" y2="55.2"  stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+    <line class="lg-edge" x1="52" y1="55.2" x2="22" y2="64.6"  stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+    <line class="lg-edge" x1="22" y1="64.6" x2="22" y2="95.4"  stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+    <line class="lg-edge" x1="22" y1="95.4" x2="52" y2="104.8" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+    <line class="lg-edge" x1="52" y1="104.8" x2="70" y2="80"  stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
+
+    <!-- Outer pentagon nodes -->
+    <circle class="lg-node" cx="70" cy="80"   r="6" fill="#0d9488" stroke="#0f766e" stroke-width="2.4"/>
+    <circle class="lg-node" cx="52" cy="55.2" r="5.2" fill="#14b8a6"/>
+    <circle class="lg-node" cx="22" cy="64.6" r="6" fill="#0d9488" stroke="#0f766e" stroke-width="2.4"/>
+    <circle class="lg-node" cx="22" cy="95.4" r="6" fill="#0d9488" stroke="#0f766e" stroke-width="2.4"/>
+    <circle class="lg-node" cx="52" cy="104.8" r="5.2" fill="#14b8a6"/>
+
+    <!-- Center node -->
+    <circle class="lg-node" cx="44" cy="80" r="8" fill="#0d9488"/>
+  </g>
+
+  <!-- Wordmark on the right: "STACKS GARAGE" in Space Grotesk Bold (dark navy on light bg) -->
+  <text x="96" y="80" dominant-baseline="central" text-anchor="start"
+        font-family="'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif"
+        font-weight="700" font-size="34" letter-spacing="2.8"
+        textLength="240" lengthAdjust="spacingAndGlyphs"
+        fill="#0d2540">STACKS GARAGE</text>
+
+  <!-- Subtle teal accent dot after the wordmark -->
+  <circle cx="340" cy="80" r="4" fill="#0d9488" opacity="0.9">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

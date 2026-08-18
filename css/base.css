@@ -1,0 +1,280 @@
+/* ============================================================
+   StackGarage — base.css
+   Design tokens, reset, typography, dark & light themes
+   ============================================================ */
+
+:root {
+  /* ---------- Brand / Teal palette ---------- */
+  --teal-50:  #ecfeff;
+  --teal-100: #cffafe;
+  --teal-200: #a5f3fc;
+  --teal-300: #67e8f9;
+  --teal-400: #2dd4bf;
+  --teal-500: #14b8a6;
+  --teal-600: #0d9488;
+  --teal-700: #0f766e;
+  --teal-glow: #00f2fe;
+  --teal-dark: #031f26;
+  --teal-base: #010b0f;
+
+  /* ---------- Brand / Logo palette (extracted from logo) ---------- */
+  --brand-navy: #0d2540;
+  --brand-navy-soft: rgba(13, 37, 64, 0.55);
+  --brand-line: rgba(45, 212, 191, 0.28);
+  --logo-glow: rgba(45, 212, 191, 0.55);
+
+  /* ---------- Dark theme (default) ---------- */
+  --bg: #010b0f;
+  --bg-alt: #051418;
+  --bg-elev: #0a1f27;
+  --surface: rgba(0, 242, 254, 0.04);
+  --surface-strong: rgba(0, 242, 254, 0.08);
+  --border: rgba(0, 242, 254, 0.15);
+  --border-strong: rgba(0, 242, 254, 0.35);
+  --text: #ffffff;
+  --text-soft: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent: #00f2fe;
+  --accent-hover: #2dd4bf;
+  --accent-soft: rgba(0, 242, 254, 0.15);
+  --shadow-glow: 0 0 30px rgba(0, 242, 254, 0.35);
+  --shadow-card: 0 10px 30px -10px rgba(0, 242, 254, 0.25);
+  --header-bg: rgba(1, 11, 15, 0.7);
+  --logo: 'white';
+
+  /* ---------- Typography ---------- */
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-bn: 'Noto Sans Bengali', 'Inter', sans-serif;
+
+  /* ---------- Spacing & radius ---------- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* ---------- Layout ---------- */
+  --container: 1200px;
+  --container-narrow: 960px;
+  --nav-h: 120px;
+
+  /* ---------- Motion ---------- */
+  --t-fast: 150ms;
+  --t-base: 300ms;
+  --t-slow: 600ms;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Light theme — applied per-section via .section-light */
+.section-light {
+  --bg: #f8fafc;
+  --bg-alt: #ffffff;
+  --bg-elev: #ffffff;
+  --surface: rgba(13, 148, 136, 0.04);
+  --surface-strong: rgba(13, 148, 136, 0.08);
+  --border: rgba(13, 148, 136, 0.18);
+  --border-strong: rgba(13, 148, 136, 0.4);
+  --text: #0f172a;
+  --text-soft: #334155;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --accent-soft: rgba(13, 148, 136, 0.1);
+  --shadow-glow: 0 0 30px rgba(13, 148, 136, 0.2);
+  --shadow-card: 0 10px 30px -10px rgba(13, 148, 136, 0.2);
+  --header-bg: rgba(248, 250, 252, 0.85);
+  --logo: 'black';
+  --text-soft-light: #334155;
+}
+
+/* ============================================================
+   Reset
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  min-height: 100vh;
+  transition: background-color var(--t-slow) var(--ease), color var(--t-slow) var(--ease);
+}
+
+body.lang-bn { font-family: var(--font-bn), var(--font-sans); }
+
+img, svg, video { display: block; max-width: 100%; height: auto; }
+
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; }
+
+input, textarea, select {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+::selection { background: var(--accent); color: var(--bg); }
+
+/* ============================================================
+   Typography
+   ============================================================ */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(2rem, 4vw, 3rem); }
+h3 { font-size: clamp(1.4rem, 2.5vw, 1.75rem); }
+h4 { font-size: 1.25rem; }
+
+p { color: var(--text-soft); }
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--teal-500) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.section-light .text-gradient {
+  background: linear-gradient(135deg, var(--teal-600) 0%, var(--teal-400) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem;
+}
+.section-heading p {
+  margin-top: 1rem;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   Utilities
+   ============================================================ */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: 24px;
+}
+.container--narrow { max-width: var(--container-narrow); }
+
+.section {
+  position: relative;
+  padding: 100px 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color var(--t-slow) var(--ease), color var(--t-slow) var(--ease);
+}
+.section--alt { background: var(--bg-alt); }
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong), transparent);
+  width: 100%;
+}
+
+.grid { display: grid; gap: 24px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.text-center { text-align: center; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================================
+   Logo (SVG variants)
+   ============================================================ */
+.nav__logo .nav__logo-img {
+  /* SVG acts as static <img>; the animated overlay is inside the SVG itself */
+  height: 78px;
+  width: auto;
+  display: block;
+}
+.nav__logo .nav__logo-img[src$=".svg"] {
+  /* A tiny extra filter so the SVG crispens against the dark glass nav header */
+  filter: drop-shadow(0 0 6px rgba(0, 242, 254, 0.18));
+  transition: filter var(--t-base) var(--ease);
+}
+.site-header.nav--over-light .nav__logo .nav__logo-img[src$=".svg"] {
+  filter: drop-shadow(0 0 6px rgba(13, 148, 136, 0.25));
+}
+.nav__logo:hover .nav__logo-img[src$=".svg"] {
+  filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.55));
+}
+
+/* ============================================================
+   Hero watermark — large faded mark behind hero text
+   ============================================================ */
+.hero__watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(720px, 90vw);
+  height: min(720px, 90vw);
+  transform: translate(-50%, -50%);
+  opacity: 0.06;
+  filter: blur(0.4px);
+  pointer-events: none;
+  z-index: 1;
+}
+.section-light .hero__watermark { opacity: 0.08; filter: blur(0.6px); }
+@media (max-width: 900px) {
+  .hero__watermark { width: 480px; height: 480px; opacity: 0.05; }
+}

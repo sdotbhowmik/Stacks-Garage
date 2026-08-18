@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <linearGradient id="bg-bw3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3d4a"/>
+      <stop offset="100%" stop-color="#02090d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg-bw3)"/>
+  <!-- Browser frame -->
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#0a1f27" stroke="#00f2fe" stroke-opacity="0.3"/>
+  <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
+  <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
+  <circle cx="64" cy="30" r="5" fill="#27c93f"/>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#00f2fe" opacity="0.7">khulnaagro.com/contact</text>
+  <!-- Page header -->
+  <text x="20" y="80" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Get in touch</text>
+  <!-- Form -->
+  <g transform="translate(20,96)">
+    <text x="0" y="10" font-family="sans-serif" font-size="8" fill="#94a3b8">Your name</text>
+    <rect y="14" width="200" height="26" rx="4" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <text x="10" y="32" font-family="sans-serif" font-size="9" fill="#cbd5e1">Nazmul Hossain</text>
+    <text x="0" y="56" font-family="sans-serif" font-size="8" fill="#94a3b8">Email</text>
+    <rect y="60" width="200" height="26" rx="4" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <text x="10" y="78" font-family="sans-serif" font-size="9" fill="#cbd5e1">nazmul@example.bd</text>
+    <text x="0" y="102" font-family="sans-serif" font-size="8" fill="#94a3b8">Message</text>
+    <rect y="106" width="200" height="56" rx="4" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <rect x="10" y="116" width="160" height="3" rx="1" fill="#cbd5e1" opacity="0.5"/>
+    <rect x="10" y="124" width="180" height="3" rx="1" fill="#cbd5e1" opacity="0.5"/>
+    <rect x="10" y="132" width="140" height="3" rx="1" fill="#cbd5e1" opacity="0.5"/>
+    <rect y="174" width="200" height="32" rx="4" fill="#00f2fe"/>
+    <text x="100" y="194" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#02090d">Send message</text>
+  </g>
+  <!-- Right column info -->
+  <g transform="translate(244,96)">
+    <rect width="136" height="216" rx="6" fill="#02090d" stroke="#00f2fe" stroke-opacity="0.2"/>
+    <text x="14" y="28" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Office</text>
+    <text x="14" y="46" font-family="sans-serif" font-size="8" fill="#cbd5e1">📞 +880 1XXX-XXXXXX</text>
+    <text x="14" y="60" font-family="sans-serif" font-size="8" fill="#cbd5e1">✉ info@khulnaagro.bd</text>
+    <text x="14" y="74" font-family="sans-serif" font-size="8" fill="#cbd5e1">📍 Khulna, Bangladesh</text>
+    <line x1="14" y1="92" x2="122" y2="92" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <text x="14" y="114" font-family="sans-serif" font-size="11" font-weight="bold" fill="#ffffff">Hours</text>
+    <text x="14" y="132" font-family="sans-serif" font-size="8" fill="#cbd5e1">Sun-Thu: 9-18</text>
+    <text x="14" y="146" font-family="sans-serif" font-size="8" fill="#cbd5e1">Fri-Sat: Closed</text>
+    <!-- Map placeholder -->
+    <rect x="14" y="160" width="108" height="50" rx="4" fill="#00f2fe" fill-opacity="0.15" stroke="#00f2fe" stroke-opacity="0.3"/>
+    <circle cx="68" cy="185" r="6" fill="#dc2626"/>
+    <text x="68" y="220" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#94a3b8">Khulna, BD</text>
+  </g>
+</svg>

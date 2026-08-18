@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StackGarage services — web development, app development, hosting, domain registration, custom software and UI/UX for businesses in Bangladesh.">
+  <title>Services | StackGarage</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.svg" alt="StackGarage" class="nav__logo-img" style="display:none">
+      </a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+        <a href="services.html" class="nav__link is-active" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="bn">বাং</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary" style="padding:10px 20px" data-i18n="nav.cta_quote">Get a Quote</a>
+        <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <aside class="nav-drawer" aria-label="Mobile menu">
+    <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+    <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+    <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn--primary" data-i18n="nav.cta_quote">Get a Quote</a>
+  </aside>
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="eyebrow">What we do</span>
+      <h1>End-to-end software services for Bangladesh and beyond</h1>
+      <p>From the first line of code to lifelong hosting — every layer of your digital stack, handled by one trusted team.</p>
+      <div class="page-hero__breadcrumbs"><a href="index.html">Home</a> <span>/</span> <span style="color:var(--accent)">Services</span></div>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-label="Services">
+    <div class="container">
+      <!-- Web Development -->
+      <article id="web" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+        <div>
+          <span class="eyebrow">01 — Web</span>
+          <h2 style="margin:18px 0 16px">Web Development</h2>
+          <p style="margin-bottom:14px">From brochure sites to complex web apps, we build fast, accessible and SEO-friendly websites on any modern stack.</p>
+          <p style="margin-bottom:24px">Specialties include high-converting landing pages, custom Shopify & WooCommerce stores, and full SaaS-style web platforms.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">React</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Next.js</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Laravel</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">WordPress</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Node.js</span>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Start a Web Project</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">FULL-STACK</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ Custom UI/UX design or theme customization</li>
+              <li>✓ Responsive mobile-first build</li>
+              <li>✓ SEO foundations &amp; on-page optimization</li>
+              <li>✓ CMS integration (WordPress / Strapi / Sanity)</li>
+              <li>✓ E-commerce with payment gateways</li>
+              <li>✓ Analytics, conversion tracking &amp; A/B test setup</li>
+              <li>✓ Performance budget &amp; Core Web Vitals</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- App Development -->
+      <article id="app" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+        <div style="order:2">
+          <span class="eyebrow">02 — Mobile</span>
+          <h2 style="margin:18px 0 16px">Mobile App Development</h2>
+          <p style="margin-bottom:14px">Native and cross-platform iOS &amp; Android apps with beautiful design, smooth performance and reliable backend sync.</p>
+          <p style="margin-bottom:24px">We handle the entire lifecycle: discovery, UX, build, testing, store submission and ongoing updates.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Flutter</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">React Native</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Swift</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Kotlin</span>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Start an App Project</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">iOS + ANDROID</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ Cross-platform development (single codebase)</li>
+              <li>✓ Push notifications &amp; in-app messaging</li>
+              <li>✓ User authentication &amp; social login</li>
+              <li>✓ Offline-first sync architecture</li>
+              <li>✓ Maps, geolocation &amp; payment integrations</li>
+              <li>✓ App Store &amp; Play Store submission</li>
+              <li>✓ Post-launch crash monitoring &amp; updates</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Hosting -->
+      <article id="hosting" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+        <div>
+          <span class="eyebrow">03 — Hosting</span>
+          <h2 style="margin:18px 0 16px">Managed Hosting</h2>
+          <p style="margin-bottom:14px">Blazing-fast NVMe storage, free SSL, daily backups and Dhaka-based 24/7 support — for every budget and scale.</p>
+          <p style="margin-bottom:24px">Choose from shared, VPS, cloud or dedicated — migrate for free, no downtime.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Shared</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">VPS</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Cloud (AWS)</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">Dedicated</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">cPanel</span>
+          </div>
+          <a href="pricing.html" class="btn btn--primary">See Hosting Plans</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">99.9% UPTIME SLA</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ Free SSL &amp; global CDN</li>
+              <li>✓ Automated daily or hourly backups</li>
+              <li>✓ Free migration &amp; zero-downtime setup</li>
+              <li>✓ DDoS protection &amp; malware scanning</li>
+              <li>✓ Email hosting with anti-spam</li>
+              <li>✓ 24/7 support from Dhaka</li>
+              <li>✓ Staging environments</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Domain -->
+      <article id="domain" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+        <div style="order:2">
+          <span class="eyebrow">04 — Domain</span>
+          <h2 style="margin:18px 0 16px">Domain Registration</h2>
+          <p style="margin-bottom:14px">Register any TLD with a single click — including local .com.bd, .bd and all popular global extensions.</p>
+          <p style="margin-bottom:24px">Every domain comes with free DNS, WHOIS privacy and friendly renewal reminders.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px">
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">.com</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">.net</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">.io</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">.org</span>
+            <span class="tag" style="padding:6px 12px;border:1px solid var(--border-strong);border-radius:999px;font-size:.85rem;color:var(--accent)">.bd / .com.bd</span>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Register a Domain</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">AUTHORIZED REGISTRAR</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ Free DNS hosting with simple management panel</li>
+              <li>✓ WHOIS privacy on all TLDs that allow it</li>
+              <li>✓ Auto-renewal &amp; 60-day expiry reminders</li>
+              <li>✓ Email forwarding &amp; domain parking</li>
+              <li>✓ DNSSEC &amp; SSL support</li>
+              <li>✓ Bulk transfer &amp; bulk pricing for agencies</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Custom Software -->
+      <article id="custom" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+        <div>
+          <span class="eyebrow">05 — Custom</span>
+          <h2 style="margin:18px 0 16px">Software Customization</h2>
+          <p style="margin-bottom:14px">We build tailored ERP, CRM, POS, HRM and inventory systems around your exact workflow — no bloated features you don't use.</p>
+          <p style="margin-bottom:24px">If your team still juggles Excel sheets, we can digitize and automate that workflow in 6–12 weeks.</p>
+          <a href="contact.html" class="btn btn--primary">Discuss Custom Build</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">YOUR WORKFLOW</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ Process discovery &amp; documentation</li>
+              <li>✓ Modular, role-based access control</li>
+              <li>✓ Reporting &amp; analytics dashboards</li>
+              <li>✓ Integration with accounting &amp; payment tools</li>
+              <li>✓ Mobile companion apps (if needed)</li>
+              <li>✓ Source-code &amp; IP ownership transfer</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- UI/UX & SEO -->
+      <article id="design" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+        <div style="order:2">
+          <span class="eyebrow">06 — UI/UX &amp; SEO</span>
+          <h2 style="margin:18px 0 16px">UI/UX Design &amp; SEO</h2>
+          <p style="margin-bottom:14px">Beautiful interfaces, conversion-focused flows and SEO foundations that help you rank on Google from day one.</p>
+          <p style="margin-bottom:24px">Pair with any of our other services, or hire us just for the design phase.</p>
+          <a href="contact.html" class="btn btn--primary">Plan a Design Sprint</a>
+        </div>
+        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+          <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
+          <div style="position:relative;z-index:1">
+            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">CONVERSION-FOCUSED</div>
+            <h3 style="margin:14px 0 8px">What's included</h3>
+            <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
+              <li>✓ UX research &amp; wireframes</li>
+              <li>✓ Hi-fidelity UI in Figma</li>
+              <li>✓ Interactive prototypes</li>
+              <li>✓ Design system &amp; component library</li>
+              <li>✓ On-page SEO &amp; technical SEO audits</li>
+              <li>✓ Page-speed &amp; Core Web Vitals optimization</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-label="CTA">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div>
+          <h2>Not sure which service you need?</h2>
+          <p>Book a free 30-minute consultation — we'll help you scope the right combination.</p>
+        </div>
+        <a href="contact.html" class="btn btn--primary">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo"><img src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img"></a>
+          <p>Bangladesh's software partner for web, mobile, hosting and beyond.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="about.html">About</a></li><li><a href="about.html#team">Team</a></li>
+            <li><a href="#">Careers</a></li><li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="#web">Web Development</a></li>
+            <li><a href="#app">App Development</a></li>
+            <li><a href="#hosting">Hosting</a></li>
+            <li><a href="#domain">Domains</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Stay updated</h4>
+          <p>Subscribe for product updates and engineering insights.</p>
+          <form class="footer__newsletter" novalidate>
+            <input type="email" required placeholder="your@email.com" aria-label="Email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 StackGarage. All rights reserved.</span>
+        <span>Built with care in Dhaka, Bangladesh.</span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StackGarage portfolio — selected web, app, hosting and custom software projects delivered for clients in Bangladesh.">
+  <title>Portfolio | StackGarage</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.svg" alt="StackGarage" class="nav__logo-img" style="display:none">
+      </a>
+      <nav class="nav__menu" aria-label="Primary">
+        <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+        <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="portfolio.html" class="nav__link is-active" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+        <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="is-active">EN</button>
+          <button type="button" data-lang="bn">বাং</button>
+        </div>
+        <a href="contact.html" class="btn btn--primary" style="padding:10px 20px" data-i18n="nav.cta_quote">Get a Quote</a>
+        <button class="nav__burger" aria-label="Toggle menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <aside class="nav-drawer" aria-label="Mobile menu">
+    <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="services.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav__link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="about.html" class="nav__link" data-i18n="nav.about">About</a>
+    <a href="pricing.html" class="nav__link" data-i18n="nav.pricing">Pricing</a>
+    <a href="contact.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn--primary" data-i18n="nav.cta_quote">Get a Quote</a>
+  </aside>
+  <div class="nav-drawer-backdrop" aria-hidden="true"></div>
+
+  <section class="page-hero">
+    <div class="container page-hero__inner">
+      <span class="eyebrow">Selected work</span>
+      <h1>120+ projects. 14 industries. One trusted team.</h1>
+      <p>A sample of apps, websites, platforms and software we've shipped across Bangladesh and beyond.</p>
+      <div class="page-hero__breadcrumbs"><a href="index.html">Home</a> <span>/</span> <span style="color:var(--accent)">Portfolio</span></div>
+    </div>
+  </section>
+
+  <section class="section section--dark" aria-label="Portfolio grid">
+    <div class="container">
+      <div class="portfolio-filters">
+        <button type="button" data-filter="all" class="is-active">All</button>
+        <button type="button" data-filter="web">Web</button>
+        <button type="button" data-filter="apps">Apps</button>
+        <button type="button" data-filter="hosting">Hosting</button>
+        <button type="button" data-filter="custom software">Custom Software</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal" data-category="web">
+          <img src="assets/img/portfolio/ecommerce.svg" alt="DhakaKart" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>DhakaKart</h4><span>E-commerce Platform</span>
+            <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Postgres</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-1" data-category="apps">
+          <img src="assets/img/portfolio/mobile-app.svg" alt="EduPath" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>EduPath</h4><span>Learning App</span>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-2" data-category="hosting">
+          <img src="assets/img/portfolio/cloud-hosting.svg" alt="CTG Logistics" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>CTG Logistics</h4><span>Multi-tenant Cloud</span>
+            <div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal" data-category="web">
+          <img src="assets/img/portfolio/portfolio-site.svg" alt="Khulna Agro" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>Khulna Agro</h4><span>Corporate Website</span>
+            <div class="tags"><span class="tag">WordPress</span><span class="tag">SEO</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-1" data-category="custom software">
+          <img src="assets/img/portfolio/erp-dashboard.svg" alt="FinSolve ERP" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>FinSolve ERP</h4><span>Custom ERP</span>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-2" data-category="apps">
+          <img src="assets/img/portfolio/edtech.svg" alt="SylhetBazar" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>SylhetBazar</h4><span>Delivery App</span>
+            <div class="tags"><span class="tag">React Native</span><span class="tag">Maps</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal" data-category="custom software">
+          <img src="assets/img/portfolio/pos-system.svg" alt="POS System" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>ShopSync POS</h4><span>POS &amp; Inventory</span>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">Vue</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-1" data-category="apps">
+          <img src="assets/img/portfolio/mobile-app.svg" alt="RideShare BD" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>RideShare BD</h4><span>Ride-hailing App</span>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Maps API</span></div>
+          </div>
+        </article>
+        <article class="portfolio-card reveal reveal--delay-2" data-category="custom software">
+          <img src="assets/img/portfolio/agro-system.svg" alt="Khulna Agro Platform" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>Agro Manager</h4><span>Agriculture SaaS</span>
+            <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light" aria-label="Process reminder">
+    <div class="container">
+      <div class="section-heading reveal" style="margin-bottom:2rem">
+        <h2>Have a project in mind?</h2>
+        <p>We'd love to add it to this page next quarter.</p>
+      </div>
+      <div class="text-center reveal">
+        <a href="contact.html" class="btn btn--primary">Start Your Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__brand">
+          <a href="index.html" class="nav__logo"><img src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img"></a>
+          <p>Bangladesh's software partner for web, mobile, hosting and beyond.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="about.html">About</a></li><li><a href="about.html#team">Team</a></li>
+            <li><a href="#">Careers</a></li><li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li><a href="services.html#web">Web Development</a></li>
+            <li><a href="services.html#app">App Development</a></li>
+            <li><a href="services.html#hosting">Hosting</a></li>
+            <li><a href="services.html#domain">Domains</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Stay updated</h4>
+          <p>Subscribe for product updates and engineering insights.</p>
+          <form class="footer__newsletter" novalidate>
+            <input type="email" required placeholder="your@email.com" aria-label="Email">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 StackGarage. All rights reserved.</span>
+        <span>Built with care in Dhaka, Bangladesh.</span>
+      </div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/logo.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
