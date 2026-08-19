@@ -34,7 +34,7 @@
 
     .logo-network-svg:hover .lg-node {
       animation-duration: 2.2s;
-      filter: drop-shadow(0 0 6px #00f2fe);
+      filter: drop-shadow(0 0 6px #ff7a29);
     }
     .logo-network-svg:hover .lg-node:nth-of-type(odd) { r: 9; }
 
@@ -55,28 +55,28 @@
   <!-- Network mark on the left, centered around (44, 80), pentagon-star pattern -->
   <g class="logo-network" aria-hidden="true">
     <!-- Spokes (center → 5 outer nodes) -->
-    <line class="lg-edge" x1="44" y1="80" x2="70" y2="80"  stroke="#00f2fe" stroke-width="2"   stroke-linecap="round"/>
-    <line class="lg-edge" x1="44" y1="80" x2="52" y2="55.2" stroke="#00f2fe" stroke-width="2"   stroke-linecap="round"/>
-    <line class="lg-edge" x1="44" y1="80" x2="22" y2="64.6" stroke="#00f2fe" stroke-width="2"   stroke-linecap="round"/>
-    <line class="lg-edge" x1="44" y1="80" x2="22" y2="95.4" stroke="#00f2fe" stroke-width="2"   stroke-linecap="round"/>
-    <line class="lg-edge" x1="44" y1="80" x2="52" y2="104.8" stroke="#00f2fe" stroke-width="2"  stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="70" y2="80"  stroke="#7fb0d0" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="52" y2="55.2" stroke="#7fb0d0" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="22" y2="64.6" stroke="#7fb0d0" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="22" y2="95.4" stroke="#7fb0d0" stroke-width="2"   stroke-linecap="round"/>
+    <line class="lg-edge" x1="44" y1="80" x2="52" y2="104.8" stroke="#7fb0d0" stroke-width="2"  stroke-linecap="round"/>
 
     <!-- Pentagon perimeter -->
-    <line class="lg-edge" x1="70" y1="80"   x2="52" y2="55.2"  stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
-    <line class="lg-edge" x1="52" y1="55.2" x2="22" y2="64.6"  stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
-    <line class="lg-edge" x1="22" y1="64.6" x2="22" y2="95.4"  stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
-    <line class="lg-edge" x1="22" y1="95.4" x2="52" y2="104.8" stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
-    <line class="lg-edge" x1="52" y1="104.8" x2="70" y2="80"  stroke="#00f2fe" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+    <line class="lg-edge" x1="70" y1="80"   x2="52" y2="55.2"  stroke="#7fb0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+    <line class="lg-edge" x1="52" y1="55.2" x2="22" y2="64.6"  stroke="#7fb0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+    <line class="lg-edge" x1="22" y1="64.6" x2="22" y2="95.4"  stroke="#7fb0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+    <line class="lg-edge" x1="22" y1="95.4" x2="52" y2="104.8" stroke="#7fb0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+    <line class="lg-edge" x1="52" y1="104.8" x2="70" y2="80"  stroke="#7fb0d0" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
 
     <!-- Outer pentagon nodes -->
-    <circle class="lg-node" cx="70" cy="80"   r="6" fill="#ffffff" stroke="#00f2fe" stroke-width="2.4"/>
-    <circle class="lg-node" cx="52" cy="55.2" r="5.2" fill="#00f2fe"/>
-    <circle class="lg-node" cx="22" cy="64.6" r="6" fill="#ffffff" stroke="#00f2fe" stroke-width="2.4"/>
-    <circle class="lg-node" cx="22" cy="95.4" r="6" fill="#ffffff" stroke="#00f2fe" stroke-width="2.4"/>
-    <circle class="lg-node" cx="52" cy="104.8" r="5.2" fill="#00f2fe"/>
+    <circle class="lg-node" cx="70" cy="80"   r="6" fill="#ffffff" stroke="#ff7a29" stroke-width="2.4"/>
+    <circle class="lg-node" cx="52" cy="55.2" r="5.2" fill="#ff7a29"/>
+    <circle class="lg-node" cx="22" cy="64.6" r="6" fill="#ffffff" stroke="#ff7a29" stroke-width="2.4"/>
+    <circle class="lg-node" cx="22" cy="95.4" r="6" fill="#ffffff" stroke="#ff7a29" stroke-width="2.4"/>
+    <circle class="lg-node" cx="52" cy="104.8" r="5.2" fill="#ff7a29"/>
 
     <!-- Center node -->
-    <circle class="lg-node" cx="44" cy="80" r="8" fill="#00f2fe"/>
+    <circle class="lg-node" cx="44" cy="80" r="8" fill="#ff7a29"/>
   </g>
 
   <!-- Wordmark on the right: "STACKS GARAGE" in Space Grotesk Bold -->
@@ -87,7 +87,7 @@
         fill="#ffffff">STACKS GARAGE</text>
 
   <!-- Subtle accent dot after the wordmark -->
-  <circle cx="340" cy="80" r="4" fill="#00f2fe" opacity="0.85">
+  <circle cx="340" cy="80" r="4" fill="#ff7a29" opacity="0.85">
     <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
   </circle>
 </svg>

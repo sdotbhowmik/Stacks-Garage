@@ -74,11 +74,17 @@
       const path = sel.getAttribute('data-i18n-options');
       const arr = getByPath(translations, path);
       if (!Array.isArray(arr)) return;
-      const firstVal = sel.options[0] ? sel.options[0].value : '';
+      const placeholder = sel.options[0];
+      const placeholderValue = placeholder ? placeholder.value : '';
+      const placeholderText = placeholder ? placeholder.textContent : '';
       sel.innerHTML = '';
-      arr.forEach((label, i) => {
+      const placeholderOpt = document.createElement('option');
+      placeholderOpt.value = placeholderValue;
+      placeholderOpt.textContent = placeholderText;
+      sel.appendChild(placeholderOpt);
+      arr.forEach((label) => {
         const opt = document.createElement('option');
-        opt.value = firstVal === '' && i === 0 ? '' : label;
+        opt.value = label;
         opt.textContent = label;
         sel.appendChild(opt);
       });
