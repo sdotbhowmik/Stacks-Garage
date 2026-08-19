@@ -227,10 +227,9 @@
     "heading": "The people behind StackGarage",
     "subheading": "Engineers, designers and strategists who care about your success.",
     "members": [
-      { "name": "Nazmul Hossain",   "role": "Founder & CEO",        "initials": "NH" },
-      { "name": "Fahim Rahman",     "role": "CTO — Full-Stack Lead","initials": "FR" },
-      { "name": "Sadia Karim",      "role": "Head of Design",        "initials": "SK" },
-      { "name": "Tanvir Ahmed",     "role": "DevOps & Hosting",      "initials": "TA" }
+      { "name": "Tawhidur Rahman",          "role": "Director", "initials": "TR" },
+      { "name": "Subrata Kumar Bhowmik",    "role": "Director", "initials": "SB" },
+      { "name": "Aywan Khan",               "role": "Director", "initials": "AK" }
     ]
   },
   "testimonials": {
@@ -275,8 +274,8 @@
         "title": "Visit us",
         "lines": ["House 24, Road 11, Banani", "Dhaka 1213, Bangladesh"]
       },
-      "phone":   { "title": "Call us",    "lines": ["+880 1700-123456", "+880 2-9876543"] },
-      "email":   { "title": "Email us",   "lines": ["hello@stackgarage.bd", "sales@stackgarage.bd"] },
+      "phone":   { "title": "Call us",    "lines": ["+880 9611-404046"] },
+      "email":   { "title": "Email us",   "lines": ["care@stacksgarage.com"] },
       "hours":   { "title": "Working hours", "lines": ["Sun–Thu: 9:00 – 19:00", "24/7 for hosting emergencies"] }
     },
     "form": {
