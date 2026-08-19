@@ -1,12 +1,9 @@
 /* ============================================================
    StackGarage — responsive.css
-   Breakpoints: 1280, 1024, 768, 640, 480
+   Breakpoints: 1024, 900, 640, 380
    ============================================================ */
 
-/* ---- Large desktops ----- */
-@media (max-width: 1280px) {
-  .hero__orbit { width: 420px; height: 420px; }
-}
+html { overflow-x: hidden; }
 
 /* ---- Tablets / small laptops ---- */
 @media (max-width: 1024px) {
@@ -24,6 +21,8 @@
 
   .process { grid-template-columns: repeat(3, 1fr); gap: 24px 16px; }
   .process::before { display: none; }
+
+  .service-split { gap: 40px; margin-bottom: 80px; }
 
   .pricing { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
 
@@ -48,6 +47,9 @@
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; }
 
+  .service-split { grid-template-columns: 1fr; gap: 32px; margin-bottom: 56px; }
+  .grid-split, .grid-split--wide { grid-template-columns: 1fr; gap: 32px; }
+
   .team { grid-template-columns: repeat(2, 1fr); }
 
   .stats { grid-template-columns: repeat(2, 1fr); }
@@ -56,7 +58,8 @@
 
   .testimonial { flex: 0 0 calc((100% - 24px) / 2); }
 
-  .hero__orbit { display: none; }
+  .hero__dims { display: none; }
+  .hero__blueprint { background-size: 32px 32px; }
 }
 
 /* ---- Mobile ---- */
@@ -110,6 +113,8 @@
   .btn { padding: 12px 22px; font-size: 0.85rem; }
 
   .card { padding: 24px 20px; }
+
+  .service-split__panel { padding: 28px 24px; }
 
   .lang-toggle button { padding: 5px 10px; }
 

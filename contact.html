@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
@@ -63,27 +63,27 @@
 
   <section class="section section-light" aria-label="Contact form and info">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:48px">
+      <div class="grid-split grid-split--wide">
         <!-- Contact form -->
         <div class="reveal">
           <form class="form" novalidate>
             <div class="form__row">
-              <div class="form__field">
+              <div class="form__field form__field--floating">
+                <input id="name" name="name" type="text" placeholder=" " required minlength="2" autocomplete="name">
                 <label for="name" data-i18n="contact.form.name">Full name</label>
-                <input id="name" name="name" type="text" required minlength="2" autocomplete="name">
                 <div class="form__error" data-i18n="contact.form.name_error">Please enter your name.</div>
               </div>
-              <div class="form__field">
+              <div class="form__field form__field--floating">
+                <input id="email" name="email" type="email" placeholder=" " required autocomplete="email">
                 <label for="email" data-i18n="contact.form.email">Email address</label>
-                <input id="email" name="email" type="email" required autocomplete="email">
                 <div class="form__error">Please enter a valid email.</div>
               </div>
             </div>
 
             <div class="form__row">
-              <div class="form__field">
+              <div class="form__field form__field--floating">
+                <input id="phone" name="phone" type="tel" placeholder=" " autocomplete="tel">
                 <label for="phone" data-i18n="contact.form.phone">Phone (optional)</label>
-                <input id="phone" name="phone" type="tel" autocomplete="tel">
               </div>
               <div class="form__field">
                 <label for="service" data-i18n="contact.form.service">Service interested in</label>
@@ -100,9 +100,9 @@
               </select>
             </div>
 
-            <div class="form__field">
+            <div class="form__field form__field--floating">
+              <textarea id="message" name="message" placeholder=" " required minlength="20"></textarea>
               <label for="message" data-i18n="contact.form.message">Tell us about your project</label>
-              <textarea id="message" name="message" required minlength="20"></textarea>
               <div class="form__error">Please share a few sentences (20+ characters).</div>
             </div>
 
