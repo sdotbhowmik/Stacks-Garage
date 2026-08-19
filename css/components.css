@@ -1,6 +1,6 @@
 /* ============================================================
    StackGarage — components.css
-   Buttons, cards, forms, accordions, badges
+   Buttons, Work Order cards, forms, accordions, badges
    ============================================================ */
 
 /* ============================================================
@@ -11,12 +11,13 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  min-height: 48px;
   padding: 14px 28px;
   border-radius: var(--radius-md);
   font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   position: relative;
   transition: all var(--t-base) var(--ease);
@@ -25,80 +26,95 @@
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--teal-500) 100%);
+  background: var(--accent);
   color: var(--bg);
-  box-shadow: 0 8px 24px -8px var(--accent);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.18), 0 8px 20px -10px rgba(0, 0, 0, 0.5);
 }
 .btn--primary:hover {
+  background: var(--accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px -8px var(--accent), var(--shadow-glow);
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.18), 0 12px 26px -10px rgba(0, 0, 0, 0.55), var(--shadow-glow);
 }
 
 .btn--ghost {
-  background: var(--surface);
-  border: 1px solid var(--border-strong);
+  background: transparent;
+  border: 1.5px dashed var(--border-strong);
   color: var(--text);
-  backdrop-filter: blur(8px);
 }
 .btn--ghost:hover {
   background: var(--surface-strong);
   border-color: var(--accent);
+  border-style: solid;
   color: var(--accent);
 }
 
-/* Sci-fi chamfered button (used in hero) */
-.btn--sci {
-  background: transparent;
-  color: var(--text);
-  padding: 16px 36px;
-  border: 1px solid var(--accent);
-  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+/* ============================================================
+   Work Order card — the shared "job ticket" signature: a
+   flat ink surface with a dimension-bracket corner mark.
+   Reused by .card, .offer-card, .testimonial, .team__card,
+   .stat, .portfolio-card. .plan gets a single bracket (see below)
+   since its ::before is reserved for the "Most Popular" stamp.
+   ============================================================ */
+.card,
+.offer-card,
+.testimonial,
+.team__card,
+.stat,
+.portfolio-card {
   position: relative;
-  overflow: visible;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: all var(--t-base) var(--ease);
 }
-.btn--sci::before {
+.card::before, .card::after,
+.offer-card::before, .offer-card::after,
+.testimonial::before, .testimonial::after,
+.team__card::before, .team__card::after,
+.stat::before, .stat::after,
+.portfolio-card::before, .portfolio-card::after,
+.plan::after {
   content: '';
-  position: absolute; inset: 0;
-  background: linear-gradient(135deg, var(--accent), var(--teal-500));
-  z-index: -1;
-  opacity: 0;
-  transition: opacity var(--t-base) var(--ease);
+  position: absolute;
+  width: 14px; height: 14px;
+  border: 2px solid var(--accent);
+  opacity: 0.4;
+  transition: all var(--t-base) var(--ease);
+  pointer-events: none;
 }
-.btn--sci:hover { color: var(--bg); }
-.btn--sci:hover::before { opacity: 1; }
-.btn--sci:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow); }
+.card::before, .offer-card::before, .testimonial::before,
+.team__card::before, .stat::before, .portfolio-card::before {
+  top: 10px; left: 10px; border-right: 0; border-bottom: 0;
+}
+.card::after, .offer-card::after, .testimonial::after,
+.team__card::after, .stat::after, .portfolio-card::after, .plan::after {
+  bottom: 10px; right: 10px; border-left: 0; border-top: 0;
+}
+.card:hover::before, .offer-card:hover::before, .testimonial:hover::before,
+.team__card:hover::before, .stat:hover::before, .portfolio-card:hover::before {
+  top: 6px; left: 6px; opacity: 0.85;
+}
+.card:hover::after, .offer-card:hover::after, .testimonial:hover::after,
+.team__card:hover::after, .stat:hover::after, .portfolio-card:hover::after,
+.plan:hover::after {
+  bottom: 6px; right: 6px; opacity: 0.85;
+}
 
 /* ============================================================
    Service / feature card
    ============================================================ */
 .card {
-  position: relative;
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
-  overflow: hidden;
-  transition: all var(--t-base) var(--ease);
-}
-.card::before {
-  content: '';
-  position: absolute;
-  top: -1px; left: -1px; right: -1px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  transform: translateX(-100%);
-  transition: transform var(--t-slow) var(--ease);
 }
 .card:hover {
   border-color: var(--border-strong);
   transform: translateY(-6px);
   box-shadow: var(--shadow-card);
 }
-.card:hover::before { transform: translateX(0); }
 
 .section-light .card {
-  background: var(--bg-elev);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 3px rgba(20, 24, 29, 0.05);
 }
 
 .card__icon {
@@ -179,7 +195,7 @@
 .feature-item__text { font-size: 0.88rem; color: var(--text-muted); }
 
 /* ============================================================
-   Trust bar
+   Trust bar — dashed nameplate tags
    ============================================================ */
 .trust-bar {
   display: grid;
@@ -195,15 +211,17 @@
   border-radius: var(--radius-md);
   background: var(--surface);
   color: var(--text-muted);
-  font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   transition: all var(--t-fast) var(--ease);
 }
 .trust-bar__item:hover {
   color: var(--accent);
   border-color: var(--accent);
+  border-style: solid;
   transform: translateY(-2px);
 }
 .trust-bar__heading {
@@ -216,7 +234,7 @@
 }
 
 /* ============================================================
-   Tech stack marquee
+   Tech stack marquee — stamped tool tags
    ============================================================ */
 .marquee {
   overflow: hidden;
@@ -235,21 +253,22 @@
   align-items: center;
   gap: 10px;
   padding: 12px 22px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
   background: var(--surface);
   color: var(--text-soft);
-  font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
   font-weight: 600;
+  letter-spacing: 0.02em;
   white-space: nowrap;
   transition: all var(--t-fast) var(--ease);
 }
-.marquee__item:hover { border-color: var(--accent); color: var(--accent); }
+.marquee__item:hover { border-color: var(--accent); border-style: solid; color: var(--accent); }
 .marquee__item svg { width: 22px; height: 22px; color: var(--accent); }
 
 /* ============================================================
-   Process / timeline
+   Process / timeline — build stages, stamped step numbers
    ============================================================ */
 .process {
   display: grid;
@@ -261,8 +280,8 @@
   content: '';
   position: absolute;
   top: 36px; left: 8%; right: 8%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--border-strong), var(--accent), var(--border-strong), transparent);
+  height: 0;
+  border-top: 2px dashed var(--border-strong);
   z-index: 0;
 }
 .process__step {
@@ -278,8 +297,8 @@
   background: var(--bg);
   border: 2px solid var(--accent);
   color: var(--accent);
-  font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
   font-weight: 700;
   box-shadow: 0 0 0 6px var(--bg), 0 0 20px var(--accent-soft);
   transition: all var(--t-base) var(--ease);
@@ -308,22 +327,25 @@
   margin-bottom: 36px;
 }
 .portfolio-filters button {
-  padding: 8px 18px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
+  min-height: 44px;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border-strong);
   background: var(--surface);
   color: var(--text-muted);
-  font-family: var(--font-display);
-  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   transition: all var(--t-fast) var(--ease);
 }
 .portfolio-filters button.is-active,
 .portfolio-filters button:hover {
   background: var(--accent);
-  color: var(--bg);
   border-color: var(--accent);
+  border-style: solid;
+  color: var(--bg);
   box-shadow: 0 0 16px var(--accent-soft);
 }
 
@@ -333,13 +355,8 @@
   gap: 24px;
 }
 .portfolio-card {
-  position: relative;
   border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--border);
-  background: var(--bg-elev);
   aspect-ratio: 4 / 3;
-  transition: all var(--t-base) var(--ease);
 }
 .portfolio-card img,
 .portfolio-card__thumb {
@@ -352,7 +369,7 @@
 .portfolio-card:hover .portfolio-card__thumb { transform: scale(1.08); }
 .portfolio-card__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 30%, rgba(1,11,15,0.95) 100%);
+  background: linear-gradient(180deg, transparent 30%, rgba(11, 14, 17, 0.95) 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -363,12 +380,25 @@
 .portfolio-card:hover .portfolio-card__overlay { opacity: 1; }
 .portfolio-card__overlay h4 { color: #fff; margin-bottom: 6px; }
 .portfolio-card__overlay span { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+.portfolio-card__metric {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--torque);
+  letter-spacing: 0.02em;
+}
 .portfolio-card__overlay .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .portfolio-card__overlay .tag {
-  font-size: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(0, 242, 254, 0.15);
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--accent);
+  background: var(--accent-soft);
   color: var(--accent);
 }
 
@@ -383,14 +413,12 @@
 .stat {
   text-align: center;
   padding: 32px 16px;
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: var(--surface);
-  transition: all var(--t-base) var(--ease);
 }
 .stat:hover { border-color: var(--accent); transform: translateY(-4px); }
 .stat__num {
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   color: var(--accent);
@@ -405,7 +433,8 @@
 }
 
 /* ============================================================
-   Pricing
+   Pricing — job-quote cards (single dimension bracket; the
+   ::before pseudo-element is reserved for the featured stamp)
    ============================================================ */
 .pricing {
   display: grid;
@@ -421,28 +450,33 @@
   background: var(--bg-elev);
   text-align: center;
   display: flex; flex-direction: column;
+  overflow: hidden;
   transition: all var(--t-base) var(--ease);
 }
 .plan:hover { border-color: var(--accent); transform: translateY(-6px); }
 .plan--featured {
   border-color: var(--accent);
   background: linear-gradient(180deg, var(--accent-soft) 0%, var(--bg-elev) 60%);
-  box-shadow: 0 0 40px var(--accent-soft);
+  box-shadow: var(--shadow-glow);
 }
 .plan--featured::before {
   content: 'Most Popular';
   position: absolute;
-  top: -12px; left: 50%;
-  transform: translateX(-50%);
-  padding: 4px 14px;
-  font-size: 0.7rem;
-  letter-spacing: 0.18em;
+  top: 14px; left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  padding: 4px 12px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   font-weight: 700;
-  background: var(--accent);
-  color: var(--bg);
-  border-radius: 999px;
+  color: var(--accent);
+  border: 1.5px dashed var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  z-index: 1;
 }
+.plan--featured .plan__name { margin-top: 20px; }
 .plan__name {
   font-family: var(--font-display);
   font-size: 1.2rem;
@@ -452,8 +486,8 @@
   margin-bottom: 8px;
 }
 .plan__price {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 2.3rem;
   font-weight: 700;
   color: var(--text);
   margin: 8px 0 4px;
@@ -488,10 +522,7 @@
 .team__card {
   text-align: center;
   padding: 28px 20px;
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  background: var(--bg-elev);
-  transition: all var(--t-base) var(--ease);
 }
 .team__card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .team__avatar {
@@ -510,7 +541,7 @@
 .team__role { font-size: 0.85rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; }
 .team__socials { display: flex; gap: 10px; justify-content: center; margin-top: 14px; }
 .team__socials a {
-  width: 32px; height: 32px;
+  width: 44px; height: 44px;
   display: inline-flex; align-items: center; justify-content: center;
   border: 1px solid var(--border);
   border-radius: 50%;
@@ -540,12 +571,8 @@
 .testimonial {
   flex: 0 0 calc((100% - 48px) / 3);
   scroll-snap-align: start;
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 28px;
-  position: relative;
-  transition: all var(--t-base) var(--ease);
 }
 .testimonial:hover { border-color: var(--border-strong); transform: translateY(-4px); }
 .testimonial__quote-mark {
@@ -628,6 +655,7 @@
   align-items: center;
   gap: 16px;
   width: 100%;
+  min-height: 44px;
   padding: 18px 22px;
   text-align: left;
   font-family: var(--font-display);
@@ -659,7 +687,7 @@
 .faq__item.is-open .faq__answer { max-height: 400px; }
 
 /* ============================================================
-   Forms
+   Forms — floating labels, live validation states
    ============================================================ */
 .form {
   display: grid;
@@ -682,6 +710,7 @@
 .form__field select,
 .form__field textarea {
   width: 100%;
+  min-height: 48px;
   padding: 12px 16px;
   background: var(--surface);
   border: 1px solid var(--border);
@@ -709,6 +738,40 @@
 }
 .form__field.error .form__error { display: block; }
 
+/* Floating-label variant — label sits inside the field until
+   focused or filled; CSS-only via :placeholder-shown, so the
+   existing form-validation.js needs no changes. Markup order:
+   input/textarea first, label second, input has placeholder=" ". */
+.form__field--floating {
+  position: relative;
+}
+.form__field--floating label {
+  position: absolute;
+  left: 16px; top: 15px;
+  margin: 0;
+  color: var(--text-dim);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  background: transparent;
+  transition: all var(--t-fast) var(--ease);
+  pointer-events: none;
+}
+.form__field--floating input,
+.form__field--floating textarea { padding-top: 22px; padding-bottom: 8px; }
+.form__field--floating textarea ~ label { top: 15px; }
+.form__field--floating input:focus + label,
+.form__field--floating input:not(:placeholder-shown) + label,
+.form__field--floating textarea:focus + label,
+.form__field--floating textarea:not(:placeholder-shown) + label {
+  top: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 .form-success {
   display: none;
   padding: 16px 20px;
@@ -731,7 +794,7 @@
   background:
     radial-gradient(circle at 20% 20%, var(--accent-soft), transparent 50%),
     linear-gradient(135deg, var(--bg-elev), var(--bg));
-  border: 1px solid var(--border-strong);
+  border: 1px dashed var(--border-strong);
   display: grid;
   grid-template-columns: 1.4fr auto;
   align-items: center;
@@ -800,7 +863,7 @@
   max-width: 360px;
 }
 .toast.is-visible { transform: translateX(0); }
-.toast__icon { color: var(--accent); flex-shrink:0 }
+.toast__icon { color: var(--accent); flex-shrink: 0 }
 
 /* ============================================================
    Back to top
@@ -834,50 +897,38 @@
   gap: 28px;
 }
 .offer-card {
-  position: relative;
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
-  transition: all var(--t-base) var(--ease);
-  overflow: hidden;
 }
 .offer-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-strong);
   box-shadow: var(--shadow-card);
 }
-.offer-card::before {
-  content: '';
-  position: absolute;
-  top: -1px; left: -1px; right: -1px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  transform: translateX(-100%);
-  transition: transform var(--t-slow) var(--ease);
-}
-.offer-card:hover::before { transform: translateX(0); }
 .offer-card--featured {
   border-color: var(--accent);
   background:
-    radial-gradient(circle at 80% 0%, rgba(0, 242, 254, 0.12), transparent 50%),
-    linear-gradient(180deg, rgba(0, 242, 254, 0.06), var(--bg-elev) 60%);
-  box-shadow: 0 0 40px rgba(0, 242, 254, 0.18);
+    radial-gradient(circle at 80% 0%, var(--accent-soft), transparent 50%),
+    linear-gradient(180deg, var(--accent-soft), var(--bg-elev) 60%);
+  box-shadow: var(--shadow-glow);
 }
 .offer-card__ribbon {
   position: absolute;
   top: 14px; right: 14px;
   padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--accent);
-  color: var(--bg);
-  font-family: var(--font-display);
-  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  color: var(--accent);
+  border: 1.5px dashed var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  transform: rotate(-3deg);
+  z-index: 1;
 }
 .offer-card__head {
   display: flex;
@@ -897,8 +948,8 @@
 .offer-card__icon svg { width: 28px; height: 28px; }
 .offer-card__title { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; }
 .offer-card__price {
-  font-family: var(--font-display);
-  font-size: 1.85rem;
+  font-family: var(--font-mono);
+  font-size: 1.7rem;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
@@ -906,8 +957,8 @@
 }
 .offer-card__price small { font-size: 0.9rem; font-weight: 400; color: var(--text-muted); margin-left: 6px; }
 .offer-card__price--neg {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--accent);
   line-height: 1;
@@ -960,7 +1011,7 @@
 .demo-modal__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(1, 11, 15, 0.78);
+  background: rgba(11, 14, 17, 0.8);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   animation: dm-fade-in 0.18s ease;
@@ -990,7 +1041,7 @@
 .demo-modal__title { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; }
 .demo-modal__subtitle { font-size: 0.85rem; color: var(--text-muted); margin-top: 2px; }
 .demo-modal__close {
-  width: 40px; height: 40px;
+  width: 44px; height: 44px;
   display: inline-flex; align-items: center; justify-content: center;
   border: 1px solid var(--border-strong);
   border-radius: 50%;

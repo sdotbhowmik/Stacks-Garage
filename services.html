@@ -8,7 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
@@ -64,7 +64,7 @@
   <section class="section section-light" aria-label="Services">
     <div class="container">
       <!-- Web Development -->
-      <article id="web" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+      <article id="web" class="reveal service-split">
         <div>
           <span class="eyebrow">01 — Web</span>
           <h2 style="margin:18px 0 16px">Web Development</h2>
@@ -79,10 +79,10 @@
           </div>
           <a href="contact.html" class="btn btn--primary">Start a Web Project</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+        <div class="service-split__panel">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">FULL-STACK</div>
+            <div class="service-split__badge">FULL-STACK</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ Custom UI/UX design or theme customization</li>
@@ -98,7 +98,7 @@
       </article>
 
       <!-- App Development -->
-      <article id="app" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+      <article id="app" class="reveal service-split">
         <div style="order:2">
           <span class="eyebrow">02 — Mobile</span>
           <h2 style="margin:18px 0 16px">Mobile App Development</h2>
@@ -112,10 +112,10 @@
           </div>
           <a href="contact.html" class="btn btn--primary">Start an App Project</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+        <div class="service-split__panel" style="order:1">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">iOS + ANDROID</div>
+            <div class="service-split__badge">iOS + ANDROID</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ Cross-platform development (single codebase)</li>
@@ -131,7 +131,7 @@
       </article>
 
       <!-- Hosting -->
-      <article id="hosting" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+      <article id="hosting" class="reveal service-split">
         <div>
           <span class="eyebrow">03 — Hosting</span>
           <h2 style="margin:18px 0 16px">Managed Hosting</h2>
@@ -146,10 +146,10 @@
           </div>
           <a href="pricing.html" class="btn btn--primary">See Hosting Plans</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+        <div class="service-split__panel">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">99.9% UPTIME SLA</div>
+            <div class="service-split__badge">99.9% UPTIME SLA</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ Free SSL &amp; global CDN</li>
@@ -165,7 +165,7 @@
       </article>
 
       <!-- Domain -->
-      <article id="domain" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+      <article id="domain" class="reveal service-split">
         <div style="order:2">
           <span class="eyebrow">04 — Domain</span>
           <h2 style="margin:18px 0 16px">Domain Registration</h2>
@@ -180,10 +180,10 @@
           </div>
           <a href="contact.html" class="btn btn--primary">Register a Domain</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+        <div class="service-split__panel" style="order:1">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">AUTHORIZED REGISTRAR</div>
+            <div class="service-split__badge">AUTHORIZED REGISTRAR</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ Free DNS hosting with simple management panel</li>
@@ -198,7 +198,7 @@
       </article>
 
       <!-- Custom Software -->
-      <article id="custom" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-bottom:120px">
+      <article id="custom" class="reveal service-split">
         <div>
           <span class="eyebrow">05 — Custom</span>
           <h2 style="margin:18px 0 16px">Software Customization</h2>
@@ -206,10 +206,10 @@
           <p style="margin-bottom:24px">If your team still juggles Excel sheets, we can digitize and automate that workflow in 6–12 weeks.</p>
           <a href="contact.html" class="btn btn--primary">Discuss Custom Build</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden">
+        <div class="service-split__panel">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">YOUR WORKFLOW</div>
+            <div class="service-split__badge">YOUR WORKFLOW</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ Process discovery &amp; documentation</li>
@@ -224,7 +224,7 @@
       </article>
 
       <!-- UI/UX & SEO -->
-      <article id="design" class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+      <article id="design" class="reveal service-split">
         <div style="order:2">
           <span class="eyebrow">06 — UI/UX &amp; SEO</span>
           <h2 style="margin:18px 0 16px">UI/UX Design &amp; SEO</h2>
@@ -232,10 +232,10 @@
           <p style="margin-bottom:24px">Pair with any of our other services, or hire us just for the design phase.</p>
           <a href="contact.html" class="btn btn--primary">Plan a Design Sprint</a>
         </div>
-        <div style="padding:48px;border:1px solid var(--border);border-radius:var(--radius-lg);background:var(--bg-elev);position:relative;overflow:hidden;order:1">
+        <div class="service-split__panel" style="order:1">
           <div class="hero-spotlight" style="position:absolute;inset:0;opacity:.4"></div>
           <div style="position:relative;z-index:1">
-            <div style="display:inline-block;padding:4px 10px;background:var(--accent);color:var(--bg);border-radius:6px;font-family:monospace;font-size:.75rem;font-weight:700">CONVERSION-FOCUSED</div>
+            <div class="service-split__badge">CONVERSION-FOCUSED</div>
             <h3 style="margin:14px 0 8px">What's included</h3>
             <ul style="display:flex;flex-direction:column;gap:8px;color:var(--text-soft)">
               <li>✓ UX research &amp; wireframes</li>

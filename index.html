@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -65,78 +65,24 @@
 
   <!-- ============== HERO ============== -->
   <section id="hero" class="hero" aria-label="Hero">
+    <!-- Blueprint drafting-paper backdrop -->
+    <div class="hero__blueprint" aria-hidden="true"></div>
     <div class="hero-spotlight" aria-hidden="true"></div>
 
     <!-- Faint network-mark watermark behind hero content -->
     <img class="hero__watermark" src="assets/img/logos/StackGarage-mark.svg" alt="" aria-hidden="true">
 
-    <!-- Orbitals (left + right) -->
-    <div class="hero__orbit" aria-hidden="true">
-      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-cw"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-ccw"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-cw-slow"
-        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 30deg, transparent 30deg 90deg, rgba(0,242,254,0.4) 90deg 120deg, transparent 120deg 180deg, rgba(0,242,254,0.4) 180deg 210deg, transparent 210deg 270deg, rgba(0,242,254,0.4) 270deg 300deg, transparent 300deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-ccw-slow"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
-    </div>
-    <div class="hero__orbit hero__orbit--right" aria-hidden="true">
-      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-ccw"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-cw"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-ccw-slow"
-        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 45deg, transparent 45deg 120deg, rgba(0,242,254,0.4) 120deg 165deg, transparent 165deg 200deg, rgba(0,242,254,0.4) 200deg 245deg, transparent 245deg 300deg, rgba(0,242,254,0.4) 300deg 345deg, transparent 345deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-cw-slow"></div>
-      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
-    </div>
-
-    <!-- Floating tech icons -->
-    <div class="hero__floats" aria-hidden="true">
-      <svg class="float-icon animate-float" style="top:18%;left:14%;width:56px;height:56px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z" fill="rgba(0,242,254,.1)"/>
-        <path d="M9 12l2 2 4-4"/>
-      </svg>
-      <svg class="float-icon animate-float-d" style="top:22%;right:18%;width:64px;height:64px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" fill="rgba(0,242,254,.05)"/>
-        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"/>
-        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"/>
-        <circle cx="12" cy="12" r="2" fill="currentColor"/>
-      </svg>
-      <svg class="float-icon animate-float" style="bottom:32%;left:18%;width:48px;height:48px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M4 12c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
-        <path d="M4 18c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
-      </svg>
-      <svg class="float-icon animate-float-d" style="bottom:24%;right:14%;width:56px;height:56px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <rect x="3" y="3" width="18" height="18" rx="3" fill="rgba(0,242,254,.1)"/>
-        <text x="12" y="16" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="currentColor" stroke="none">&lt;/&gt;</text>
-      </svg>
-    </div>
-
-    <!-- Floor + cityscape -->
-    <div class="floor-grid" aria-hidden="true"></div>
-    <div class="cityscape" aria-hidden="true">
-      <div class="building" style="height:60px"></div>
-      <div class="building" style="height:90px"></div>
-      <div class="building" style="height:40px"></div>
-      <div class="building" style="height:120px"></div>
-      <div class="building" style="height:70px"></div>
-      <div class="building" style="height:140px"></div>
-      <div class="building" style="height:50px"></div>
-      <div class="building" style="height:100px"></div>
-      <div class="building" style="height:80px"></div>
-      <div class="building" style="height:150px"></div>
-      <div class="building" style="height:60px"></div>
-      <div class="building" style="height:110px"></div>
-      <div class="building" style="height:40px"></div>
-      <div class="building" style="height:90px"></div>
-      <div class="building" style="height:70px"></div>
-      <div class="building" style="height:130px"></div>
-      <div class="building" style="height:50px"></div>
-      <div class="building" style="height:80px"></div>
-      <div class="building" style="height:110px"></div>
-      <div class="building" style="height:60px"></div>
+    <!-- Dimension-line annotations -->
+    <div class="hero__dims" aria-hidden="true">
+      <span class="dim-line dim-line--h" style="top:22%;left:4%;width:12%"></span>
+      <span style="top:calc(22% - 18px);left:4%">WEB · APP · CLOUD</span>
+      <span class="dim-line dim-line--v" style="top:22%;left:4%;height:14%"></span>
+      <span class="dim-line dim-line--h" style="bottom:16%;right:5%;width:10%"></span>
+      <span style="bottom:calc(16% + 6px);right:5%">EST. DHAKA</span>
     </div>
 
     <div class="hero__inner">
-      <span class="eyebrow reveal">Software • Hosting • Domains • Beyond</span>
+      <span class="eyebrow stamp-in">Software • Hosting • Domains • Beyond</span>
       <h1 class="reveal reveal--delay-1" style="margin-top:20px">
         <span id="typewriter-text" style="color:var(--accent)"></span><span class="cursor-blink" style="color:var(--accent)">_</span>
         <br>
@@ -394,6 +340,7 @@
           <div class="portfolio-card__overlay">
             <h4>DhakaKart</h4>
             <span>E-commerce Platform</span>
+            <span class="portfolio-card__metric">+62% Sales, Q1</span>
             <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span></div>
           </div>
         </a>
@@ -402,6 +349,7 @@
           <div class="portfolio-card__overlay">
             <h4>EduPath</h4>
             <span>Learning App</span>
+            <span class="portfolio-card__metric">4.8★ App Rating</span>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
           </div>
         </a>
@@ -410,6 +358,7 @@
           <div class="portfolio-card__overlay">
             <h4>CTG Logistics</h4>
             <span>Cloud Infrastructure</span>
+            <span class="portfolio-card__metric">0 Downtime / 14mo</span>
             <div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span></div>
           </div>
         </a>
@@ -418,6 +367,7 @@
           <div class="portfolio-card__overlay">
             <h4>Khulna Agro</h4>
             <span>Corporate Website</span>
+            <span class="portfolio-card__metric">+3.1x Organic Traffic</span>
             <div class="tags"><span class="tag">WordPress</span><span class="tag">SEO</span></div>
           </div>
         </a>
@@ -426,6 +376,7 @@
           <div class="portfolio-card__overlay">
             <h4>FinSolve ERP</h4>
             <span>Custom ERP</span>
+            <span class="portfolio-card__metric">ROI in 8 Weeks</span>
             <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
           </div>
         </a>
@@ -434,6 +385,7 @@
           <div class="portfolio-card__overlay">
             <h4>SylhetBazar</h4>
             <span>Delivery App</span>
+            <span class="portfolio-card__metric">12k+ Orders / mo</span>
             <div class="tags"><span class="tag">React Native</span><span class="tag">Maps API</span></div>
           </div>
         </a>
