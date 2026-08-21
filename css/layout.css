@@ -23,12 +23,12 @@
    scroll — nav--over-light is toggled by menu.js and needs literal "workshop
    floor" values since the :root tokens it would otherwise read stay dark-themed. */
 .site-header.nav--over-light {
-  background: rgba(244, 240, 230, 0.96);
-  border-bottom-color: rgba(76, 134, 176, 0.3);
+  background: rgba(238, 242, 248, 0.96);
+  border-bottom-color: rgba(0, 56, 168, 0.3);
 }
-.site-header.nav--over-light.is-scrolled { border-bottom-color: #d9600e; }
-.site-header.nav--over-light .nav__link { color: #5b6169; }
-.site-header.nav--over-light .nav__link.is-active { color: #d9600e; }
+.site-header.nav--over-light.is-scrolled { border-bottom-color: #0038a8; }
+.site-header.nav--over-light .nav__link { color: #566380; }
+.site-header.nav--over-light .nav__link.is-active { color: #0038a8; }
 
 .nav {
   height: 100%;

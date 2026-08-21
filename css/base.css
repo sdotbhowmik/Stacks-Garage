@@ -13,38 +13,38 @@
   --blueprint-500: #386f97;
   --blueprint-600: #2c5878;
   --blueprint-700: #1f3f57;
-  --signal-500: #ff7a29;
-  --signal-600: #d9600e;
-  --torque-400: #ffc93c;
-  --ink-base: #0b0e11;
-  --paper-base: #f4f0e6;
+  --signal-500: #0038a8;
+  --signal-600: #002d86;
+  --torque-400: #4d8dff;
+  --ink-base: #05080d;
+  --paper-base: #eef2f8;
 
   /* ---------- Brand / Logo accent (glow applied around fixed logo art) ---------- */
-  --brand-navy: #1f3f57;
-  --brand-navy-soft: rgba(31, 63, 87, 0.5);
-  --brand-line: rgba(76, 134, 176, 0.28);
-  --logo-glow: rgba(255, 122, 41, 0.4);
+  --brand-navy: #041c3f;
+  --brand-navy-soft: rgba(4, 28, 63, 0.5);
+  --brand-line: rgba(0, 56, 168, 0.28);
+  --logo-glow: rgba(0, 56, 168, 0.45);
 
   /* ---------- Dark theme (default) — "Night shift" ---------- */
-  --bg: #0b0e11;
-  --bg-alt: #0f1216;
-  --bg-elev: #14181d;
+  --bg: #05080d;
+  --bg-alt: #070c14;
+  --bg-elev: #0c131d;
   --surface: rgba(76, 134, 176, 0.06);
   --surface-strong: rgba(76, 134, 176, 0.12);
   --border: rgba(76, 134, 176, 0.22);
   --border-strong: rgba(76, 134, 176, 0.42);
-  --text: #f5f3ee;
-  --text-soft: #c9cdd2;
-  --text-muted: #9aa0a8;
-  --text-dim: #6b7280;
-  --accent: #ff7a29;
-  --accent-hover: #ffc93c;
-  --accent-soft: rgba(255, 122, 41, 0.16);
+  --text: #f5f7fb;
+  --text-soft: #c7ccd6;
+  --text-muted: #93a0b3;
+  --text-dim: #626d80;
+  --accent: #2f7dff;
+  --accent-hover: #6fa8ff;
+  --accent-soft: rgba(47, 125, 255, 0.16);
   --blueprint: rgba(76, 134, 176, 0.35);
-  --torque: #ffc93c;
-  --shadow-glow: 0 0 24px rgba(255, 122, 41, 0.35);
+  --torque: #4d8dff;
+  --shadow-glow: 0 0 24px rgba(47, 125, 255, 0.35);
   --shadow-card: 0 14px 32px -12px rgba(0, 0, 0, 0.55);
-  --header-bg: rgba(11, 14, 17, 0.94);
+  --header-bg: rgba(5, 8, 13, 0.94);
   --logo: 'white';
 
   /* ---------- Typography ---------- */
@@ -73,27 +73,27 @@
 
 /* Light theme — applied per-section via .section-light — "Workshop floor" */
 .section-light {
-  --bg: #f4f0e6;
+  --bg: #eef2f8;
   --bg-alt: #ffffff;
   --bg-elev: #ffffff;
-  --surface: rgba(76, 134, 176, 0.05);
-  --surface-strong: rgba(76, 134, 176, 0.09);
-  --border: rgba(76, 134, 176, 0.22);
-  --border-strong: rgba(76, 134, 176, 0.38);
-  --text: #14181d;
-  --text-soft: #3a3f46;
-  --text-muted: #5b6169;
-  --text-dim: #82878e;
-  --accent: #d9600e;
-  --accent-hover: #b84e0a;
-  --accent-soft: rgba(217, 96, 14, 0.12);
-  --blueprint: rgba(76, 134, 176, 0.3);
-  --torque: #b8860a;
-  --shadow-glow: 0 0 24px rgba(217, 96, 14, 0.18);
+  --surface: rgba(0, 56, 168, 0.045);
+  --surface-strong: rgba(0, 56, 168, 0.08);
+  --border: rgba(0, 56, 168, 0.16);
+  --border-strong: rgba(0, 56, 168, 0.32);
+  --text: #0b1626;
+  --text-soft: #33415a;
+  --text-muted: #566380;
+  --text-dim: #7c88a0;
+  --accent: #0038a8;
+  --accent-hover: #002d86;
+  --accent-soft: rgba(0, 56, 168, 0.12);
+  --blueprint: rgba(0, 56, 168, 0.22);
+  --torque: #2f6fe0;
+  --shadow-glow: 0 0 24px rgba(0, 56, 168, 0.18);
   --shadow-card: 0 14px 32px -12px rgba(20, 24, 29, 0.14);
-  --header-bg: rgba(244, 240, 230, 0.96);
+  --header-bg: rgba(238, 242, 248, 0.96);
   --logo: 'black';
-  --text-soft-light: #3a3f46;
+  --text-soft-light: #33415a;
 }
 
 /* ============================================================
@@ -306,25 +306,23 @@ p { color: var(--text-soft); }
 }
 
 /* ============================================================
-   Logo (SVG variants)
+   Logo — nameplate lockup: opaque royal-blue plate, so it is
+   rounded and lifted off the header like a mounted badge rather
+   than styled as flat line-art.
    ============================================================ */
 .nav__logo .nav__logo-img {
-  /* SVG acts as static <img>; the animated overlay is inside the SVG itself */
-  height: 78px;
+  height: 56px;
   width: auto;
   display: block;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px -4px var(--logo-glow), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition: box-shadow var(--t-base) var(--ease), transform var(--t-base) var(--ease);
 }
-.nav__logo .nav__logo-img[src$=".svg"] {
-  /* A tiny extra filter so the SVG crispens against the flat ink nav header */
-  filter: drop-shadow(0 0 6px var(--logo-glow));
-  transition: filter var(--t-base) var(--ease);
+.nav__logo:hover .nav__logo-img {
+  box-shadow: 0 8px 24px -4px var(--logo-glow), 0 0 0 1px rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
 }
-.site-header.nav--over-light .nav__logo .nav__logo-img[src$=".svg"] {
-  filter: drop-shadow(0 0 6px rgba(217, 96, 14, 0.22));
-}
-.nav__logo:hover .nav__logo-img[src$=".svg"] {
-  filter: drop-shadow(0 0 12px var(--logo-glow));
-}
+.footer__brand .nav__logo-img { height: 64px; }
 
 /* ============================================================
    Hero watermark — large faded mark behind hero text

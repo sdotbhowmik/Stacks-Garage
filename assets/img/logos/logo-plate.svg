@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 180" class="logo-plate-svg" role="img" aria-label="StackGarage">
+  <!-- Primary lockup: royal-blue nameplate, white inset frame, stacked wordmark.
+       Self-contained (opaque background) so it reads identically over dark
+       and light sections — no light/dark swap needed. -->
+  <rect width="360" height="180" fill="#0038A8" />
+  <rect x="12" y="12" width="336" height="156" fill="none" stroke="#FFFFFF" stroke-width="4" />
+
+  <text x="332" y="108" fill="#FFFFFF" font-family="'Arial Black', Arial, Impact, sans-serif" font-weight="900" font-size="42" letter-spacing="3" text-anchor="end">
+    STACKS
+  </text>
+  <text x="332" y="150" fill="#FFFFFF" font-family="'Arial Black', Arial, Impact, sans-serif" font-weight="900" font-size="38" letter-spacing="3" text-anchor="end">
+    GARAGE
+  </text>
+</svg>
