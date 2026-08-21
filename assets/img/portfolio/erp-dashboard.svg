@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="320" viewBox="0 0 400 320">
   <defs>
     <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#3a0a3a"/>
+      <stop offset="0%" stop-color="#1f3f57"/>
       <stop offset="100%" stop-color="#0b0e11"/>
     </linearGradient>
   </defs>
   <rect width="400" height="320" fill="url(#bg4)"/>
   <g transform="translate(200,140)">
-    <rect x="-120" y="-30" width="100" height="60" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.4"/>
-    <rect x="-100" y="-10" width="60" height="6" rx="3" fill="#ff7a29" opacity="0.6"/>
-    <rect x="-100" y="4" width="40" height="3" rx="2" fill="#ff7a29" opacity="0.4"/>
-    <rect x="20" y="-30" width="100" height="60" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.4"/>
-    <rect x="40" y="-10" width="60" height="6" rx="3" fill="#ff7a29" opacity="0.6"/>
-    <rect x="40" y="4" width="40" height="3" rx="2" fill="#ff7a29" opacity="0.4"/>
-    <path d="M -20 -10 L 20 -10 L 0 30 L -10 30 Z" fill="#ff7a29" opacity="0.6"/>
-    <rect x="-130" y="80" width="260" height="40" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.4"/>
-    <text x="0" y="105" text-anchor="middle" fill="#ff7a29" font-family="monospace" font-size="16" font-weight="bold">SYS://workflow.exe</text>
+    <rect x="-120" y="-30" width="100" height="60" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.4"/>
+    <rect x="-100" y="-10" width="60" height="6" rx="3" fill="#4d8dff" opacity="0.6"/>
+    <rect x="-100" y="4" width="40" height="3" rx="2" fill="#4d8dff" opacity="0.4"/>
+    <rect x="20" y="-30" width="100" height="60" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.4"/>
+    <rect x="40" y="-10" width="60" height="6" rx="3" fill="#4d8dff" opacity="0.6"/>
+    <rect x="40" y="4" width="40" height="3" rx="2" fill="#4d8dff" opacity="0.4"/>
+    <path d="M -20 -10 L 20 -10 L 0 30 L -10 30 Z" fill="#4d8dff" opacity="0.6"/>
+    <rect x="-130" y="80" width="260" height="40" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.4"/>
+    <text x="0" y="105" text-anchor="middle" fill="#4d8dff" font-family="monospace" font-size="16" font-weight="bold">SYS://workflow.exe</text>
   </g>
 </svg>

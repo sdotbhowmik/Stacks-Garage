@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — animations.js
+   Stacks Garage — animations.js
    Counter animations, scroll reveals, intersection triggers
    ============================================================ */
 

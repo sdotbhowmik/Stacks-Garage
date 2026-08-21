@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — portfolio.js
+   Stacks Garage — portfolio.js
    Category filter for project grid
    ============================================================ */
 

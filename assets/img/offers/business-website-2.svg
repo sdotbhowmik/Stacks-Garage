@@ -7,41 +7,41 @@
   </defs>
   <rect width="400" height="320" fill="url(#bg-bw2)"/>
   <!-- Browser frame -->
-  <rect x="10" y="10" width="380" height="40" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
   <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
   <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
   <circle cx="64" cy="30" r="5" fill="#27c93f"/>
-  <rect x="90" y="22" width="240" height="16" rx="3" fill="#0b0e11" stroke="#ff7a29" stroke-opacity="0.2"/>
-  <text x="105" y="33" font-family="monospace" font-size="9" fill="#ff7a29" opacity="0.7">khulnaagro.com/services</text>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#0b0e11" stroke="#4d8dff" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#4d8dff" opacity="0.7">khulnaagro.com/services</text>
   <!-- Page title -->
   <text x="200" y="80" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff">Our Services</text>
   <!-- 4 cards 2x2 -->
   <g transform="translate(20,98)">
-    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
-    <circle cx="20" cy="22" r="10" fill="#ff7a29" fill-opacity="0.25" stroke="#ff7a29" stroke-opacity="0.6"/>
+    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
+    <circle cx="20" cy="22" r="10" fill="#4d8dff" fill-opacity="0.25" stroke="#4d8dff" stroke-opacity="0.6"/>
     <text x="38" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Seeds</text>
     <text x="38" y="36" font-family="sans-serif" font-size="8" fill="#cbd5e1">Hybrid and OP varieties</text>
-    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#ff7a29">→ Learn more</text>
+    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#4d8dff">→ Learn more</text>
   </g>
   <g transform="translate(210,98)">
-    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
-    <circle cx="20" cy="22" r="10" fill="#ff7a29" fill-opacity="0.25" stroke="#ff7a29" stroke-opacity="0.6"/>
+    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
+    <circle cx="20" cy="22" r="10" fill="#4d8dff" fill-opacity="0.25" stroke="#4d8dff" stroke-opacity="0.6"/>
     <text x="38" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Fertilizer</text>
     <text x="38" y="36" font-family="sans-serif" font-size="8" fill="#cbd5e1">Balanced NPK blends</text>
-    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#ff7a29">→ Learn more</text>
+    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#4d8dff">→ Learn more</text>
   </g>
   <g transform="translate(20,184)">
-    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
-    <circle cx="20" cy="22" r="10" fill="#ff7a29" fill-opacity="0.25" stroke="#ff7a29" stroke-opacity="0.6"/>
+    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
+    <circle cx="20" cy="22" r="10" fill="#4d8dff" fill-opacity="0.25" stroke="#4d8dff" stroke-opacity="0.6"/>
     <text x="38" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Irrigation</text>
     <text x="38" y="36" font-family="sans-serif" font-size="8" fill="#cbd5e1">Solar pump systems</text>
-    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#ff7a29">→ Learn more</text>
+    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#4d8dff">→ Learn more</text>
   </g>
   <g transform="translate(210,184)">
-    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
-    <circle cx="20" cy="22" r="10" fill="#ff7a29" fill-opacity="0.25" stroke="#ff7a29" stroke-opacity="0.6"/>
+    <rect width="170" height="76" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
+    <circle cx="20" cy="22" r="10" fill="#4d8dff" fill-opacity="0.25" stroke="#4d8dff" stroke-opacity="0.6"/>
     <text x="38" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="#ffffff">Training</text>
     <text x="38" y="36" font-family="sans-serif" font-size="8" fill="#cbd5e1">Modern farming methods</text>
-    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#ff7a29">→ Learn more</text>
+    <text x="14" y="56" font-family="sans-serif" font-size="7" fill="#4d8dff">→ Learn more</text>
   </g>
 </svg>

@@ -11,9 +11,9 @@ Professional, multi-page website for **StackGarage**, a Bangladesh-based softwar
 
 - **Pages:** Home, Services, Portfolio, About, Pricing, Contact
 - **Languages:** English + Bengali (toggle in navbar, persisted in `localStorage`)
-- **Alternating theme:** Dark teal + Light teal sections alternate down every page (no toggle complexity, every section reads as fresh)
-- **Logo auto-swap:** `WhiteLogo.png` shows on dark sections, `blacklogo.png` on light — driven by IntersectionObserver
-- **Hero:** Futuristic orbitals, perspective grid, cityscape, floating tech icons, sci-fi chamfered CTA — refactored from the original `Programming Hero teal clone` sample
+- **Alternating theme:** Dark + Light royal-blue sections alternate down every page (no toggle complexity, every section reads as fresh)
+- **Logo:** Self-contained navy `logo-plate.svg` reads identically on dark and light sections — no swap needed
+- **Hero:** Futuristic orbitals, perspective grid, cityscape, floating tech icons, sci-fi chamfered CTA
 - **Typewriter** cycles through phrases defined in `lang/*.json`
 - **Animations:** Orbital spins, parallax floaters, scroll-reveal, count-up counters, marquee tech stack, testimonial carousel, FAQ accordion
 - **Responsive:** Mobile-first with breakpoints at 1280 / 1024 / 900 / 640 / 380
@@ -32,7 +32,7 @@ StackGarage/
 │                           #        testimonials, CTA, FAQ
 ├── services.html           # All 6 services detailed with feature lists
 ├── portfolio.html          # 9 project grid with category filter
-├── about.html              # Story, team (4), mission/vision/values
+├── about.html              # Story, team (3), mission/vision/values
 ├── pricing.html            # Hosting plans + project starting prices + FAQ
 ├── contact.html            # Form (with validation) + contact info + map
 │
@@ -59,10 +59,11 @@ StackGarage/
 │   └── bn.json             # All Bengali copy, mirrored structure
 │
 └── assets/
-    ├── img/
-    │   ├── logos/          # blacklogo.png, WhiteLogo.png (your originals)
-    │   └── portfolio/      # 9 SVG project placeholders (vector, theme-matched)
-    └── icons/              # Reserved for any extracted SVG icons
+    └── img/
+        ├── logos/          # logo-plate.svg, logo-mark.svg (live) + legacy/ (retired PNGs)
+        ├── portfolio/      # 9 SVG project mockups, recolored to the brand palette
+        ├── offers/         # 12 SVG offer-package mockups, recolored to the brand palette
+        └── team/           # Team headshots (.jpg)
 ```
 
 ---
@@ -100,33 +101,26 @@ Every translatable string in HTML uses `data-i18n="path.to.string"` (text) or `d
 ## 🎨 Design System
 
 ### Colors (defined in `css/base.css :root`)
-| Token              | Dark value | Light value (in `.section-light`) |
-| ------------------ | ---------- | --------------------------------- |
-| `--bg`             | `#010b0f`  | `#f8fafc`                         |
-| `--text`           | `#ffffff`  | `#0f172a`                         |
-| `--accent`         | `#00f2fe`  | `#0d9488`                         |
-| `--border`         | rgba teal  | rgba teal                         |
+| Token       | Dark value | Light value (in `.section-light`) |
+| ----------- | ---------- | ---------------------------------- |
+| `--bg`      | `#05080d`  | `#eef2f8`                          |
+| `--text`    | `#f5f7fb`  | `#0b1626`                          |
+| `--accent`  | `#2f7dff`  | `#0038a8`                          |
+| `--border`  | `rgba(76, 134, 176, 0.22)` | `rgba(0, 56, 168, 0.16)` |
+
+Brand blue palette also includes `--signal-500: #0038a8`, `--torque-400: #4d8dff`, and the `--blueprint-*` gray-blue scale — used throughout the portfolio/offer mockup SVGs and UI accents.
 
 ### Typography
-- **Inter** — body
-- **Space Grotesk** — display/headings
-- **Noto Sans Bengali** — body in Bengali mode
+- **Inter** — body (`--font-sans`)
+- **Archivo** — display/headings (`--font-display`)
+- **IBM Plex Mono** — code/stat figures (`--font-mono`)
+- **Noto Sans Bengali** — body in Bengali mode (`--font-bn`)
 
 ### Logo rules
-- **`WhiteLogo.svg`** — 175×80 (Layout A), pure SVG vector. Use on dark backgrounds (default body, `.section--dark`, `.site-footer`)
-- **`blacklogo.svg`** — 175×80 (Layout A), pure SVG vector with teal-dark palette. Use on light backgrounds (`.section-light`)
-- **`StackGarage-mark.svg`** — 200×200 pure vector mark. Used as favicon + hero watermark
-- Composition: pentagon-star network mark on the left + **"STACKS GARAGE"** wordmark on the right (Space Grotesk Bold, drawn via SVG `<text>` so it scales without artifacts)
-- Wordmark uses `textLength` + `lengthAdjust="spacingAndGlyphs"` to lock consistent width across renderers
-- Original PNGs preserved in `assets/img/logos/legacy/` for fallback / brand reference
-- Logos auto-swap — `js/menu.js:initLogoSwap` watches section classes via IntersectionObserver
-- All three logos animate:
-  - One-shot hero-load line draw + node scale-in (handled inside each SVG)
-  - Idle 4.4s breathing pulse on network nodes
-  - Hover via `:hover` in SVG `<style>` brightens nearest nodes
-  - `js/logo.js` re-triggers hero draw when the tab regains visibility
-- All animation is wrapped in `@media (prefers-reduced-motion: reduce)`
-- If Space Grotesk font fails to load, fallback to `system-ui → -apple-system → Inter` — still readable
+- **`logo-plate.svg`** — 360×180 viewBox, self-contained opaque navy (`#0038A8`) plate with a white inset frame and the "STACKS / GARAGE" wordmark. Reads identically on dark and light sections, so it needs **no** light/dark swap — used as-is in every page header and footer.
+- **`logo-mark.svg`** — used as the favicon and the faint hero watermark.
+- Original pre-rebrand PNGs (`WhiteLogo.png`, `blacklogo.png`) are kept in `assets/img/logos/legacy/` for historical reference only — they are not referenced by any page.
+- On mobile, `.nav__logo-img` scales down at the `900px` / `640px` / `380px` breakpoints (`css/responsive.css`) to stay clear of the language toggle and burger menu inside the shrinking header.
 
 ---
 
@@ -150,13 +144,13 @@ Every translatable string in HTML uses `data-i18n="path.to.string"` (text) or `d
 - Hosting plans → `pricing.html` (`.plan` cards) **and** `lang/en.json` → `pricing.plans`
 
 ### Team
-- `about.html` → `#team .team__card` (4 cards by default)
+- `about.html` → `#team .team__card` (3 cards by default)
 
 ---
 
 ## 🖼 Replacing placeholder SVGs
 
-All 9 project thumbnails in `assets/img/portfolio/*.svg` are vector placeholders matching the teal theme. To use real screenshots:
+All 9 project thumbnails in `assets/img/portfolio/*.svg` (and the 12 offer-package mockups in `assets/img/offers/*.svg`) are vector placeholders, recolored to the brand blue palette. To use real screenshots:
 1. Export PNG/JPG screenshots from your projects (recommended 1200×800, < 200 KB each)
 2. Replace the file at the same path with the same name (or edit `src=` in `index.html` / `portfolio.html`)
 3. Keep `loading="lazy"` attribute for performance
@@ -185,9 +179,9 @@ Uses: CSS Grid, custom properties, IntersectionObserver, scroll-snap, clip-path.
 
 ## 📝 License & Credits
 
-- Brand assets (`blacklogo.png`, `WhiteLogo.png`): owned by StackGarage
+- Brand assets (`logo-plate.svg`, `logo-mark.svg`, legacy `blacklogo.png`/`WhiteLogo.png`): owned by StackGarage
 - Icons: Inline SVG, original
-- Fonts: [Inter](https://rsms.me/inter/) (OFL), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (OFL), [Noto Sans Bengali](https://fonts.google.com/noto/specimen/Noto+Sans+Bengali) (OFL)
+- Fonts: [Inter](https://rsms.me/inter/) (OFL), [Archivo](https://fonts.google.com/specimen/Archivo) (OFL), [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) (OFL), [Noto Sans Bengali](https://fonts.google.com/noto/specimen/Noto+Sans+Bengali) (OFL)
 - Map embed: OpenStreetMap (ODbL)
 
 ---

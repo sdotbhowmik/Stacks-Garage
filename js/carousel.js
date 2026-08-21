@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — carousel.js
+   Stacks Garage — carousel.js
    Testimonial carousel (CSS scroll-snap, JS arrow navigation)
    ============================================================ */
 

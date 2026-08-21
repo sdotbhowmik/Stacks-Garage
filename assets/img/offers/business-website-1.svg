@@ -7,38 +7,38 @@
   </defs>
   <rect width="400" height="320" fill="url(#bg-bw)"/>
   <!-- Browser frame -->
-  <rect x="10" y="10" width="380" height="40" rx="6" fill="#1f3f57" stroke="#ff7a29" stroke-opacity="0.3"/>
+  <rect x="10" y="10" width="380" height="40" rx="6" fill="#1f3f57" stroke="#4d8dff" stroke-opacity="0.3"/>
   <circle cx="28" cy="30" r="5" fill="#ff5f56"/>
   <circle cx="46" cy="30" r="5" fill="#ffbd2e"/>
   <circle cx="64" cy="30" r="5" fill="#27c93f"/>
-  <rect x="90" y="22" width="240" height="16" rx="3" fill="#0b0e11" stroke="#ff7a29" stroke-opacity="0.2"/>
-  <text x="105" y="33" font-family="monospace" font-size="9" fill="#ff7a29" opacity="0.7">khulnaagro.com</text>
+  <rect x="90" y="22" width="240" height="16" rx="3" fill="#0b0e11" stroke="#4d8dff" stroke-opacity="0.2"/>
+  <text x="105" y="33" font-family="monospace" font-size="9" fill="#4d8dff" opacity="0.7">khulnaagro.com</text>
   <!-- Nav -->
   <rect x="10" y="50" width="380" height="32" fill="#1f3f57"/>
-  <text x="20" y="71" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ff7a29">Khulna Agro</text>
+  <text x="20" y="71" font-family="sans-serif" font-size="13" font-weight="bold" fill="#4d8dff">Khulna Agro</text>
   <text x="290" y="71" font-family="sans-serif" font-size="9" fill="#cbd5e1">About</text>
   <text x="335" y="71" font-family="sans-serif" font-size="9" fill="#cbd5e1">Services</text>
   <text x="385" y="71" font-family="sans-serif" font-size="9" fill="#cbd5e1">Contact</text>
   <!-- Hero section -->
-  <rect x="10" y="82" width="380" height="100" fill="#ff7a29" fill-opacity="0.12"/>
+  <rect x="10" y="82" width="380" height="100" fill="#4d8dff" fill-opacity="0.12"/>
   <text x="30" y="118" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff">Premium agricultural products</text>
   <text x="30" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff">for Bangladesh's farms</text>
   <text x="30" y="158" font-family="sans-serif" font-size="9" fill="#cbd5e1">Quality inputs • Field-tested • Delivered nationwide</text>
-  <rect x="30" y="166" width="80" height="14" rx="7" fill="#ff7a29"/>
+  <rect x="30" y="166" width="80" height="14" rx="7" fill="#4d8dff"/>
   <text x="70" y="176" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="bold" fill="#0b0e11">Learn more</text>
   <!-- Stats -->
   <g transform="translate(10,196)">
-    <rect width="380" height="50" rx="4" fill="#0b0e11" stroke="#ff7a29" stroke-opacity="0.2"/>
+    <rect width="380" height="50" rx="4" fill="#0b0e11" stroke="#4d8dff" stroke-opacity="0.2"/>
     <g transform="translate(0,0)">
-      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ff7a29">25+</text>
+      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4d8dff">25+</text>
       <text x="50" y="38" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#cbd5e1">Years</text>
     </g>
     <g transform="translate(110,0)">
-      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ff7a29">12k</text>
+      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4d8dff">12k</text>
       <text x="50" y="38" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#cbd5e1">Farmers</text>
     </g>
     <g transform="translate(220,0)">
-      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ff7a29">40+</text>
+      <text x="50" y="22" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#4d8dff">40+</text>
       <text x="50" y="38" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#cbd5e1">Products</text>
     </g>
   </g>

@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — demo-modal.js
+   Stacks Garage — demo-modal.js
    Opens a 3-image mockup gallery when "View Demo" is clicked
    - ESC closes
    - Click-outside closes

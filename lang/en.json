@@ -1,6 +1,6 @@
 {
   "meta": {
-    "site_name": "StackGarage",
+    "site_name": "Stacks Garage",
     "tagline": "Build Solutions. Stack Success."
   },
   "nav": {
@@ -15,13 +15,13 @@
   "hero": {
     "typewriter_phrases": ["We Build.", "We Host.", "We Scale.", "Your Vision."],
     "headline_suffix": "Build Solutions. Stack Success.",
-    "subheadline": "Bangladesh-based software firm delivering web apps, mobile apps, hosting, and domain solutions — built with precision, deployed with reliability.",
+    "subheadline": "A full-stack software team delivering web apps, mobile apps, hosting, and domain solutions for businesses worldwide — built with precision in Dhaka, deployed with reliability everywhere.",
     "cta_primary": "Get Started",
     "cta_secondary": "Our Services",
     "scroll_hint": "Scroll"
   },
   "trust": {
-    "heading": "Trusted by growing businesses across Bangladesh"
+    "heading": "Trusted by growing businesses worldwide"
   },
   "services": {
     "eyebrow": "What we offer",
@@ -61,8 +61,8 @@
     }
   },
   "why": {
-    "eyebrow": "Why StackGarage",
-    "heading": "Built for serious businesses, priced for Bangladesh",
+    "eyebrow": "Why Stacks Garage",
+    "heading": "Built for serious businesses, priced right",
     "subheading": "We combine global engineering standards with local understanding and unbeatable value.",
     "features": {
       "experience": { "title": "Experienced Engineers", "text": "50+ years of combined dev experience across modern stacks." },
@@ -90,7 +90,7 @@
   "portfolio": {
     "eyebrow": "Selected work",
     "heading": "Projects we're proud of",
-    "subheading": "A glimpse into apps, sites and platforms shipped for clients across Bangladesh.",
+    "subheading": "A glimpse into apps, sites and platforms shipped for clients across Bangladesh and beyond.",
     "filters": ["All", "Web", "Apps", "Hosting", "Custom Software"],
     "view_all": "View full portfolio"
   },
@@ -224,7 +224,7 @@
   },
   "team": {
     "eyebrow": "The team",
-    "heading": "The people behind StackGarage",
+    "heading": "The people behind Stacks Garage",
     "subheading": "Engineers, designers and strategists who care about your success.",
     "members": [
       { "name": "Tawhidur Rahman",          "role": "Director", "initials": "TR" },
@@ -238,7 +238,7 @@
     "prev": "Previous",
     "next": "Next",
     "items": [
-      { "name": "Rahim Ahmed",       "role": "Founder, DhakaKart",        "text": "StackGarage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.", "initials": "RA" },
+      { "name": "Rahim Ahmed",       "role": "Founder, DhakaKart",        "text": "Stacks Garage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.", "initials": "RA" },
       { "name": "Tania Akter",       "role": "Director, Chittagong Logistics", "text": "Their hosting has had zero downtime in 14 months. The local 24/7 support has saved us more than once.", "initials": "TA" },
       { "name": "Mohammad Imran",    "role": "CTO, FinSolve BD",          "text": "They custom-built our ERP from scratch and trained the entire team. ROI was visible within two months.", "initials": "MI" },
       { "name": "Nusrat Jahan",      "role": "Marketing Lead, EduPath",   "text": "UI/UX work was outstanding. Our app is finally something my students actually want to open every day.", "initials": "NJ" },
@@ -297,7 +297,7 @@
     "button": "Book a Free Consultation"
   },
   "footer": {
-    "tagline": "Bangladesh's software partner for web, mobile, hosting and beyond.",
+    "tagline": "Your software partner for web, mobile, hosting and beyond — headquartered in Dhaka.",
     "company_heading": "Company",
     "company_links": { "about": "About", "team": "Team", "careers": "Careers", "blog": "Blog" },
     "services_heading": "Services",
@@ -306,7 +306,7 @@
     "contact_text": "Subscribe for product updates and engineering insights from our team.",
     "newsletter_placeholder": "your@email.com",
     "newsletter_btn": "Subscribe",
-    "copyright": "© 2025 StackGarage. All rights reserved.",
+    "copyright": "© 2025 Stacks Garage. All rights reserved.",
     "built": "Built with care in Dhaka, Bangladesh."
   }
 }

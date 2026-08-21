@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — i18n.js
+   Stacks Garage — i18n.js
    English + Bengali language toggle with localStorage persistence
    ============================================================ */
 

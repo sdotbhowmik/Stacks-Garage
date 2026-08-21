@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — pricing-calculator.js
+   Stacks Garage — pricing-calculator.js
    Live hosting-cost estimator on pricing.html
    ============================================================ */
 

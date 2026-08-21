@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — menu.js
+   Stacks Garage — menu.js
    Mobile drawer + theme-aware logo swap
    ============================================================ */
 
