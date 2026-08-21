@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — form-validation.js
+   Stacks Garage — form-validation.js
    Client-side validation + success toast (no backend)
    ============================================================ */
 

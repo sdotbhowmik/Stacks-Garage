@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — responsive.css
+   Stacks Garage — responsive.css
    Breakpoints: 1024, 900, 640, 380
    ============================================================ */
 
@@ -43,6 +43,7 @@ html { overflow-x: hidden; }
 
   .nav__menu { display: none; }
   .nav__burger { display: inline-flex; }
+  .nav__logo-img { height: 52px; }
 
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-2 { grid-template-columns: 1fr; }
@@ -67,6 +68,9 @@ html { overflow-x: hidden; }
   .container { padding-inline: 18px; }
 
   :root { --nav-h: 80px; }
+
+  .nav__logo-img { height: 44px; }
+  .nav__actions .btn--primary { display: none; }
 
   .section { padding: 60px 0; }
 
@@ -124,7 +128,7 @@ html { overflow-x: hidden; }
 
 /* ---- Very small phones ---- */
 @media (max-width: 380px) {
-  .nav__logo-img { height: 48px; }
+  .nav__logo-img { height: 38px; }
 }
 
 /* ---- Print ---- */

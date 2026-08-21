@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — service-quiz.js
+   Stacks Garage — service-quiz.js
    2-question service finder on services.html
    ============================================================ */
 

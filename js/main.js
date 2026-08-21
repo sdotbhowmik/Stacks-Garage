@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — main.js
+   Stacks Garage — main.js
    Entry point — boots everything on every page
    ============================================================ */
 

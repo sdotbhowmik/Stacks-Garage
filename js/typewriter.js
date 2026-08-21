@@ -1,5 +1,5 @@
 /* ============================================================
-   StackGarage — typewriter.js
+   Stacks Garage — typewriter.js
    Cycles through phrases defined in lang/<lang>.json
    ============================================================ */
 
