@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="StackGarage pricing — hosting and maintenance plans starting at ৳5,000/month. Free .com domain, free SSL, 24/7 support.">
   <title>Pricing | StackGarage</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/logos/StackGarage-mark.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logos/logo-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,8 +20,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="index.html" class="nav__logo" aria-label="StackGarage home">
-        <img data-logo="white" src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img">
-        <img data-logo="black" src="assets/img/logos/blacklogo.svg" alt="StackGarage" class="nav__logo-img" style="display:none">
+        <img src="assets/img/logos/logo-plate.svg" alt="StackGarage" class="nav__logo-img">
       </a>
       <nav class="nav__menu" aria-label="Primary">
         <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
@@ -122,6 +121,70 @@
     </div>
   </section>
 
+  <section class="section section-light" aria-label="Hosting cost calculator">
+    <div class="container container--narrow">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Build your plan</span>
+        <h2>Not sure which tier? Estimate it.</h2>
+        <p>Drag the sliders to match your needs — the price updates instantly.</p>
+      </div>
+
+      <div class="plan-builder reveal" id="planBuilder">
+        <div class="plan-builder__controls">
+          <div class="pb-field">
+            <div class="pb-field__head">
+              <label for="pbSites">Websites hosted</label>
+              <span class="pb-field__value" id="pbSitesValue">1</span>
+            </div>
+            <input type="range" id="pbSites" min="1" max="10" step="1" value="1">
+          </div>
+
+          <div class="pb-field">
+            <div class="pb-field__head">
+              <label for="pbStorage">Storage</label>
+              <span class="pb-field__value" id="pbStorageValue">5 GB</span>
+            </div>
+            <input type="range" id="pbStorage" min="5" max="100" step="5" value="5">
+          </div>
+
+          <div class="pb-field">
+            <div class="pb-field__head"><label>Support level</label></div>
+            <div class="pb-toggle" role="group" aria-label="Support level" data-field="support">
+              <button type="button" class="pb-toggle__btn is-active" data-value="0">Standard</button>
+              <button type="button" class="pb-toggle__btn" data-value="2000">Priority 24/7 <span>+৳2,000</span></button>
+            </div>
+          </div>
+
+          <div class="pb-field">
+            <div class="pb-field__head"><label>Backups</label></div>
+            <div class="pb-toggle" role="group" aria-label="Backup frequency" data-field="backup">
+              <button type="button" class="pb-toggle__btn is-active" data-value="0">Weekly</button>
+              <button type="button" class="pb-toggle__btn" data-value="800">Daily <span>+৳800</span></button>
+            </div>
+          </div>
+
+          <div class="pb-field">
+            <div class="pb-field__head"><label>Billing cycle</label></div>
+            <div class="pb-toggle" role="group" aria-label="Billing cycle" data-field="billing">
+              <button type="button" class="pb-toggle__btn is-active" data-value="monthly">Monthly</button>
+              <button type="button" class="pb-toggle__btn" data-value="yearly">Yearly <span>save 15%</span></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-builder__summary">
+          <div class="pb-summary__label">Estimated cost</div>
+          <div class="pb-summary__price"><span id="pbTotal">৳4,000</span><small id="pbPer">/month</small></div>
+          <div class="pb-summary__note" id="pbYearlyNote"></div>
+          <ul class="pb-summary__breakdown" id="pbBreakdown">
+            <li><span>Base hosting (1 site, 5 GB)</span><span>৳4,000</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn--primary" style="width:100%;justify-content:center">Get This Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section--dark" aria-label="Project pricing">
     <div class="container">
       <div class="section-heading reveal" style="margin-bottom:2rem">
@@ -195,7 +258,7 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col footer__brand">
-          <a href="index.html" class="nav__logo"><img src="assets/img/logos/WhiteLogo.svg" alt="StackGarage" class="nav__logo-img"></a>
+          <a href="index.html" class="nav__logo"><img src="assets/img/logos/logo-plate.svg" alt="StackGarage" class="nav__logo-img"></a>
           <p>Bangladesh's software partner for web, mobile, hosting and beyond.</p>
         </div>
         <div class="footer__col">
@@ -237,7 +300,7 @@
   <script src="js/menu.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/faq.js"></script>
-  <script src="js/logo.js"></script>
+  <script src="js/pricing-calculator.js"></script>
   <script src="js/main.js"></script>
   <script src="js/form-validation.js"></script>
 </body>

@@ -36,48 +36,28 @@
     });
   }
 
-  /* ---------- Theme-aware logo swap ---------- */
-  function initLogoSwap() {
-    const logoWhite = document.querySelector('[data-logo="white"]');
-    const logoBlack = document.querySelector('[data-logo="black"]');
-    if (!logoWhite && !logoBlack) return;
-
+  /* ---------- Header "over light section" detection ----------
+     The logo is a self-contained navy plate (opaque background), so it no
+     longer needs a light/dark swap — but the header itself still needs to
+     know when it's riding over a light section to adjust link colors. */
+  function initNavOverLight() {
     const sections = document.querySelectorAll('.section-dark, .section-light, .site-header, .site-footer, .page-hero, .hero');
-    if (!sections.length || !('IntersectionObserver' in window)) {
-      // fallback: ensure one logo visible based on body bg
-      return;
-    }
+    const nav = document.querySelector('.site-header');
+    if (!sections.length || !nav || !('IntersectionObserver' in window)) return;
 
-    const updateLogos = () => {
-      // default to dark (current visible section)
-      let bgIsLight = false;
+    const update = () => {
       const visible = [...sections].find((s) => {
         const r = s.getBoundingClientRect();
         return r.top <= 100 && r.bottom > 100;
       });
-      if (visible && visible.classList.contains('section-light')) bgIsLight = true;
-      const nav = document.querySelector('.site-header');
-      if (nav) {
-        const r = nav.getBoundingClientRect();
-        const overLight = visible && visible.classList.contains('section-light');
-        // Header is transparent over hero/dark, glass over light
-        if (overLight) nav.classList.add('nav--over-light');
-        else nav.classList.remove('nav--over-light');
-      }
-
-      if (bgIsLight) {
-        if (logoBlack) logoBlack.style.display = 'inline-block';
-        if (logoWhite) logoWhite.style.display = 'none';
-      } else {
-        if (logoWhite) logoWhite.style.display = 'inline-block';
-        if (logoBlack) logoBlack.style.display = 'none';
-      }
+      const overLight = !!(visible && visible.classList.contains('section-light'));
+      nav.classList.toggle('nav--over-light', overLight);
     };
 
-    const io = new IntersectionObserver(updateLogos, { threshold: [0, 0.1, 0.5] });
+    const io = new IntersectionObserver(update, { threshold: [0, 0.1, 0.5] });
     sections.forEach((s) => io.observe(s));
-    window.addEventListener('scroll', updateLogos, { passive: true });
-    updateLogos();
+    window.addEventListener('scroll', update, { passive: true });
+    update();
   }
 
   /* ---------- Scroll spy for nav links ---------- */
@@ -112,7 +92,7 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     initBurger();
-    initLogoSwap();
+    initNavOverLight();
     initScrollSpy();
     initHeaderScroll();
   });
