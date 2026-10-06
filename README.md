@@ -31,7 +31,7 @@ StackGarage/
 │                           #        process, portfolio preview, stats,
 │                           #        testimonials, CTA, FAQ
 ├── services.html           # All 6 services detailed with feature lists
-├── portfolio.html          # 14 project grid with category filter
+├── portfolio.html          # 16 project grid with category filter
 ├── about.html              # Story, team (3), mission/vision/values
 ├── pricing.html            # Hosting plans + project starting prices + FAQ
 ├── contact.html            # Form (with validation) + contact info + map
@@ -61,7 +61,7 @@ StackGarage/
 └── assets/
     └── img/
         ├── logos/          # logo-plate.svg, logo-mark.svg (live) + legacy/ (retired PNGs)
-        ├── portfolio/      # 5 real site screenshots (PNG) + 9 SVG demo mockups, recolored to the brand palette
+        ├── portfolio/      # 7 real site screenshots (PNG) + 9 SVG demo mockups, recolored to the brand palette
         ├── offers/         # 12 SVG offer-package mockups, recolored to the brand palette
         └── team/           # Team headshots (.jpg)
 ```
@@ -150,7 +150,7 @@ Brand blue palette also includes `--signal-500: #0038a8`, `--torque-400: #4d8dff
 
 ## 🖼 Project thumbnails
 
-Real screenshots of live projects (HutGhor, Subrata.tech, CAF PC POINT, Corsi LMS, CAF Soft) live in `assets/img/portfolio/*.png` (captured 1200×900). The 9 demo project thumbnails in `assets/img/portfolio/*.svg` (and the 12 offer-package mockups in `assets/img/offers/*.svg`) are vector placeholders, recolored to the brand blue palette. To refresh or add screenshots:
+Real screenshots of live projects (HutGhor, Subrata.tech, CAF PC POINT, Corsi LMS, CAF Soft, Apparel Elegance, Extension Lab) live in `assets/img/portfolio/*.png` (captured 1200×900). The 9 demo project thumbnails in `assets/img/portfolio/*.svg` (and the 12 offer-package mockups in `assets/img/offers/*.svg`) are vector placeholders, recolored to the brand blue palette. To refresh or add screenshots:
 1. Capture a 1200×900 PNG of the site (headless Chrome works well: `chrome --headless=new --window-size=1200,900 --screenshot=out.png <url>`)
 2. Save it in `assets/img/portfolio/` and point the card's `src=` in `index.html` / `portfolio.html` at it
 3. Keep `loading="lazy"` attribute for performance
