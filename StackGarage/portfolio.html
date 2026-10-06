@@ -3,18 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stacks Garage portfolio — selected web, app, hosting and custom software projects delivered for clients in Bangladesh and beyond.">
-  <meta property="og:title" content="Portfolio | Stacks Garage">
-  <meta property="og:description" content="120+ projects, 14 industries — a look at the apps, sites and platforms we've shipped for clients in Bangladesh and beyond.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stacksgarage.com/portfolio.html">
-  <meta name="theme-color" content="#0038a8">
-  <link rel="canonical" href="https://stacksgarage.com/portfolio.html">
-  <title>Portfolio | Stacks Garage</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/logos/logo-mark.svg">
+  <meta name="description" content="StackGarage portfolio — selected web, app, hosting and custom software projects delivered for clients in Bangladesh.">
+  <title>Portfolio | StackGarage</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23010b0f'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='%2300f2fe' font-family='sans-serif' font-size='40' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
@@ -25,8 +19,9 @@
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav__logo" aria-label="Stacks Garage home">
-        <img src="assets/img/logos/logo-plate.svg" alt="Stacks Garage" class="nav__logo-img">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.png" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.png" alt="StackGarage" class="nav__logo-img" style="display:none">
       </a>
       <nav class="nav__menu" aria-label="Primary">
         <a href="index.html" class="nav__link" data-i18n="nav.home">Home</a>
@@ -77,51 +72,10 @@
       </div>
 
       <div class="portfolio-grid">
-        <a class="portfolio-card reveal" data-category="web" href="https://www.hutghor.com" target="_blank" rel="noopener">
-          <img src="assets/img/portfolio/hutghor.png" alt="HutGhor e-commerce store" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>HutGhor</h4><span>E-commerce Store</span>
-            <span class="portfolio-card__metric">Live · www.hutghor.com</span>
-            <div class="tags"><span class="tag">E-commerce</span><span class="tag">Fashion</span><span class="tag">Responsive</span></div>
-          </div>
-        </a>
-        <a class="portfolio-card reveal reveal--delay-1" data-category="web" href="https://www.subrata.tech" target="_blank" rel="noopener">
-          <img src="assets/img/portfolio/subrata-tech.png" alt="Subrata.tech developer portfolio" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>Subrata.tech</h4><span>Developer Portfolio</span>
-            <span class="portfolio-card__metric">15+ Yrs Experience</span>
-            <div class="tags"><span class="tag">Portfolio</span><span class="tag">Frontend</span><span class="tag">Responsive</span></div>
-          </div>
-        </a>
-        <a class="portfolio-card reveal reveal--delay-2" data-category="web" href="https://www.cafpcpoint.it" target="_blank" rel="noopener">
-          <img src="assets/img/portfolio/cafpcpoint.png" alt="CAF PC POINT agency website" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>CAF PC POINT</h4><span>Agency Website</span>
-            <span class="portfolio-card__metric">3 Languages · IT/EN/BN</span>
-            <div class="tags"><span class="tag">Corporate</span><span class="tag">Multilingual</span><span class="tag">Booking</span></div>
-          </div>
-        </a>
-        <a class="portfolio-card reveal" data-category="custom software" href="https://corsi.cafpcpoint.it" target="_blank" rel="noopener">
-          <img src="assets/img/portfolio/corsi-lms.png" alt="Corsi LMS learning platform" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>Corsi LMS</h4><span>Learning Platform</span>
-            <span class="portfolio-card__metric">500+ Enrolled Students</span>
-            <div class="tags"><span class="tag">LMS</span><span class="tag">E-learning</span><span class="tag">Courses</span></div>
-          </div>
-        </a>
-        <a class="portfolio-card reveal reveal--delay-1" data-category="custom software" href="https://soft.cafpcpoint.it" target="_blank" rel="noopener">
-          <img src="assets/img/portfolio/soft-portal.png" alt="CAF Soft custom software portal" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>CAF Soft</h4><span>Custom Software Portal</span>
-            <span class="portfolio-card__metric">Secure Client Portal</span>
-            <div class="tags"><span class="tag">CAF Management</span><span class="tag">Auth</span><span class="tag">Portal</span></div>
-          </div>
-        </a>
-        <article class="portfolio-card reveal reveal--delay-2" data-category="web">
+        <article class="portfolio-card reveal" data-category="web">
           <img src="assets/img/portfolio/ecommerce.svg" alt="DhakaKart" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>DhakaKart</h4><span>E-commerce Platform</span>
-            <span class="portfolio-card__metric">+62% Sales, Q1</span>
             <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">Postgres</span></div>
           </div>
         </article>
@@ -129,7 +83,6 @@
           <img src="assets/img/portfolio/mobile-app.svg" alt="EduPath" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>EduPath</h4><span>Learning App</span>
-            <span class="portfolio-card__metric">4.8★ App Rating</span>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
           </div>
         </article>
@@ -137,7 +90,6 @@
           <img src="assets/img/portfolio/cloud-hosting.svg" alt="CTG Logistics" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>CTG Logistics</h4><span>Multi-tenant Cloud</span>
-            <span class="portfolio-card__metric">0 Downtime / 14mo</span>
             <div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span></div>
           </div>
         </article>
@@ -145,7 +97,6 @@
           <img src="assets/img/portfolio/portfolio-site.svg" alt="Khulna Agro" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>Khulna Agro</h4><span>Corporate Website</span>
-            <span class="portfolio-card__metric">+3.1x Organic Traffic</span>
             <div class="tags"><span class="tag">WordPress</span><span class="tag">SEO</span></div>
           </div>
         </article>
@@ -153,7 +104,6 @@
           <img src="assets/img/portfolio/erp-dashboard.svg" alt="FinSolve ERP" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>FinSolve ERP</h4><span>Custom ERP</span>
-            <span class="portfolio-card__metric">ROI in 8 Weeks</span>
             <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
           </div>
         </article>
@@ -161,7 +111,6 @@
           <img src="assets/img/portfolio/edtech.svg" alt="SylhetBazar" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>SylhetBazar</h4><span>Delivery App</span>
-            <span class="portfolio-card__metric">12k+ Orders / mo</span>
             <div class="tags"><span class="tag">React Native</span><span class="tag">Maps</span></div>
           </div>
         </article>
@@ -169,7 +118,6 @@
           <img src="assets/img/portfolio/pos-system.svg" alt="POS System" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>ShopSync POS</h4><span>POS &amp; Inventory</span>
-            <span class="portfolio-card__metric">-35% Stock Errors</span>
             <div class="tags"><span class="tag">Laravel</span><span class="tag">Vue</span></div>
           </div>
         </article>
@@ -177,7 +125,6 @@
           <img src="assets/img/portfolio/mobile-app.svg" alt="RideShare BD" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>RideShare BD</h4><span>Ride-hailing App</span>
-            <span class="portfolio-card__metric">50k+ Rides Booked</span>
             <div class="tags"><span class="tag">Flutter</span><span class="tag">Maps API</span></div>
           </div>
         </article>
@@ -185,7 +132,6 @@
           <img src="assets/img/portfolio/agro-system.svg" alt="Khulna Agro Platform" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>Agro Manager</h4><span>Agriculture SaaS</span>
-            <span class="portfolio-card__metric">2,000+ Farmers Onboarded</span>
             <div class="tags"><span class="tag">Node.js</span><span class="tag">MongoDB</span></div>
           </div>
         </article>
@@ -209,8 +155,8 @@
     <div class="container">
       <div class="footer__grid">
         <div class="footer__col footer__brand">
-          <a href="index.html" class="nav__logo"><img src="assets/img/logos/logo-plate.svg" alt="Stacks Garage" class="nav__logo-img"></a>
-          <p>Your software partner for web, mobile, hosting and beyond — headquartered in Dhaka.</p>
+          <a href="index.html" class="nav__logo"><img src="assets/img/logos/WhiteLogo.png" alt="StackGarage" class="nav__logo-img"></a>
+          <p>Bangladesh's software partner for web, mobile, hosting and beyond.</p>
         </div>
         <div class="footer__col">
           <h4>Company</h4>
@@ -238,7 +184,7 @@
         </div>
       </div>
       <div class="footer__bottom">
-        <span>© 2025 Stacks Garage. All rights reserved.</span>
+        <span>© 2025 StackGarage. All rights reserved.</span>
         <span>Built with care in Dhaka, Bangladesh.</span>
       </div>
     </div>

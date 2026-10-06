@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stacks Garage — an international software development company headquartered in Dhaka, delivering web, app, hosting, and domain solutions for businesses worldwide.">
-  <meta name="keywords" content="software development company, web development, app development, hosting, domain registration, ERP, CRM, custom software, Dhaka Bangladesh">
-  <meta name="author" content="Stacks Garage">
-  <meta property="og:title" content="Stacks Garage — We Build. We Host. We Scale.">
-  <meta property="og:description" content="End-to-end software services for clients worldwide, engineered by our team in Dhaka.">
+  <meta name="description" content="StackGarage — Bangladesh-based software firm delivering web, app, hosting, and domain solutions for businesses across South Asia and beyond.">
+  <meta name="keywords" content="software firm Bangladesh, web development Dhaka, app development, hosting, domain, ERP, CRM, custom software">
+  <meta name="author" content="StackGarage">
+  <meta property="og:title" content="StackGarage — We Build. We Host. We Scale.">
+  <meta property="og:description" content="End-to-end software services from Dhaka, Bangladesh.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://stacksgarage.com/">
-  <meta name="theme-color" content="#0038a8">
-  <link rel="canonical" href="https://stacksgarage.com/">
-  <title>Stacks Garage | Build Solutions. Stack Success.</title>
-  <link rel="icon" type="image/svg+xml" href="assets/img/logos/logo-mark.svg">
+  <title>StackGarage | Your Career</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23010b0f'/%3E%3Ctext x='50' y='62' text-anchor='middle' fill='%2300f2fe' font-family='sans-serif' font-size='40' font-weight='bold'%3ES%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -30,8 +27,9 @@
   <!-- ============== HEADER ============== -->
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="nav__logo" aria-label="Stacks Garage home">
-        <img src="assets/img/logos/logo-plate.svg" alt="Stacks Garage" class="nav__logo-img">
+      <a href="index.html" class="nav__logo" aria-label="StackGarage home">
+        <img data-logo="white" src="assets/img/logos/WhiteLogo.png" alt="StackGarage" class="nav__logo-img">
+        <img data-logo="black" src="assets/img/logos/blacklogo.png" alt="StackGarage" class="nav__logo-img" style="display:none">
       </a>
 
       <nav class="nav__menu" aria-label="Primary">
@@ -67,30 +65,81 @@
 
   <!-- ============== HERO ============== -->
   <section id="hero" class="hero" aria-label="Hero">
-    <!-- Blueprint drafting-paper backdrop -->
-    <div class="hero__blueprint" aria-hidden="true"></div>
     <div class="hero-spotlight" aria-hidden="true"></div>
 
-    <!-- Faint network-mark watermark behind hero content -->
-    <img class="hero__watermark" src="assets/img/logos/logo-mark.svg" alt="" aria-hidden="true">
+    <!-- Orbitals (left + right) -->
+    <div class="hero__orbit" aria-hidden="true">
+      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-cw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-ccw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-cw-slow"
+        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 30deg, transparent 30deg 90deg, rgba(0,242,254,0.4) 90deg 120deg, transparent 120deg 180deg, rgba(0,242,254,0.4) 180deg 210deg, transparent 210deg 270deg, rgba(0,242,254,0.4) 270deg 300deg, transparent 300deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-ccw-slow"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
+    </div>
+    <div class="hero__orbit hero__orbit--right" aria-hidden="true">
+      <div class="hero__orbit-ring hero__orbit-ring--1 animate-spin-ccw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--2 animate-spin-cw"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--3 animate-spin-ccw-slow"
+        style="background: conic-gradient(from 0deg, rgba(0,242,254,0.4) 0 45deg, transparent 45deg 120deg, rgba(0,242,254,0.4) 120deg 165deg, transparent 165deg 200deg, rgba(0,242,254,0.4) 200deg 245deg, transparent 245deg 300deg, rgba(0,242,254,0.4) 300deg 345deg, transparent 345deg 360deg); -webkit-mask-image: radial-gradient(transparent 90%, black 91%); mask-image: radial-gradient(transparent 90%, black 91%);"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--4 animate-spin-cw-slow"></div>
+      <div class="hero__orbit-ring hero__orbit-ring--5"></div>
+    </div>
 
-    <!-- Dimension-line annotations -->
-    <div class="hero__dims" aria-hidden="true">
-      <span class="dim-line dim-line--h" style="top:22%;left:4%;width:12%"></span>
-      <span style="top:calc(22% - 18px);left:4%">WEB · APP · CLOUD</span>
-      <span class="dim-line dim-line--v" style="top:22%;left:4%;height:14%"></span>
-      <span class="dim-line dim-line--h" style="bottom:16%;right:5%;width:10%"></span>
-      <span style="bottom:calc(16% + 6px);right:5%">EST. DHAKA</span>
+    <!-- Floating tech icons -->
+    <div class="hero__floats" aria-hidden="true">
+      <svg class="float-icon animate-float" style="top:18%;left:14%;width:56px;height:56px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z" fill="rgba(0,242,254,.1)"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+      <svg class="float-icon animate-float-d" style="top:22%;right:18%;width:64px;height:64px;color:var(--accent);opacity:.75" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(30 12 12)" fill="rgba(0,242,254,.05)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(90 12 12)"/>
+        <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(150 12 12)"/>
+        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+      </svg>
+      <svg class="float-icon animate-float" style="bottom:32%;left:18%;width:48px;height:48px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 12c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
+        <path d="M4 18c2 0 3-4 6-4s4 4 6 4 3-4 6-4"/>
+      </svg>
+      <svg class="float-icon animate-float-d" style="bottom:24%;right:14%;width:56px;height:56px;color:var(--accent);opacity:.85" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="3" y="3" width="18" height="18" rx="3" fill="rgba(0,242,254,.1)"/>
+        <text x="12" y="16" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="currentColor" stroke="none">&lt;/&gt;</text>
+      </svg>
+    </div>
+
+    <!-- Floor + cityscape -->
+    <div class="floor-grid" aria-hidden="true"></div>
+    <div class="cityscape" aria-hidden="true">
+      <div class="building" style="height:60px"></div>
+      <div class="building" style="height:90px"></div>
+      <div class="building" style="height:40px"></div>
+      <div class="building" style="height:120px"></div>
+      <div class="building" style="height:70px"></div>
+      <div class="building" style="height:140px"></div>
+      <div class="building" style="height:50px"></div>
+      <div class="building" style="height:100px"></div>
+      <div class="building" style="height:80px"></div>
+      <div class="building" style="height:150px"></div>
+      <div class="building" style="height:60px"></div>
+      <div class="building" style="height:110px"></div>
+      <div class="building" style="height:40px"></div>
+      <div class="building" style="height:90px"></div>
+      <div class="building" style="height:70px"></div>
+      <div class="building" style="height:130px"></div>
+      <div class="building" style="height:50px"></div>
+      <div class="building" style="height:80px"></div>
+      <div class="building" style="height:110px"></div>
+      <div class="building" style="height:60px"></div>
     </div>
 
     <div class="hero__inner">
-      <span class="eyebrow stamp-in">Software • Hosting • Domains • Beyond</span>
+      <span class="eyebrow reveal">Software • Hosting • Domains • Beyond</span>
       <h1 class="reveal reveal--delay-1" style="margin-top:20px">
         <span id="typewriter-text" style="color:var(--accent)"></span><span class="cursor-blink" style="color:var(--accent)">_</span>
         <br>
-        <span style="font-size:0.6em" data-i18n="hero.headline_suffix">Build Solutions. Stack Success.</span>
+        <span style="font-size:0.6em" data-i18n="hero.headline_suffix">Your Digital Presence</span>
       </h1>
-      <p class="reveal reveal--delay-2" data-i18n="hero.subheadline">A full-stack software team delivering web apps, mobile apps, hosting, and domain solutions for businesses worldwide — built with precision in Dhaka, deployed with reliability everywhere.</p>
+      <p class="reveal reveal--delay-2" data-i18n="hero.subheadline">Bangladesh-based software firm delivering web apps, mobile apps, hosting, and domain solutions — built with precision, deployed with reliability.</p>
       <div class="hero__cta-row reveal reveal--delay-3">
         <a href="contact.html" class="btn btn--primary">
           <span data-i18n="hero.cta_primary">Get Started</span>
@@ -104,7 +153,7 @@
   <!-- ============== TRUST BAR ============== -->
   <section class="section section-light" aria-label="Trusted by">
     <div class="container">
-      <p class="trust-bar__heading reveal" data-i18n="trust.heading">Trusted by growing businesses worldwide</p>
+      <p class="trust-bar__heading reveal" data-i18n="trust.heading">Trusted by growing businesses across Bangladesh</p>
       <div class="trust-bar reveal">
         <div class="trust-bar__item">DhakaKart</div>
         <div class="trust-bar__item">FinSolve BD</div>
@@ -205,8 +254,8 @@
   <section class="section section-light" aria-label="Why choose us">
     <div class="container">
       <div class="section-heading reveal">
-        <span class="eyebrow" data-i18n="why.eyebrow">Why Stacks Garage</span>
-        <h2 data-i18n="why.heading">Built for serious businesses, priced right</h2>
+        <span class="eyebrow" data-i18n="why.eyebrow">Why StackGarage</span>
+        <h2 data-i18n="why.heading">Built for serious businesses, priced for Bangladesh</h2>
         <p data-i18n="why.subheading">We combine global engineering standards with local understanding and unbeatable value.</p>
       </div>
 
@@ -333,62 +382,56 @@
       <div class="section-heading reveal">
         <span class="eyebrow" data-i18n="portfolio.eyebrow">Selected work</span>
         <h2 data-i18n="portfolio.heading">Projects we're proud of</h2>
-        <p data-i18n="portfolio.subheading">A glimpse into apps, sites and platforms shipped for clients across Bangladesh and beyond.</p>
+        <p data-i18n="portfolio.subheading">A glimpse into apps, sites and platforms shipped for clients across Bangladesh.</p>
       </div>
 
       <div class="portfolio-grid">
-        <a href="https://www.hutghor.com" target="_blank" rel="noopener" class="portfolio-card reveal" data-category="web">
-          <img src="assets/img/portfolio/hutghor.png" alt="HutGhor e-commerce store" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>HutGhor</h4>
-            <span>E-commerce Store</span>
-            <span class="portfolio-card__metric">Live · www.hutghor.com</span>
-            <div class="tags"><span class="tag">E-commerce</span><span class="tag">Fashion</span></div>
-          </div>
-        </a>
-        <a href="https://www.subrata.tech" target="_blank" rel="noopener" class="portfolio-card reveal reveal--delay-1" data-category="web">
-          <img src="assets/img/portfolio/subrata-tech.png" alt="Subrata.tech developer portfolio" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>Subrata.tech</h4>
-            <span>Developer Portfolio</span>
-            <span class="portfolio-card__metric">15+ Yrs Experience</span>
-            <div class="tags"><span class="tag">Portfolio</span><span class="tag">Frontend</span></div>
-          </div>
-        </a>
-        <a href="https://www.cafpcpoint.it" target="_blank" rel="noopener" class="portfolio-card reveal reveal--delay-2" data-category="web">
-          <img src="assets/img/portfolio/cafpcpoint.png" alt="CAF PC POINT agency website" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>CAF PC POINT</h4>
-            <span>Agency Website</span>
-            <span class="portfolio-card__metric">3 Languages · IT/EN/BN</span>
-            <div class="tags"><span class="tag">Corporate</span><span class="tag">Multilingual</span></div>
-          </div>
-        </a>
-        <a href="https://corsi.cafpcpoint.it" target="_blank" rel="noopener" class="portfolio-card reveal" data-category="custom software">
-          <img src="assets/img/portfolio/corsi-lms.png" alt="Corsi LMS learning platform" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>Corsi LMS</h4>
-            <span>Learning Platform</span>
-            <span class="portfolio-card__metric">500+ Enrolled Students</span>
-            <div class="tags"><span class="tag">LMS</span><span class="tag">E-learning</span></div>
-          </div>
-        </a>
-        <a href="https://soft.cafpcpoint.it" target="_blank" rel="noopener" class="portfolio-card reveal reveal--delay-1" data-category="custom software">
-          <img src="assets/img/portfolio/soft-portal.png" alt="CAF Soft custom software portal" loading="lazy">
-          <div class="portfolio-card__overlay">
-            <h4>CAF Soft</h4>
-            <span>Custom Software Portal</span>
-            <span class="portfolio-card__metric">Secure Client Portal</span>
-            <div class="tags"><span class="tag">CAF Management</span><span class="tag">Auth</span></div>
-          </div>
-        </a>
-        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-2" data-category="web">
+        <a href="portfolio.html" class="portfolio-card reveal" data-category="web">
           <img src="assets/img/portfolio/ecommerce.svg" alt="DhakaKart e-commerce platform" loading="lazy">
           <div class="portfolio-card__overlay">
             <h4>DhakaKart</h4>
             <span>E-commerce Platform</span>
-            <span class="portfolio-card__metric">+62% Sales, Q1</span>
             <div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-1" data-category="apps">
+          <img src="assets/img/portfolio/mobile-app.svg" alt="EduPath mobile app" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>EduPath</h4>
+            <span>Learning App</span>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-2" data-category="hosting">
+          <img src="assets/img/portfolio/cloud-hosting.svg" alt="Multi-tenant cloud infra" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>CTG Logistics</h4>
+            <span>Cloud Infrastructure</span>
+            <div class="tags"><span class="tag">AWS</span><span class="tag">DevOps</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal" data-category="web">
+          <img src="assets/img/portfolio/portfolio-site.svg" alt="Khulna Agro corporate site" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>Khulna Agro</h4>
+            <span>Corporate Website</span>
+            <div class="tags"><span class="tag">WordPress</span><span class="tag">SEO</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-1" data-category="custom software">
+          <img src="assets/img/portfolio/erp-dashboard.svg" alt="FinSolve ERP system" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>FinSolve ERP</h4>
+            <span>Custom ERP</span>
+            <div class="tags"><span class="tag">Laravel</span><span class="tag">MySQL</span></div>
+          </div>
+        </a>
+        <a href="portfolio.html" class="portfolio-card reveal reveal--delay-2" data-category="apps">
+          <img src="assets/img/portfolio/edtech.svg" alt="Sylhet Bazar delivery app" loading="lazy">
+          <div class="portfolio-card__overlay">
+            <h4>SylhetBazar</h4>
+            <span>Delivery App</span>
+            <div class="tags"><span class="tag">React Native</span><span class="tag">Maps API</span></div>
           </div>
         </a>
       </div>
@@ -426,91 +469,6 @@
     </div>
   </section>
 
-  <!-- ============== HOT OFFERS ============== -->
-  <section id="offers" class="section section--dark" aria-label="Hot offers">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow" data-i18n="offers.eyebrow">Hot offers</span>
-        <h2 data-i18n="offers.heading">Solutions built for you</h2>
-        <p data-i18n="offers.subheading">Curated packages for the businesses we build the most — transparent monthly pricing.</p>
-      </div>
-
-      <div class="offers-grid">
-
-        <!-- Online Store -->
-        <article class="offer-card reveal">
-          <div class="offer-card__head">
-            <div class="offer-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.5 6h13M9 21a1 1 0 11-2 0 1 1 0 012 0zm9 0a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
-            </div>
-            <h3 class="offer-card__title" data-i18n="offers.online_store.title">Online Store</h3>
-          </div>
-          <div class="offer-card__price" data-i18n="offers.online_store.price">৳35,000<small data-i18n="offers.online_store.per_month">/month</small></div>
-          <ul class="offer-card__features" data-i18n-list-html="offers.online_store.features"></ul>
-          <div class="offer-card__actions">
-            <button class="btn btn--ghost" data-demo-open="online_store" data-i18n="offers.online_store.demo">View Demo</button>
-            <a href="tel:+8809611404046" class="btn btn--primary" data-i18n="offers.online_store.call">Call for Details</a>
-          </div>
-        </article>
-
-        <!-- News Portal (featured) -->
-        <article class="offer-card offer-card--featured reveal reveal--delay-1">
-          <span class="offer-card__ribbon" data-i18n="offers.popular_ribbon">Most Popular</span>
-          <div class="offer-card__head">
-            <div class="offer-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM14 4v4h4M8 12h8M8 16h6"/></svg>
-            </div>
-            <h3 class="offer-card__title" data-i18n="offers.news_portal.title">News Portal</h3>
-          </div>
-          <div class="offer-card__price" data-i18n="offers.news_portal.price">৳35,000<small data-i18n="offers.news_portal.per_month">/month</small></div>
-          <ul class="offer-card__features" data-i18n-list-html="offers.news_portal.features"></ul>
-          <div class="offer-card__actions">
-            <button class="btn btn--ghost" data-demo-open="news_portal" data-i18n="offers.news_portal.demo">View Demo</button>
-            <a href="tel:+8809611404046" class="btn btn--primary" data-i18n="offers.news_portal.call">Call for Details</a>
-          </div>
-        </article>
-
-        <!-- Business Website -->
-        <article class="offer-card reveal">
-          <div class="offer-card__head">
-            <div class="offer-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7l9-4 9 4M4 10h16M5 10v10a1 1 0 001 1h12a1 1 0 001-1V10M9 21v-6h6v6"/></svg>
-            </div>
-            <h3 class="offer-card__title" data-i18n="offers.business_website.title">Business Website</h3>
-          </div>
-          <div class="offer-card__price" data-i18n="offers.business_website.price">৳20,000<small data-i18n="offers.business_website.per_month">/month</small></div>
-          <ul class="offer-card__features" data-i18n-list-html="offers.business_website.features"></ul>
-          <div class="offer-card__actions">
-            <button class="btn btn--ghost" data-demo-open="business_website" data-i18n="offers.business_website.demo">View Demo</button>
-            <a href="tel:+8809611404046" class="btn btn--primary" data-i18n="offers.business_website.call">Call for Details</a>
-          </div>
-        </article>
-
-        <!-- Corporate Website -->
-        <article class="offer-card reveal reveal--delay-1">
-          <div class="offer-card__head">
-            <div class="offer-card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 4h6"/></svg>
-            </div>
-            <h3 class="offer-card__title" data-i18n="offers.corporate_website.title">Corporate Website</h3>
-          </div>
-          <div class="offer-card__price offer-card__price--neg" data-i18n="offers.corporate_website.price">Negotiable</div>
-          <ul class="offer-card__features" data-i18n-list-html="offers.corporate_website.features"></ul>
-          <div class="offer-card__actions">
-            <button class="btn btn--ghost" data-demo-open="corporate_website" data-i18n="offers.corporate_website.demo">View Demo</button>
-            <a href="tel:+8809611404046" class="btn btn--primary" data-i18n="offers.corporate_website.call">Call for Details</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Offer data (used by js/demo-modal.js — JSON, hidden from view) -->
-  <script type="application/json" data-offer-data="online_store">{"title":"Online Store — Demo","subtitle":"Product grid, cart, checkout flow","callHref":"tel:+8809611404046","images":["assets/img/offers/online-store-1.svg","assets/img/offers/online-store-2.svg","assets/img/offers/online-store-3.svg"]}</script>
-  <script type="application/json" data-offer-data="news_portal">{"title":"News Portal — Demo","subtitle":"Headlines, article page, breaking-news ticker","callHref":"tel:+8809611404046","images":["assets/img/offers/news-portal-1.svg","assets/img/offers/news-portal-2.svg","assets/img/offers/news-portal-3.svg"]}</script>
-  <script type="application/json" data-offer-data="business_website">{"title":"Business Website — Demo","subtitle":"Landing, services, contact page","callHref":"tel:+8809611404046","images":["assets/img/offers/business-website-1.svg","assets/img/offers/business-website-2.svg","assets/img/offers/business-website-3.svg"]}</script>
-  <script type="application/json" data-offer-data="corporate_website">{"title":"Corporate Website — Demo","subtitle":"Bespoke hero, multilingual, admin dashboard","callHref":"tel:+8809611404046","images":["assets/img/offers/corporate-website-1.svg","assets/img/offers/corporate-website-2.svg","assets/img/offers/corporate-website-3.svg"]}</script>
-
   <!-- ============== TESTIMONIALS ============== -->
   <section class="section section--dark" aria-label="Testimonials">
     <div class="container">
@@ -523,7 +481,7 @@
         <div class="testimonials__track">
           <article class="testimonial">
             <span class="testimonial__quote-mark">"</span>
-            <p class="testimonial__text">Stacks Garage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.</p>
+            <p class="testimonial__text">StackGarage rebuilt our e-commerce platform end-to-end. Sales jumped 62% in the first quarter after launch.</p>
             <div class="testimonial__author">
               <div class="testimonial__avatar">RA</div>
               <div>
@@ -659,13 +617,13 @@
       <div class="footer__grid">
         <div class="footer__col footer__brand">
           <a href="index.html" class="nav__logo">
-            <img src="assets/img/logos/logo-plate.svg" alt="Stacks Garage" class="nav__logo-img">
+            <img data-logo="white" src="assets/img/logos/WhiteLogo.png" alt="StackGarage" class="nav__logo-img">
           </a>
-          <p data-i18n="footer.tagline">Your software partner for web, mobile, hosting and beyond — headquartered in Dhaka.</p>
+          <p data-i18n="footer.tagline">Bangladesh's software partner for web, mobile, hosting and beyond.</p>
           <div class="footer__socials">
             <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
             <a href="#" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
-            <a href="https://wa.me/8801713395672" target="_blank" rel="noopener" aria-label="WhatsApp support"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
             <a href="#" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
           </div>
         </div>
@@ -703,7 +661,7 @@
       </div>
 
       <div class="footer__bottom">
-        <span data-i18n="footer.copyright">© 2025 Stacks Garage. All rights reserved.</span>
+        <span data-i18n="footer.copyright">© 2025 StackGarage. All rights reserved.</span>
         <span data-i18n="footer.built">Built with care in Dhaka, Bangladesh.</span>
       </div>
     </div>
@@ -714,27 +672,6 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
   </button>
 
-  <!-- ============== DEMO MODAL ============== -->
-  <div id="demoModal" class="demo-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="demoModalTitle">
-    <div class="demo-modal__backdrop" data-demo-close></div>
-    <div class="demo-modal__panel">
-      <div class="demo-modal__head">
-        <div>
-          <div class="demo-modal__title" id="demoModalTitle" data-demo-title>Demo Preview</div>
-          <div class="demo-modal__subtitle" data-demo-subtitle>Live mockups</div>
-        </div>
-        <button class="demo-modal__close" data-demo-close aria-label="Close">&times;</button>
-      </div>
-      <div class="demo-modal__body">
-        <div class="demo-modal__gallery" data-demo-gallery></div>
-      </div>
-      <div class="demo-modal__foot">
-        <div class="demo-modal__hint">Have questions? <b>Call us directly</b> — no form needed.</div>
-        <a class="btn btn--primary" data-demo-call href="tel:+8809611404046">Call +880 9611-404046</a>
-      </div>
-    </div>
-  </div>
-
   <!-- ============== SCRIPTS ============== -->
   <script src="js/i18n.js"></script>
   <script src="js/typewriter.js"></script>
@@ -744,7 +681,6 @@
   <script src="js/portfolio.js"></script>
   <script src="js/faq.js"></script>
   <script src="js/form-validation.js"></script>
-  <script src="js/demo-modal.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

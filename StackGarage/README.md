@@ -1,5 +1,4 @@
 # StackGarage — Website
-Preview: https://sdotbhowmik.github.io/Stacks-Garage/
 
 Professional, multi-page website for **StackGarage**, a Bangladesh-based software firm offering web development, mobile apps, hosting, domain registration, software customization and more.
 
@@ -11,9 +10,9 @@ Professional, multi-page website for **StackGarage**, a Bangladesh-based softwar
 
 - **Pages:** Home, Services, Portfolio, About, Pricing, Contact
 - **Languages:** English + Bengali (toggle in navbar, persisted in `localStorage`)
-- **Alternating theme:** Dark + Light royal-blue sections alternate down every page (no toggle complexity, every section reads as fresh)
-- **Logo:** Self-contained navy `logo-plate.svg` reads identically on dark and light sections — no swap needed
-- **Hero:** Futuristic orbitals, perspective grid, cityscape, floating tech icons, sci-fi chamfered CTA
+- **Alternating theme:** Dark teal + Light teal sections alternate down every page (no toggle complexity, every section reads as fresh)
+- **Logo auto-swap:** `WhiteLogo.png` shows on dark sections, `blacklogo.png` on light — driven by IntersectionObserver
+- **Hero:** Futuristic orbitals, perspective grid, cityscape, floating tech icons, sci-fi chamfered CTA — refactored from the original `Programming Hero teal clone` sample
 - **Typewriter** cycles through phrases defined in `lang/*.json`
 - **Animations:** Orbital spins, parallax floaters, scroll-reveal, count-up counters, marquee tech stack, testimonial carousel, FAQ accordion
 - **Responsive:** Mobile-first with breakpoints at 1280 / 1024 / 900 / 640 / 380
@@ -31,8 +30,8 @@ StackGarage/
 │                           #        process, portfolio preview, stats,
 │                           #        testimonials, CTA, FAQ
 ├── services.html           # All 6 services detailed with feature lists
-├── portfolio.html          # 14 project grid with category filter
-├── about.html              # Story, team (3), mission/vision/values
+├── portfolio.html          # 9 project grid with category filter
+├── about.html              # Story, team (4), mission/vision/values
 ├── pricing.html            # Hosting plans + project starting prices + FAQ
 ├── contact.html            # Form (with validation) + contact info + map
 │
@@ -59,11 +58,10 @@ StackGarage/
 │   └── bn.json             # All Bengali copy, mirrored structure
 │
 └── assets/
-    └── img/
-        ├── logos/          # logo-plate.svg, logo-mark.svg (live) + legacy/ (retired PNGs)
-        ├── portfolio/      # 5 real site screenshots (PNG) + 9 SVG demo mockups, recolored to the brand palette
-        ├── offers/         # 12 SVG offer-package mockups, recolored to the brand palette
-        └── team/           # Team headshots (.jpg)
+    ├── img/
+    │   ├── logos/          # blacklogo.png, WhiteLogo.png (your originals)
+    │   └── portfolio/      # 9 SVG project placeholders (vector, theme-matched)
+    └── icons/              # Reserved for any extracted SVG icons
 ```
 
 ---
@@ -101,26 +99,22 @@ Every translatable string in HTML uses `data-i18n="path.to.string"` (text) or `d
 ## 🎨 Design System
 
 ### Colors (defined in `css/base.css :root`)
-| Token       | Dark value | Light value (in `.section-light`) |
-| ----------- | ---------- | ---------------------------------- |
-| `--bg`      | `#05080d`  | `#eef2f8`                          |
-| `--text`    | `#f5f7fb`  | `#0b1626`                          |
-| `--accent`  | `#2f7dff`  | `#0038a8`                          |
-| `--border`  | `rgba(76, 134, 176, 0.22)` | `rgba(0, 56, 168, 0.16)` |
-
-Brand blue palette also includes `--signal-500: #0038a8`, `--torque-400: #4d8dff`, and the `--blueprint-*` gray-blue scale — used throughout the portfolio/offer mockup SVGs and UI accents.
+| Token              | Dark value | Light value (in `.section-light`) |
+| ------------------ | ---------- | --------------------------------- |
+| `--bg`             | `#010b0f`  | `#f8fafc`                         |
+| `--text`           | `#ffffff`  | `#0f172a`                         |
+| `--accent`         | `#00f2fe`  | `#0d9488`                         |
+| `--border`         | rgba teal  | rgba teal                         |
 
 ### Typography
-- **Inter** — body (`--font-sans`)
-- **Archivo** — display/headings (`--font-display`)
-- **IBM Plex Mono** — code/stat figures (`--font-mono`)
-- **Noto Sans Bengali** — body in Bengali mode (`--font-bn`)
+- **Inter** — body
+- **Space Grotesk** — display/headings
+- **Noto Sans Bengali** — body in Bengali mode
 
 ### Logo rules
-- **`logo-plate.svg`** — 360×180 viewBox, self-contained opaque navy (`#0038A8`) plate with a white inset frame and the "STACKS / GARAGE" wordmark. Reads identically on dark and light sections, so it needs **no** light/dark swap — used as-is in every page header and footer.
-- **`logo-mark.svg`** — used as the favicon and the faint hero watermark.
-- Original pre-rebrand PNGs (`WhiteLogo.png`, `blacklogo.png`) are kept in `assets/img/logos/legacy/` for historical reference only — they are not referenced by any page.
-- On mobile, `.nav__logo-img` scales down at the `900px` / `640px` / `380px` breakpoints (`css/responsive.css`) to stay clear of the language toggle and burger menu inside the shrinking header.
+- `WhiteLogo.png` → use on dark backgrounds (default body, `.section--dark`, `.site-footer`)
+- `blacklogo.png` → use on light backgrounds (`.section-light`)
+- Swap is automatic — `js/menu.js:initLogoSwap` watches section classes via IntersectionObserver
 
 ---
 
@@ -134,8 +128,8 @@ Brand blue palette also includes `--signal-500: #0038a8`, `--torque-400: #4d8dff
 - Detailed service pages → `services.html`
 
 ### Portfolio projects
-- Real projects are `<a class="portfolio-card" href="https://live-url" target="_blank" rel="noopener" data-category="…">` blocks (screenshot PNG); demos are `<article class="portfolio-card" data-category="web|apps|hosting|custom software">` blocks in `portfolio.html`
-- Drop the project thumbnail as `assets/img/portfolio/yourname.png` (or `.svg`/`.jpg` — keep size < 80 KB)
+- Add an `<article class="portfolio-card" data-category="web|apps|hosting|custom software">` block in `portfolio.html`
+- Drop the project thumbnail as `assets/img/portfolio/yourname.svg` (or `.jpg/.png` — keep size < 80 KB)
 
 ### Testimonials
 - `index.html` → `#testimonials .testimonials__track` (each card has the same shape)
@@ -144,15 +138,15 @@ Brand blue palette also includes `--signal-500: #0038a8`, `--torque-400: #4d8dff
 - Hosting plans → `pricing.html` (`.plan` cards) **and** `lang/en.json` → `pricing.plans`
 
 ### Team
-- `about.html` → `#team .team__card` (3 cards by default)
+- `about.html` → `#team .team__card` (4 cards by default)
 
 ---
 
-## 🖼 Project thumbnails
+## 🖼 Replacing placeholder SVGs
 
-Real screenshots of live projects (HutGhor, Subrata.tech, CAF PC POINT, Corsi LMS, CAF Soft) live in `assets/img/portfolio/*.png` (captured 1200×900). The 9 demo project thumbnails in `assets/img/portfolio/*.svg` (and the 12 offer-package mockups in `assets/img/offers/*.svg`) are vector placeholders, recolored to the brand blue palette. To refresh or add screenshots:
-1. Capture a 1200×900 PNG of the site (headless Chrome works well: `chrome --headless=new --window-size=1200,900 --screenshot=out.png <url>`)
-2. Save it in `assets/img/portfolio/` and point the card's `src=` in `index.html` / `portfolio.html` at it
+All 9 project thumbnails in `assets/img/portfolio/*.svg` are vector placeholders matching the teal theme. To use real screenshots:
+1. Export PNG/JPG screenshots from your projects (recommended 1200×800, < 200 KB each)
+2. Replace the file at the same path with the same name (or edit `src=` in `index.html` / `portfolio.html`)
 3. Keep `loading="lazy"` attribute for performance
 
 ---
@@ -179,12 +173,11 @@ Uses: CSS Grid, custom properties, IntersectionObserver, scroll-snap, clip-path.
 
 ## 📝 License & Credits
 
-- Brand assets (`logo-plate.svg`, `logo-mark.svg`, legacy `blacklogo.png`/`WhiteLogo.png`): owned by StackGarage
+- Brand assets (`blacklogo.png`, `WhiteLogo.png`): owned by StackGarage
 - Icons: Inline SVG, original
-- Fonts: [Inter](https://rsms.me/inter/) (OFL), [Archivo](https://fonts.google.com/specimen/Archivo) (OFL), [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) (OFL), [Noto Sans Bengali](https://fonts.google.com/noto/specimen/Noto+Sans+Bengali) (OFL)
+- Fonts: [Inter](https://rsms.me/inter/) (OFL), [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) (OFL), [Noto Sans Bengali](https://fonts.google.com/noto/specimen/Noto+Sans+Bengali) (OFL)
 - Map embed: OpenStreetMap (ODbL)
 
 ---
 
 **Built with care in Dhaka, Bangladesh.** 🇧🇩
-"# Stacks-Garage" 
